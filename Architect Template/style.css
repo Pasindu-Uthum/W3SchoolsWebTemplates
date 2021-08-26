@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+nav {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+nav ul {
+	list-style-type: none;
+	display: block;
+	overflow: hidden;
+	background-color: white;
+	width: 100%;
+	box-shadow: 0px 1px 10px black;
+}
+
+
+nav ul li a {
+	color: black;
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px;
+	margin: 6px;
+	font-size: 25px;
+	font-family: 'Londrina Solid', cursive;
+}
+
+nav ul li a:hover {
+	background-color: lightgray;
+}
+
+.logo {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.cover-image img {
+	width: 100%;
+}
+
+.logo span {
+	color: black;
+	padding: 5px;
+	border: 5px solid #262626;
+}
+
+.title {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 70%;
+	left: 50%;
+	text-align: center;
+	font-size: 40px;
+	font-family: 'Londrina Solid', cursive;
+	color: white;
+}
+
+.br {
+	background-color: #262626;
+	color: white;
+	padding: 16px;
+}
+
+.projects-container h1 {
+	font-family: 'Londrina Solid', cursive;
+	padding: 10px;
+}
+
+.project-images {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.first-row-image1 img {
+	padding: 10px;
+	width: 100%;
+}
+
+.first-row-image1 {
+	position: relative;
+	flex: 25%;
+	min-width: 25%;
+}
+
+.first-row-image1 h3 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 10px;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	background-color: #262626;
+	padding: 16px;
+	color: white;
+	font-family: 'Patrick Hand SC', cursive;
+}
+
+.about-container h1 {
+	font-family: 'Londrina Solid', cursive;
+	padding: 20px;
+}
+
+.about-paragraph {
+	font-family: 'Patrick Hand', cursive;
+	font-size: 20px;
+	font-weight: bolder;
+	padding-left: 5px;
+}
+
+.about-paragraph::selection {
+	text-shadow: 1px 1px 5px dodgerblue;
+}
+
+.persons {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.avatar {
+	flex: 25%;
+	min-width: 25%;
+	padding: 10px;
+}
+.avatar img {
+	width: 100%;
+	filter: grayscale(50%);
+}
+
+.avatar h2, .avatar h3, .avatar button {
+	font-family: 'Catamaran', sans-serif;
+}
+
+.avatar h3 {
+	opacity: 0.7;
+}
+
+.avatar p {
+	font-family: 'Patrick Hand', cursive;
+	font-weight: bolder;
+	text-shadow: 1px 1px 5px dodgerblue;
+}
+
+.persons {
+	padding: 10px;
+}
+
+.avatar button {
+	font-weight: bolder;
+	padding: 10px;
+	background-color: lightgray;
+	color: black;
+	margin-top: 10px;
+	width: 100%;
+	text-align: center;
+}
+
+.avatar button:hover {
+	background-color: grey;
+}
+
+.contact-container h1 {
+	font-family: 'Londrina Solid', cursive;
+	padding: 20px;
+}
+
+.contact-container p {
+	font-family: 'Patrick Hand', cursive;
+	font-weight: bolder;
+	font-size: 20px;
+	padding-left: 20px;
+}
+
+.input-fields {
+	width: 100%;
+}
+
+.input-fields input {
+	display: block;
+	width: 95%;
+	padding: 5px;
+	margin: 20px 0px 20px 20px;
+	font-family: 'Patrick Hand', cursive;
+	font-weight: bolder;
+	font-size: 18px;
+}
+
+.contact-container button {
+	font-weight: bolder;
+	padding: 10px;
+	background-color: #262626;
+	color: white;
+	margin-top: 10px;
+	text-align: center;
+	margin: 0px 20px 20px 20px;
+	width: 200px;
+	font-family: 'Patrick Hand', cursive;
+	font-weight: bolder;
+	font-size: 18px;
+}
+
+.contact-container button:hover {
+	background-color: black;
+}
+
+.map img {
+	width: 100%;
+}
+
+.social-media {
+	text-align: center;
+}
+
+.social-media i {
+	padding: 10px;
+	opacity: 0.5;
+	font-size: 25px;
+}
+
+.social-media i:hover {
+	opacity: 1;
+}
+
+.trade {
+	text-align: center;
+	font-size: 20px;
+	font-family: Comic Sans MS;
+	font-weight: bolder;
+}
+
+.menu-container {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background-color: white;
+	position: fixed;
+	display: none;
+	animation-name: slide;
+	animation-duration: 1s;
+}
+
+@keyframes slide {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+
+
+.menu-container a {
+	color: black;
+	display: block;
+	text-decoration: none;
+	padding: 10px;
+	margin: 6px;
+	font-size: 25px;
+	font-family: 'Londrina Solid', cursive;
+	text-align: center;
+}
+
+.menu-container a:hover {
+	background-color: lightgray;
+}
+
+.profile img {
+	width: 100%;
+	opacity: 0.6;
+	height: auto;
+}
+
+.profile-title {
+	text-decoration: none;
+	padding: 10px;
+	margin-top: 100px;
+	font-size: 50px;
+	font-family: 'Londrina Solid', cursive;
+	text-align: center;
+	animation-name: title-display;
+	white-space: pre-wrap;
+	animation-delay: 1s;
+	animation-duration: 1s;
+}
+
+@keyframes title-display {
+	from {
+		transform: rotate(0deg);
+		color: white;
+		opacity: 0;
+	}
+	to {
+		transform: rotate(360deg);
+		color: black;
+		opacity: 1;
+	}
+}
+
+
+.profile-title span {
+	background-color: white;
+	color: black;
+	padding: 5px;
+	border: 5px solid #262626;
+}
+
+.close {
+	float: right;
+	margin: 10px;
+}
+
+
+@media screen and (max-width: 1015px) {
+	.first-row-image1 {
+		flex: 50%;
+		min-width: 50%;
+	}
+}
+
+@media screen and (max-width: 867px) {
+	.avatar {
+		flex: 50%;
+		min-width: 50%;
+		padding: 20px;
+	}
+}
+
+@media screen and (max-width: 945px) {
+	.title {
+		position: absolute;
+		transform: translate(-50%, -50%);
+		top: 50%;
+		left: 50%;
+	}
+}
+
+@media screen and (max-width: 579px) {
+	.title {
+		top: 40%;
+		font-size: 30px;
+	}
+}
+
+.menu {
+	display: none;
+	float: right;
+}
+
+@media screen and (max-width: 505px) {
+	.right {
+		display: none;
+	}
+
+	.title {
+		font-size: 20px;
+		top: 30%;
+	}
+
+	.title span {
+		padding: 5px;
+	}
+
+	.menu {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 499px) {
+	.first-row-image1 {
+		flex: 100%;
+		min-width: 100%;
+	}
+
+	.projects-container h1, .about-container h1, .contact-container h1 {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 405px) {
+	.avatar {
+		flex: 100%;
+		min-width: 100%;
+		padding: 20px;
+	}
+
+	.input-fields input {
+		width: 80%;
+		padding: 5px;
+		margin: 20px 0px 20px 20px;
+	}
+}
