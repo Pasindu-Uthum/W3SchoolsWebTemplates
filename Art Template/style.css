@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul {
+	list-style-type: none;
+	display: block;
+	overflow: hidden;
+	background-color: white;
+}
+
+.art-btn {
+	float: left;
+	margin-left: 40px;
+}
+
+.about-btn {
+	float: right;
+	margin-right: 40px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	margin: 20px 0px 20px 0px;
+	padding: 16px;
+	font-size: 35px;
+	font-family: 'Caveat', cursive;
+	font-weight: bolder;
+}
+
+nav ul li a:hover {
+	background-color: #b3b3b3;
+}
+
+.image-grid {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.column {
+	flex: 50%;
+	min-width: 50%;
+}
+
+.column img {
+	width: 100%;
+}
+
+.about-heading {
+	font-family: 'Caveat', cursive;
+	font-weight: bolder;
+	text-align: center;
+	margin-top: 100px;
+}
+
+.photo-me {
+	text-align: center;
+}
+
+.photo-me img {
+	width: 350px;
+	height: auto;
+}
+
+.about-me-content {
+	text-align: center;
+}
+
+.about-me {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	font-size: 25px;
+	font-family: 'Amatic SC', cursive;
+	font-weight: bolder;
+}
+
+.warning {
+	text-align: center;
+	color: red;
+	font-family: 'Amatic SC', cursive;
+	font-weight: bolder;
+	font-size: 35px;
+}
+
+.form {
+	width: 50%;
+	text-align: center;
+	margin-right: 25%;
+	margin-left: 25%;
+}
+
+.name, .mail, .msg {
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 25px;
+	font-family: 'Amatic SC', cursive;
+	font-weight: bolder;
+	margin: 10px;
+}
+
+.form h3 {
+	text-align: center;
+	font-family: 'Amatic SC', cursive;
+	font-weight: bolder;
+	font-size: 25px;
+}
+
+.send-btn {
+	background-color: gray;
+	color: white;
+	text-align: center;
+	width: 100%;
+	margin: 10px;
+	font-size: 25px;
+	font-family: 'Amatic SC', cursive;
+	font-weight: bolder;
+	padding: 10px;
+}
+
+.send-btn:hover {
+	background-color: black;
+	color: white;
+}
+
+.social-media {
+	text-align: center;
+}
+
+.social-media i {
+	padding: 10px;
+	opacity: 0.5;
+	font-size: 25px;
+}
+
+.social-media i:hover {
+	opacity: 1;
+}
+
+.trade {
+	text-align: center;
+	font-size: 20px;
+	font-family: Comic Sans MS;
+	font-weight: bolder;
+}
+
+@media screen and (max-width: 600px) {
+	nav ul li a {
+		font-size: 20px;
+	}
+	.column {
+		flex: 100%;
+		min-width: 100%;
+	}
+}
+
