@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap');
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.main-container {
+	width: 100%;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+nav {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+nav ul {
+	list-style-type: none;
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	background-color: white;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav ul li a {
+	display: inline-block;
+	padding: 16px;
+	font-size: 30px;
+	font-family: 'Baloo Chettan 2', cursive;
+	font-weight: bolder;
+	text-decoration: none;
+	color: black;
+}
+
+.last {
+	float: right;
+}
+
+.food-images {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	padding-top: 10px;
+}
+
+.bars:hover {
+	background-color: lightgray;
+}
+
+.food {
+	flex: 25%;
+	min-width: 25%;
+	padding: 10px;
+}
+
+.food img {
+	width: 100%;
+}
+
+.food h1, .food p {
+	text-align: center;
+	font-family: 'Baloo Chettan 2', cursive;
+	padding: 5px;
+}
+
+.food h1 {
+	font-size: 25px;
+}
+
+.center {
+	text-align: center;
+}
+
+.pagination {
+	display: inline-block;
+}
+
+.pagination span {
+	float: left;
+	font-family: Comic Sans MS;
+	font-size: 15px;
+	padding: 16px;
+	color: black;
+	font-weight: bolder;
+}
+
+.pagination span.one {
+	background-color: black;
+	color: white;
+}
+
+.pagination span:hover {
+	color: white;
+	background-color: black;
+}
+
+.about-section h1 {
+	text-align: center;
+	font-family: 'Baloo Chettan 2', cursive;
+	font-size: 40px;
+}
+
+.about-section img {
+	text-align: center;
+	padding-left: 18%;
+	padding-right: 18%;
+	width: 100%;
+}
+
+.about-section h2 {
+	font-family: 'Baloo Chettan 2', cursive;
+	font-size: 30px;
+}
+
+.italic {
+	font-style: italic;
+	font-weight: bolder;
+}
+
+.about-section p {
+	font-family: 'Baloo Chettan 2', cursive;
+}
+
+.about-section p, .about-section h2 {
+	text-align: center;
+}
+
+.left, .middle, .right {
+	float: left;
+	width: 33.3%;
+}
+
+.left, .middle, .right {
+	font-family: 'Baloo Chettan 2', cursive;
+	padding: 10px;
+}
+
+.post {
+	margin: 10px;
+}
+
+.post img {
+	width: 20%;
+	float: left;
+}
+
+.post p {
+	float: left;
+	padding-left: 5px;
+}
+
+p img {
+	padding-right: 5px;
+}
+
+.tags span:first-child {
+	color: white;
+	background-color: black;
+}
+
+.tags span {
+	display: inline-block;
+	color: black;
+	background-color: lightgray;
+	margin: 5px;
+	padding: 5px;
+}
+
+.social-media {
+	text-align: center;
+}
+
+.social-media i {
+	padding: 10px;
+	opacity: 0.5;
+	font-size: 25px;
+}
+
+.social-media i:hover {
+	opacity: 1;
+}
+
+.trade {
+	text-align: center;
+	font-size: 15px;
+	font-family: Comic Sans MS;
+	font-weight: bolder;
+}
+
+.menu {
+	height: 100%;
+	width: 40%;
+	position: fixed;
+	z-index: 1;
+	background-color: white;
+	top: 0;
+	left: 0;
+	animation-name: slide;
+	animation-duration: 1s;
+	transition: width 1s;
+	box-shadow: 1px 0px 5px black;
+	display: none;
+	overflow: hidden;
+}
+
+@keyframes slide {
+	from {
+		width: 0;
+	}
+	to {
+		width: 40%;
+	}
+}
+
+.menu span {
+	display: block;
+	padding: 10px;
+	font-size: 30px;
+	font-family: 'Baloo Chettan 2', cursive;
+	font-weight: bolder;
+	white-space: nowrap;
+}
+
+.menu span a {
+	text-decoration: none;
+	color: black;
+}
+
+.menu span:hover {
+	background-color: lightgray;
+}
+
+.menu h1 {
+	font-family: 'Baloo Chettan 2', cursive;
+	font-weight: bolder;
+	width: 100%;
+	top: 50%;
+	position: absolute;
+	text-align: center;
+	white-space: nowrap;
+	font-size: 50px;
+	animation-name: logo;
+	animation-duration: 1s;
+}
+
+.menu mark {
+	background-color: #00e6ac;
+	border: 3px solid black;
+	padding: 5px;
+	animation-name: logo-title;
+	animation-duration: 2s;
+}
+
+@keyframes logo {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes logo-title {
+	from {
+		background-color: transparent;
+	}
+	to {
+		background-color: #00e6ac;
+	}
+}
+
+@media screen and (max-width: 987px) {
+	.food {
+		flex: 50%;
+		min-width: 50%;
+	}
+}
+
+@media screen and (max-width: 496px) {
+	.food {
+		flex: 100%;
+		min-width: 100%;
+	}
+}
+
+@media screen and (max-width: 391px) {
+	.my-food, .last {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 468px) {
+	.six {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 411px) {
+	.six, .five {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.six, .five, .four {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 304px) {
+	.six, .five, .four, .three {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 604px) {
+	.right, .middle, .left {
+		width: 100%;
+		margin-top
+	}
+}
+
+@media screen and (max-width: 504px) {
+	.about-section img {
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+}
