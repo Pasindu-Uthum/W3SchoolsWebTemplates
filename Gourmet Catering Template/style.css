@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One&family=Fondamento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+nav {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+nav ul {
+	list-style-type: none;
+	background-color: white;
+	box-shadow: 0px 1px 5px black;
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	padding: 10px;
+}
+
+.logo {
+	float: left;
+}
+
+.others {
+	float: right;
+	margin-left: 30px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: black;
+	padding: 10px;
+	font-size: 20px;
+	display: inline-block;
+	font-family: 'Fondamento', cursive;
+}
+
+nav ul li a:hover {
+	background-color: lightgray;
+	font-weight: bolder;
+}
+
+.cover-image img {
+	width: 100%;
+}
+
+.cover-image-title {
+	position: absolute;
+	width: 100%;
+	top: 100%;
+	font-size:25px;
+	opacity: 0.7;
+	font-family: 'Fondamento', cursive;
+}
+
+.about-container, .menu-container {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.about-container-left {
+	float: left;
+	width: 50%;
+}
+
+.about-container-right {
+	float: left;
+	padding: 20px;
+	text-align: center;
+	width: 50%;
+}
+
+.about-container-right h1 {
+	font-size: 40px;
+	margin-bottom: 20px;
+	font-family: 'Fondamento', cursive;
+}
+
+.about-container-right h4 {
+	font-size: 20px;
+	opacity: 0.7;
+	margin-bottom: 20px;
+}
+
+.about-container-right p {
+	font-size: 20px;
+	text-align: justify;
+	padding-left: 10px;
+	font-family: 'Chau Philomene One', sans-serif;
+}
+
+.about-container-right p span {
+	background-color: lightgray;
+	padding: 5px;
+	margin: 5px;
+	display: inline-block;
+}
+
+.fade {
+	opacity: 0.7;
+}
+
+.about-container::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.menu-container-right {
+	float: right;
+	width: 50%;
+}
+
+.menu-container-left {
+	float: right;
+	width: 50%;
+}
+
+hr {
+	opacity: 0.5;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+}
+
+.menu-container-right img, .about-container-left img {
+	opacity: 0.7;
+	width: 100%;
+}
+
+.menu-container-left h1 {
+	text-align: center;
+	font-family: 'Fondamento', cursive;
+	font-size: 40px;
+}
+
+.menu-container-left h2 {
+	font-family: 'Chau Philomene One', sans-serif;
+}
+
+.menu-container-left p {
+	font-family: 'Patrick Hand', cursive;
+	font-weight: bolder;
+	font-size: 20px;
+	opacity: 0.8;
+}
+
+.menu-container::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.contact-container {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contact-container input {
+	width: 100%;
+	margin: 10px;
+	padding: 16px;
+	border: none;
+	border-bottom: 2px solid grey;
+	font-family: 'Patrick Hand', cursive;
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+.contact-container button {
+	padding: 16px;
+	font-size: 16px;
+	background-color: lightgray;
+	margin-left: 10px;
+	border: none;
+	font-family: 'Fondamento', cursive;
+	font-weight: bolder;
+}
+
+.contact-container button:hover {
+	background-color: #999999;
+}
+
+.contact-container h1 {
+	font-family: 'Fondamento', cursive;
+	font-size: 40px;
+}
+
+.contact-container h3 {
+	font-family: 'Patua One', cursive;
+	color: #009999;
+}
+
+.contact-container p {
+	font-family: 'Patrick Hand', cursive;
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+.social-media {
+	text-align: center;
+}
+
+.social-media i {
+	padding: 10px;
+	opacity: 0.5;
+	font-size: 25px;
+}
+
+.social-media i:hover {
+	opacity: 1;
+}
+
+.trade {
+	text-align: center;
+	font-size: 20px;
+	font-family: Comic Sans MS;
+	font-weight: bolder;
+}
+
+.banner {
+	width: 100%;
+	background-color: lightgray;
+	margin-top: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+@media screen and (max-width: 1533px) {
+	.cover-image-title {
+		top: 90%;
+	}
+}
+
+@media screen and (max-width: 1405px) {
+	.cover-image-title {
+		top: 80%;
+	}
+}
+
+@media screen and (max-width: 1247px) {
+	.cover-image-title {
+		top: 70%;
+	}
+}
+
+@media screen and (max-width: 1081px) {
+	.cover-image-title {
+		top: 60%;
+	}
+}
+
+@media screen and (max-width: 941px) {
+	.cover-image-title {
+		top: 50%;
+	}
+}
+
+@media screen and (max-width: 778px) {
+	.cover-image-title {
+		top: 40%;
+	}
+}
+
+@media screen and (max-width: 629px) {
+	.cover-image-title {
+		top: 30%;
+	}
+}
+
+@media screen and (max-width: 476px) {
+	.cover-image-title {
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.cover-image-title {
+		top: 20%;
+	}
+}
+
+@media screen and (max-width: 276px) {
+	.cover-image-title {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 970px) {
+	.about-container-left, .menu-container-right,.about-container-right, .menu-container-left {
+		width: 100%;
+	}
+}
+
+.bars {
+	display: none;
+	float: right;
+}
+
+@media screen and (max-width: 554px) {
+	.bars {
+		display: block;
+	}
+	.others {
+		display: none;
+	}
+}
+
+
+.hiddenMenu {
+	background-color: rgba(26, 26, 26, 0.9);
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	position: fixed;
+	display: none;
+	animation-name: slide;
+	white-space: nowrap;
+	animation-duration: 1s;
+}
+
+@keyframes slide {
+	from {
+		height: 0;
+	}
+	to {
+		height: 100%;
+	}
+}
+
+.hiddenMenu a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	font-size: 30px;
+	font-family: 'Fondamento', cursive;
+	text-align: center;
+	padding: 20px;
+}
+
+.hiddenMenu span {
+	font-size: 25px;
+	color: white;
+	float: right;
+	padding: 16px;
+}
+
+.hiddenMenu span:hover {
+	background-color: tomato;
+}
+
+.hiddenMenu a:hover {
+	background-color: grey;
+}
+
+.hiddenMenu h1 {
+	color: white;
+	text-align: center;
+	font-family: 'Fondamento', cursive;
+	font-size: 50px;
+	animation-name: pop-up;
+	animation-duration: 2s;
+	animation-delay: 0.5s;
+}
+
+.hiddenMenu h1 mark {
+	background-color: #00cc66;
+	color: black;
+	padding: 16px;
+	border: 5px solid black;
+}
+
+@keyframes pop-up {
+	0% {
+		transform: scale(0);
+	}
+	25% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(0.5);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
