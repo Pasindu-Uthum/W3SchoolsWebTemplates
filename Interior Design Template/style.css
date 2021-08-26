@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.left-section-navigation {
+    height: 100%;
+    width: 370px;
+    position: fixed;
+    background-color: #f44336;
+    padding-right: 20px;
+}
+
+.left-section-navigation h1 {
+    font-family: 'Red Hat Display', sans-serif;
+    color: white;
+    padding-top: 150px;
+    padding-left: 50px;
+}
+
+.left-section-navigation nav ul {
+    list-style-type: none;
+    display: block;
+    padding-left: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.left-section-navigation nav ul li a{
+    font-family: 'Red Hat Display', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px 0;
+    display: block;
+    padding-left: 30px;
+}
+
+.left-section-navigation nav ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* The coding for hidden menu */
+
+.left-section-navigation-hidden {
+    height: 100%;
+    width: 370px;
+    position: fixed;
+    background-color: #f44336;
+    padding-right: 20px;
+}
+
+.left-section-navigation-hidden h1 {
+    font-family: 'Red Hat Display', sans-serif;
+    color: white;
+    padding-top: 150px;
+    padding-left: 50px;
+}
+
+.left-section-navigation-hidden nav ul {
+    list-style-type: none;
+    display: block;
+    padding-left: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.left-section-navigation-hidden nav ul li a{
+    font-family: 'Red Hat Display', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px 0;
+    display: block;
+    padding-left: 30px;
+}
+
+.left-section-navigation-hidden nav ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+.hiddenDev {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    overflow: auto;
+    display: none;
+}
+
+.left-section-navigation-hidden span {
+    float: left;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.left-section-navigation-hidden span:hover {
+    background-color: lightgrey;
+    color: black;
+}
+
+/* The Hidden menu configuration */
+
+.main-container {
+    margin-left: 370px;
+    padding: 40px;
+}
+
+.main-container h1 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 80px;
+    padding-top: 20px;
+}
+
+.main-container h2, .services h2, .packages h2, .contact h2, .designers h2{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 60px;
+    color: #f44336;
+    padding-top: 50px;
+}
+
+.underline {
+    background-color: #f44336;
+    width: 100px;
+    height: 1em;
+    border-radius: 0.5em;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+    margin-bottom: 40px;
+}
+
+.line {
+    height: 0.1em;
+    width: 100%;
+    background-color: white;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 50%;
+    min-width: 50%;
+}
+
+.column img {
+    width: 100%;
+    padding: 10px;
+    opacity: 0.8;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+.services p, .designers p {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.designers h3 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 25px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.parent {
+    width: 33.33%;
+    float: left;
+    padding: 10px;
+}
+
+.person {
+    width: 100%;
+    background-color: rgb(231, 231, 231);
+}
+
+.person img {
+    width: 100%;
+}
+
+.person h4 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 30px;
+    padding: 10px 0;
+    padding: 10px;
+}
+
+.person h5 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 20px;
+    opacity: 0.5;
+    padding-bottom: 10px;
+    padding: 10px;
+}
+
+.person p {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.packages p {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 20px;
+}
+
+.basic, .pro {
+    width: 100%;
+}
+
+.basic div, .pro div {
+    background-color: rgb(233, 233, 233);
+    padding: 20px 0;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border-bottom: 2px solid rgb(197, 197, 197);
+}
+
+.basic div:first-child {
+    background-color: rgb(43, 43, 43);
+    color: white;
+    padding: 40px 0;
+    font-size: 30px;
+    border: none;
+}
+
+.pro div:first-child {
+    background-color: #f44336;
+    color: white;
+    padding: 40px 0;
+    font-size: 30px;
+    border: none;
+}
+
+.basic div:nth-child(7), .pro div:nth-child(7) {
+    padding: 40px 0;
+}
+
+.basic span, .pro span {
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.parent-2 {
+    width: 50%;
+    padding: 10px;
+    float: left;
+}
+
+.basic button {
+    padding: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    border: none;
+}
+
+.pro button {
+    padding: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: #f44336;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+
+.basic div:last-child, .pro div:last-child {
+    border-bottom: none;
+}
+
+.basic button:hover, .pro button:hover {
+    background-color: black;
+    color: white;
+}
+
+.contact p {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 20px;
+}
+
+.form label, .form input {
+    display: block;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 20px;
+}
+
+.form input {
+    padding: 10px;
+    width: 100%;
+}
+
+.contact button {
+    background-color: #f44336;
+    width: 100%;
+    padding: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 20px;
+    border: none;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.contact button:hover {
+    color: black;
+    background-color: lightgrey;
+}
+
+.footer {
+    background-color: lightgrey;
+    margin-left: 370px;
+}
+
+.social-media {
+	text-align: center;
+}
+
+.social-media i {
+	padding: 10px;
+	opacity: 0.5;
+	font-size: 25px;
+}
+
+.social-media i:hover {
+	opacity: 1;
+}
+
+.trade {
+	text-align: center;
+	font-size: 20px;
+	font-family: Comic Sans MS;
+	font-weight: bolder;
+}
+
+.designers::after, .packages::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.hidden-navigation {
+    width: 100%;
+    background-color: #f44336;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 20px;
+    color: white;
+    display: none;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.hidden-navigation span {
+    display: block;
+}
+
+.hidden-navigation i {
+    margin-right: 30px;
+    padding: 16px;
+}
+
+.hidden-navigation i:hover {
+    color: black;
+    background-color: lightgrey;
+}
+
+@media screen and (max-width: 995px) {
+    .left-section-navigation {
+        display: none;
+    }
+    .hidden-navigation {
+        display: block;
+    }
+    .main-container, .footer {
+        margin-left: 0;
+    }
+    .main-container {
+        animation-name: resize;
+        animation-duration: 1s;
+    }
+}
+
+@keyframes resize {
+    from {
+        margin-left: 370px;
+    }
+    to {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 623px) {
+    .column {
+        flex: 100%;
+        min-width: 100%;
+    }
+    .parent {
+        width: 100%;
+    }
+    .main-container h1 {
+        font-size: 60px;
+        padding: 0;
+        margin-right: 0;
+    }
+    .main-container h2 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 681px) { 
+    .parent-2 {
+        width: 100%;
+    }
+    .main-container {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 498px) {
+    .services p, .designers p {
+        font-size: 16px;
+    }
+}
