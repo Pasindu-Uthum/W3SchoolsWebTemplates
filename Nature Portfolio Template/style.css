@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.left-section {
+    width: 20%;
+    background-color:white;
+    height: 100%;
+    position: fixed;
+    animation-name: slide;
+    animation-duration: 1s;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
+@keyframes slide {
+    from {
+        width: 0;
+    }
+    to {
+        width: 20%;
+    }
+}
+
+.left-section h2 {
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 10px;
+}
+
+.left-section img {
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.left-section p {
+    margin-left: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    opacity: 0.7;
+}
+
+.navbar ul {
+    overflow: hidden;
+    display: block;
+    list-style-type: none;
+}
+
+
+.navbar ul li a {
+    text-decoration: none;
+    display: block;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+}
+
+.navbar ul li a:hover {
+    background-color: grey;
+}
+
+.main-container {
+    float: right;
+    width: 80%;
+    background-color: #d9d9d9;
+    padding: 20px;
+}
+
+.main-container h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.main-container span {
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+    float: left;
+    padding: 10px;
+}
+
+.main-container ul, .main-container span {
+    display: inline-block;
+}
+
+.main-container ul {
+    overflow: hidden;
+    float: left;
+    list-style-type: none;
+}
+
+.main-container ul li {
+    float: left;
+}
+
+.main-container ul li i {
+    font-size: 16px;
+}
+
+.main-container ul li a {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    margin-left: 5px;
+    background-color: white;
+}
+
+.main-container ul li a:hover {
+    background-color: black;
+    color: white;
+}
+
+.first-heading::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.line {
+    background-color: black;
+    height: 10px;
+    width: 100%;
+    opacity: 0.2;
+    border-radius: 5px;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image img {
+    width: 100%;
+}
+
+.image img:hover {
+    opacity: 0.7;
+}
+
+.image {
+    flex: 33.33%;
+    min-width: 33.33%;
+    background-color: white;
+}
+
+.parent {
+    padding: 10px;
+    flex: 33.33%;
+    min-width: 33.33%;
+}
+
+.image h3, .image p {
+    font-family: 'Ubuntu', sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.image p {
+    font-size: 18px;
+    text-align: left;
+}
+
+.image-grid::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.pagination {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pagination ul {
+    overflow: hidden;
+    display: block;
+}
+
+.pagination ul li {
+    float: left;
+}
+
+.pagination ul li a {
+    color: black;
+    background-color: transparent;
+}
+
+.pagination ul li a:hover {
+    background-color: black;
+}
+
+.two-images img {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+.aboutme h1 {
+    font-size: 30px;
+}
+
+.aboutme {
+    padding: 10px;
+}
+
+.aboutme p {
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.skills h2 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.skills h3 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.progress {
+    width: 100%;
+    background-color: grey;
+    height: 2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.data-done {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    background-color: #404040;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5px;
+}
+
+.skills button {
+    background-color: #404040;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    width: 300px;
+}
+
+.skills button:hover {
+    background-color: grey;
+    color: black;
+}
+
+.payments h2 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.basic, .pro, .premium {
+    width: 33.33%;
+    float: left;
+    padding: 10px;
+    opacity: 0.6;
+}
+
+.child {
+    border: 1px solid grey;
+    padding-bottom: 10px;
+}
+
+.heading {
+    background-color: black;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 16px;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+}
+
+.basic:hover, .pro:hover, .premium:hover {
+    opacity: 1;
+}
+
+.pro .heading {
+    background-color: seagreen;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 16px;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+}
+
+.columns, .price {
+    background-color: white;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 16px;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    display: block;
+    text-align: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button button {
+    background-color: seagreen;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    margin-top: 20px;
+}
+
+.payments::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.button button:hover {
+    background-color: black;
+}
+
+.contact-me {
+    background-color: grey;
+    width: 80%;
+    padding: 20px;
+    float: right;
+}
+
+.contact-me h2 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.mail, .phone, .location {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    width: 33.33%;
+    float: left;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.location {
+    background-color: seagreen;
+}
+
+.contact-me::after, .contact-info::after, .main-container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.contact-form label, .contact-form input {
+    display: block;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+    margin-top: 5px;
+}
+
+.contact-form input {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    border: none;   
+}
+
+.contact-form button:hover {
+    background-color: rgb(31, 28, 28);
+}
+
+.footer-before {
+    width: 80%;
+    float: right;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.footer-container, .blog-posts, .popular_tags {
+    font-family: 'Ubuntu', sans-serif;
+    width: 33.33%;
+    float: left;
+    padding: 10px;
+}
+
+.image-list {
+    list-style-type: none;
+}
+
+.image-list-items {
+    padding: 10px;
+}
+
+.image-list-items:hover {
+    background-color: lightblue;
+    color: black;
+}
+
+.image-list-items img, .image-list-items span {
+    display: inline-block;
+}
+
+.image-list-items img {
+    width: 70px;
+    float: left;
+    margin-right: 20px;
+}
+
+.image-list-items::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.tags span:first-child {
+    background-color: black;
+    color: lightgray;
+    font-size: 20px;
+}
+
+.tags span {
+    display: inline-block;
+    padding: 5px;
+    background-color: lightgray;
+    color: black;
+    margin: 5px;
+}
+
+.cover-image img {
+	width: 100%;
+}
+
+.social-media {
+	text-align: center;
+}
+
+.social-media i {
+	padding: 10px;
+	opacity: 0.5;
+	font-size: 20px;
+}
+
+.social-media i:hover {
+	opacity: 1;
+}
+
+.trade {
+	text-align: center;
+	font-size: 17px;
+	font-family: Comic Sans MS;
+	font-weight: bolder;
+}
+
+.main-footer {
+    width: 100%;
+    float: right;
+    background-color: black;
+}
+
+.main-footer-social-media {
+	text-align: center;
+}
+
+.main-footer-social-media i {
+	padding: 10px;
+	opacity: 0.5;
+	font-size: 25px;
+}
+
+.main-footer-social-media i:hover {
+	opacity: 1;
+}
+
+.main-footer-trade {
+	text-align: center;
+	font-size: 20px;
+	font-family: Comic Sans MS;
+	font-weight: bolder;
+}
+
+.footer-rule {
+    display: none;
+}
+
+@media screen and (max-width: 1383px) {
+    .left-section p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 927px) {
+    .footer-container, .blog-posts, .popular_tags {
+        width: 100%;
+    }
+    .blog-posts h1, .footer-container h1, .popular_tags h1, .popular_tags h1 {
+        text-align: center;
+    }
+    .footer-rule {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 949px) {
+    .image {
+        flex: 50%;
+        min-width: 50%;
+    }
+    .parent {
+        flex: 50%;
+        min-width: 50%;
+    }
+}
+
+@media screen and (max-width: 833px) {
+    .left-section {
+        display: none;
+    }
+
+    .main-container, .contact-me, .footer-before, .main-footer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 563px) {
+    .image {
+        flex: 100%;
+        min-width: 100%;
+    }
+    .parent {
+        flex: 100%;
+        min-width: 100%;
+    }
+}
+
+@media screen and (max-width: 642px) {
+    .heading h2 {
+        font-size: 25px;
+    }
+}
