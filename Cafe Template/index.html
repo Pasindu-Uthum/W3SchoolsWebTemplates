@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/58e77607fe.js" crossorigin="anonymous"></script>
+    <title>Cafe | Web Template</title>
+</head>
+
+<body>
+    <nav>
+        <div><a href="#">HOME</a></div>
+        <div><a href="#about">ABOUT</a></div>
+        <div><a href="#menu">MENU</a></div>
+        <div><a href="#where">WHERE</a></div>
+    </nav>
+    <div class="cover-image">
+        <div class="white-container">
+            <center><span>the<br>cafe</span></center>
+            <div class="opentime">Open from 6am to 5pm</div>
+            <div class="address">15 Adr street, 5015</div>
+        </div>
+    </div>
+    <div class="about-section">
+        <center><span id="about">ABOUT THE CAFE</span></center>
+        <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <br><br>
+            In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch
+            sandwiches, as well as a selection of sides and salads and other good stuff.
+        </p>
+        <div class="quote">
+            <div class="bar"></div>
+            <p>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new
+                sweet.
+                <br><br>
+                Chef, Coffeeist and Owner: Liam Brown
+            </p>
+        </div>
+        <img src="coffeeshop.jpg" alt="coffeeshop">
+        <p class="info">
+            <mark>Opening hours:</mark> everyday from 6am to 5pm.
+            <br><br>
+            <mark>Address:</mark> 15 Adr street, 5015, NY
+        </p>
+    </div>
+
+    <div class="menu-section">
+        <center><span id="menu">THE MENU</span></center>
+        <br><br>
+        <div class="menu">
+            <div id="eat">Eat</div>
+            <div id="drink">Drink</div>
+        </div>
+        <div class="menu-content-eat" id="eat-menu">
+            <span>Bread Basket</span>
+            <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+            <br>
+            <span>Honey Almond Granola with Fruits</span>
+            <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+            <br>
+            <span>Belgian Waffle</span>
+            <p>Vanilla flavored batter with malted flour 7.50</p>
+            <br>
+            <span>Scrambled eggs</span>
+            <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+            <br>
+            <span>Blueberry Pancakes</span>
+            <p>With syrup, butter and lots of berries 8.50</p>
+        </div>
+        <div class="menu-content-drink" id="drink-menu">
+            <span>Coffee</span>
+            <p>Regular coffee 2.50</p>
+            <br>
+            <span>Chocolato</span>
+            <p>Chocolate espresso with milk 4.50</p>
+            <br>
+            <span>Corretto</span>
+            <p>Whiskey and coffee 5.00</p>
+            <br>
+            <span>Iced tea</span>
+            <p>Hot tea, except not hot 3.00</p>
+            <br>
+            <span>Soda</span>
+            <p>Coke, Sprite, Fanta, etc. 2.50</p>
+        </div>
+        <img src="coffeehouse2.jpg" alt="">
+    </div>
+
+    <div class="location">
+        <center><span id="where">WHERE TO FIND US</span></center>
+        <p>Find us at some address at some place.</p>
+        <img src="map.jpg" alt="location">
+        <p><span>FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and
+            we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+        <p class="next">
+        <p class="bold-text">Reserve</p> a table, ask for today's special or just send us a message:</p>
+        <div class="form">
+            <input type="text" placeholder="Name">
+            <input type="number" placeholder="How Many People">
+            <input type="datetime-local" placeholder="Date and Time">
+            <input type="text" placeholder="Message / Special Requirements">
+            <button>SEND MESSAGE</button>
+        </div>
+    </div>
+    <div class="footer">
+        <br><br><br>
+        <p class="social-media"><i class="fas fa-at"></i><i class="fab fa-telegram"></i><i class="fab fa-discord"></i><i
+                class="fab fa-whatsapp"></i><i class="fab fa-instagram"></i><i class="fab fa-reddit"></i></p>
+        <p class="trade">Pasindu Uthum Web Templates™ | 2021</p>
+        <br><br><br>
+    </div>
+
+    <script>
+        const eat = document.getElementById('eat');
+        const drink = document.getElementById('drink');
+        const eat_menu = document.getElementById('eat-menu');
+        const drink_menu = document.getElementById('drink-menu');
+
+        eat.onclick = function () {
+            eat_menu.style.display = "block";
+            drink_menu.style.display = "none";
+        }
+
+        drink.onclick = function () {
+            eat_menu.style.display = "none";
+            drink_menu.style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
