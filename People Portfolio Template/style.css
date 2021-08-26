@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: lightgrey;
+}
+
+.left-section {
+    width: 20%;
+    background-color: white;
+    text-align: center;
+    padding-top: 100px;
+    position: fixed;
+    height: 100%;
+    animation-name: slide;
+    animation-duration: 1s;
+    z-index: 1;
+    transform: translate(0%);
+    white-space: nowrap;
+}
+
+@keyframes slide {
+    from {
+        transform: translate(-100%);
+    }
+    to {
+        transform: translate(0%);
+    }
+}
+
+.left-section h1 {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+.left-section div {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    display: block;
+    padding: 16px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.left-section div:hover {
+    background-color: grey;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    width: 80%;
+}
+
+.column {
+    flex: 33.33%;
+    min-width: 33.33%;
+}
+
+.column img {
+    width: 100%;
+    display: block;
+    opacity: 0.7;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+.image-grid::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.one {
+    background-color: black;
+    color: white;
+}
+
+.pagination {
+    float: right;
+    width: 80%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination div {
+    display: inline-block;
+    padding: 16px;
+    font-family: Comic Sans MS;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.pagination div:hover {
+    background-color: black;
+    color: white;
+}
+
+.about-me {
+    width: 80%;
+    float: right;
+    text-align: center;
+    margin-top: 70px;
+    padding: 30px;
+    background-color: rgb(82, 80, 80);
+    color: white;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+.middle h1 {
+    margin-bottom: 20px;
+    
+}
+
+.middle img {
+    width: 100%;
+}
+
+.name-heading {
+    text-align: left;
+    font-size: 25px;
+}
+
+.middle {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.paragraph {
+    font-size: 17px;
+}
+
+.skills {
+    text-align: left;
+}
+
+.progress {
+    background-color: white;
+    height: 2em;
+}
+
+.datadone {
+    background: rgb(173, 173, 173);
+    color: black;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills button {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    border: none;
+    font-size: 16px;
+    font-family: Comic Sans Ms;
+    font-weight: bolder;
+}
+
+.skills button:hover {
+    background: rgb(80, 80, 80);
+    border: 1px solid white;
+    color: white;
+    box-shadow: 0px 0px 10px white;
+}
+
+.payments h2 {
+    text-align: left;
+}
+
+.child {
+    width: 50%;
+    float: left;
+}
+
+.child::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.basic div:first-child, .pro div:first-child {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 35px;
+}
+
+.basic div, .pro div {
+    padding: 16px;
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid grey;
+    font-size: 20px;
+}
+
+.basic button, .pro button {
+    padding: 16px;
+    background-color: white;
+    color: black;
+    font-family: Comic Sans MS;
+    font-size: 16px;
+    font-weight: bolder;
+    border: none;
+}
+
+.basic, .pro {
+    border: 1px solid white;
+    opacity: 0.7;
+    background-color: lightgrey;
+}
+
+.child {
+    padding: 10px;
+}
+
+.basic:hover, .pro:hover {
+    opacity: 1;
+}
+
+.basic button:hover, .pro button:hover {
+    color: white;
+    background-color: black;
+}
+
+.contact-me {
+    padding-top: 50px;
+    width: 80%;
+    float: right;
+    text-align: center;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    background-color: lightgrey;
+}
+
+
+
+.message {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.message p {
+    text-align: left;
+    font-size: 20px;
+}
+
+.contact-form {
+    text-align: left;
+}
+
+.contact-form input {
+    width: 100%;
+    font-family: Comic Sans MS;
+    padding: 10px;
+    border: 1px solid grey;
+    background-color: white; 
+    color: black;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.contact-form h3 {
+    padding-bottom: 2px;
+}
+
+.contact-form button {
+    width: 100%;
+    font-family: Comic Sans MS;
+    padding: 10px;
+    border: 1px solid grey;
+    background-color: black; 
+    color: white;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: white;
+    color: black;
+}
+
+.footer-before {
+    width: 80%;
+    float: right;
+    background-color: #504e4e;
+    color: white;
+}
+
+.footer-container, .blog-posts, .popular_tags {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    width: 33.33%;
+    float: left;
+    padding: 10px;
+}
+
+.image-list {
+    list-style-type: none;
+}
+
+.image-list-items {
+    padding: 10px;
+}
+
+.image-list-items:hover {
+    background-color: lightblue;
+    color: black;
+}
+
+.image-list-items img, .image-list-items span {
+    display: inline-block;
+}
+
+.image-list-items img {
+    width: 70px;
+    float: left;
+    margin-right: 20px;
+}
+
+.image-list-items::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.tags span:first-child {
+    background-color: black;
+    color: lightgray;
+    font-size: 20px;
+}
+
+.tags span {
+    display: inline-block;
+    padding: 5px;
+    background-color: lightgray;
+    color: black;
+    margin: 5px;
+}
+
+.cover-image img {
+	width: 100%;
+}
+
+.social-media {
+	text-align: center;
+}
+
+.social-media i {
+	padding: 10px;
+	opacity: 0.5;
+	font-size: 20px;
+}
+
+.social-media i:hover {
+	opacity: 1;
+}
+
+.trade {
+	text-align: center;
+	font-size: 17px;
+	font-family: Comic Sans MS;
+	font-weight: bolder;
+}
+
+.footer-rule {
+    display: none;
+}
+
+.footer-container p {
+    font-size: 18px;
+}
+
+.main-footer {
+    width: 100%;
+    float: right;
+    background-color: black;
+}
+
+.main-footer-social-media {
+	text-align: center;
+}
+
+.main-footer-social-media i {
+	padding: 10px;
+	opacity: 0.5;
+	font-size: 25px;
+}
+
+.main-footer-social-media i:hover {
+	opacity: 1;
+}
+
+.main-footer-trade {
+	text-align: center;
+	font-size: 20px;
+	font-family: Comic Sans MS;
+	font-weight: bolder;
+}
+
+@media screen and (max-width: 938px) {
+    .message, .middle {
+        width: 100%;
+        padding: 0px 10px 0px 10px;
+    }
+}
+
+@media screen and (max-width: 977px) {
+    .footer-container, .popular_tags, .blog-posts {
+        width: 100%;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .footer-container h1, .popular_tags h1, .blog-posts h1 {
+        text-align: center;
+    }
+    .footer-rule {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 862px) {
+    .left-section {
+        display: none;
+    }
+    .image-grid, .pagination, .about-me, .contact-me, .footer-before {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .column {
+        flex: 100%;
+        min-width: 100%;
+    }
+}
+
+@media screen and (max-width: 492px) {
+    .child {
+        width: 100%;
+    }
+}
