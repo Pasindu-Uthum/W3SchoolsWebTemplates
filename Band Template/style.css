@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+nav {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+nav ul {
+	background-color: black;
+	list-style-type: none;
+	overflow: hidden;
+	display: block;
+	width: 100%;
+}
+
+
+nav ul li {
+	float: left;
+}
+
+.search {
+	float: right;
+}
+
+nav ul li a, .dropdown-btn {
+	text-decoration: none;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	font-family: 'Kanit', sans-serif;
+	display: inline-block;
+	font-weight: bolder;
+}
+
+nav ul li a:hover, .dropdown-btn:hover {
+	background-color: darkgrey;
+	color: black;
+}
+
+.menu {
+	display: none;
+}
+
+.lens:hover {
+	background-color: tomato;
+}
+
+.dropdown {
+	display: inline-block;
+}
+
+.dropdown-content {
+	position: absolute;
+	z-index: 1;
+	min-width: 160px;
+	background-color: white;
+	display: none;
+	box-shadow: 1px 1px 10px black;
+}
+
+.dropdown-content a {
+	color: black;
+	display: block;
+
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.intro-image1, .intro-image2, .intro-image3 {
+	width: 100%;
+}
+
+.image-title, .image-desc {
+	color: black;
+}
+
+.banner {
+	width: 100%;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+.banner img {
+	width: 100%;
+}
+
+.heading, .description {
+	position: absolute;
+	color: white;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.heading {
+	top: 100%;
+}
+
+.description {
+	top: 105%;
+}
+
+.the-band-heading {
+	font-family: 'Asap', sans-serif;
+}
+
+.the-band {
+	text-align: center;
+}
+
+.the-band-content {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	text-align: justify;
+}
+
+.the-band-sub {
+	opacity: 0.7;
+}
+
+.the-band-sub, .the-band-content-paragraph {
+	font-family: Arial;
+}
+
+.name-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-left: 30%;
+	padding-right: 30%;
+}
+
+.name1, .name2, .name3 {
+	display: inline-block;
+}
+
+.name-content {
+	text-align: center;
+	margin: 0;
+	font-family: 'Asap', sans-serif;
+}
+
+.name1 img, .name2 img, .name3 img {
+	transform: scale(0.8);
+	border-radius: 6px;
+	margin: 0;
+}
+
+.tour-dates {
+	background-color: black;
+}
+
+.tour-dates-heading, .tour-dates-sub {
+	color: white;
+	text-align: center;
+	font-family: 'Kanit', sans-serif;
+}
+
+.tour-dates-heading {
+	padding-top: 60px;
+}
+
+.tour-dates-sub {
+	padding-top: 20px;
+}
+
+.months {
+	margin: 0 auto;
+	background-color: white;
+	width: 50%;
+}
+
+.months h4 {
+	color: black;
+	padding: 10px;
+	font-family: 'Kanit', sans-serif;
+	opacity: 0.8;
+}
+
+.november h4{
+	display: inline-block;
+}
+
+.three {
+	float: right;
+}
+
+.three mark {
+	background-color: black;
+	border-radius: 20px;
+}
+
+mark {
+	color: white;
+	background-color: red;
+	padding: 5px;
+}
+
+
+.tickets {
+	padding-left: 25%;
+	padding-right: 25%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-bottom: 20px;
+}
+
+.new-york {
+	margin-right: 20px;
+}
+
+.sanfrancisco {
+	margin-left: 20px;
+}
+
+.new-york, .paris, .sanfrancisco {
+	display: inline-block;
+	background-color: white;
+	padding-bottom: 10px;
+}
+
+.new-york img, .paris img, .sanfrancisco img {
+	width: 100%;
+}
+
+.ticket-title, .ticket-date, .ticket-description {
+	font-family: 'Kanit', sans-serif;
+	padding-left: 5px;
+}
+
+.ticket-date {
+	opacity: 0.8;
+}
+
+.ticket-description {
+	font-weight: bolder;
+}
+
+.but-tickets {
+	padding: 16px;
+	font-size: 15px;
+	background-color: black;
+	color: white;
+	margin-left: 10px;
+	font-family: 'Kanit', sans-serif;
+	font-weight: bolder;
+}
+
+.but-tickets:hover, .form button:hover {
+	background-color: white;
+	color: black;
+}
+
+.contact-heading, .contact-heading-sub  {
+	text-align: center;
+	font-family: 'Kanit', sans-serif;
+}
+
+.information {
+	text-align: center;
+}
+
+.info, .form {
+	display: inline-block;
+	text-align: left;
+}
+
+.info {
+	margin-right: 100px;
+}
+
+.info p {
+	font-size: 18px;
+	font-weight: bolder;
+	font-family: 'Kanit', sans-serif;
+}
+.msg {
+	width: 100%;
+	margin-top: 10px;
+}
+
+.form input {
+	padding: 10px;
+}
+
+.form button {
+	margin-top: 20px;
+	float: right;
+	padding: 10px;
+	font-size: 15px;
+	background-color: black;
+	color: white;
+	margin-left: 10px;
+	font-family: 'Kanit', sans-serif;
+	font-weight: bolder;
+}
+
+.cover-image img {
+	width: 100%;
+}
+
+.social-media {
+	text-align: center;
+}
+
+.social-media i {
+	padding: 10px;
+	opacity: 0.5;
+	font-size: 25px;
+}
+
+.social-media i:hover {
+	opacity: 1;
+}
+
+.trade {
+	text-align: center;
+	font-size: 20px;
+	font-family: Comic Sans MS;
+	font-weight: bolder;
+}
+
+.modal {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.7);
+	z-index: 1;
+	position: fixed;
+	overflow: auto;
+	padding-top: 100px;
+	display: none;
+}
+
+.header{
+	background-color: dodgerblue;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+.close {
+	float: right;
+	padding: 16px;
+}
+
+.header-heading {
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-family: 'Kanit', sans-serif;
+}
+
+.details {
+	background-color: white;
+	margin-left: 25%;
+	margin-right: 25%;
+	padding: 20px;
+}
+
+.points {
+	font-family: 'Kanit', sans-serif;
+	font-weight: bolder;
+}
+
+.count {
+	margin-top: 20px;
+	font-size: 16px;
+	padding: 10px;
+	width: 100%;
+	margin-bottom: 20px;
+	font-family: 'Kanit', sans-serif;
+	font-weight: bolder;
+}
+
+.pay {
+	background-color: dodgerblue;
+	color: white;
+	width: 100%;
+	border: none;
+	border-radius: 6px;
+	padding: 16px;
+	font-weight: bolder;
+	font-family: 'Kanit', sans-serif;
+}
+
+.pay:hover {
+	background-color: #004d99;
+}
+
+.cancel {
+	background-color: tomato;
+	color: white;
+	border: none;
+	border-radius: 1px;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+.cancel:hover {
+	background-color: #ff3c1a;
+}
+
+.cancel, .help {
+	display: inline-block;
+}
+
+.help-link {
+	color: dodgerblue;
+}
+
+.help {
+	padding-top: 20px;
+	float: right;
+	font-family: 'Kanit', sans-serif;
+	font-weight: bolder;
+}
+
+.close:hover {
+	color: red;
+	background-color: white;
+}
+
+@media screen and (max-width: 1255px) {
+	.heading {
+		top: 90%;
+	}
+	.description {
+		top: 95%;
+	}
+}
+
+@media screen and (max-width: 1131px) {
+	.heading {
+		top: 80%;
+	}
+	.description {
+		top: 85%;
+	}
+}
+
+@media screen and (max-width: 1013px) {
+	.heading {
+		top: 70%;
+	}
+	.description {
+		top: 75%;
+	}
+}
+
+@media screen and (max-width: 885px) {
+	.heading {
+		top: 60%;
+	}
+	.description {
+		top: 65%;
+	}
+}
+
+@media screen and (max-width: 743px) {
+	.heading {
+		top: 50%;
+	}
+	.description {
+		top: 55%;
+	}
+}
+
+@media screen and (max-width: 621px) {
+	.heading {
+		top: 40%;
+	}
+	.description {
+		top: 45%;
+	}
+}
+
+@media screen and (max-width: 499px) {
+	.heading {
+		top: 30%;
+	}
+	.description {
+		top: 35%;
+	}
+}
+
+@media screen and (max-width: 416px) {
+	.heading {
+		top: 25%;
+	}
+	.description {
+		top: 30%;
+	}
+}
+
+@media screen and (max-width: 761px) {
+	.name1, .name2, .name3 {
+		display: block;
+	}
+	.name-list {
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 923px) {
+	.tickets {
+		flex-direction: column;
+	}
+	.new-york {
+	margin-right: 0;
+	margin-bottom: 20px;
+	}
+
+	.sanfrancisco {
+	margin-left: 0;
+	margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 557px) {
+	nav ul li a, .dropdown-btn {
+		display: none;
+	}
+
+	.menu, .search {
+		display: inline-block;
+	}
+}
+
+@media screen and (max-width: 629px) {
+	.name-list {
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+}
+
+@media screen and (max-width: 629px) {
+	.form {
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.name, .mail, .msg {
+		margin: 10px;
+	}
+}
+
+.menu-content {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	overflow: auto;
+	background-color: #333333;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.menu-item {
+	background-color: black;
+	color: white;
+	display: inline-block;
+	padding: 16px;
+	font-size: 20px;
+	width: 100%;
+}
+
+.navbar-horizontal a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-family: 'Kanit', sans-serif;
+	font-weight: bolder;
+	font-size: 20px;
+	padding: 16px;
+	text-align: center;
+}
+
+.navbar-horizontal a:hover {
+	background-color: white;
+	color: black;
+}
+
+.menu-item:hover {
+	color: black;
+	background-color: white;
+}
