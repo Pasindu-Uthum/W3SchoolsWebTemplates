@@ -9,6 +9,7 @@
 	margin: 0;
 	padding: 0;
 }
+
 nav {
 	position: sticky;
 	top: 0;
@@ -23,14 +24,8 @@ nav ul {
 	width: 100%;
 }
 
-
-nav ul li {
-	float: left;
-}
-
-.search {
-	float: right;
-}
+nav ul li {float: left}
+nav ul li:last-child {float: right}
 
 nav ul li a, .dropdown-btn {
 	text-decoration: none;
@@ -47,17 +42,9 @@ nav ul li a:hover, .dropdown-btn:hover {
 	color: black;
 }
 
-.menu {
-	display: none;
-}
-
-.lens:hover {
-	background-color: tomato;
-}
-
-.dropdown {
-	display: inline-block;
-}
+.menu {display: none}
+.lens:hover {background-color: tomato}
+.dropdown {display: inline-block}
 
 .dropdown-content {
 	position: absolute;
@@ -71,20 +58,11 @@ nav ul li a:hover, .dropdown-btn:hover {
 .dropdown-content a {
 	color: black;
 	display: block;
-
 }
 
-.dropdown:hover .dropdown-content {
-	display: block;
-}
-
-.intro-image1, .intro-image2, .intro-image3 {
-	width: 100%;
-}
-
-.image-title, .image-desc {
-	color: black;
-}
+.dropdown:hover .dropdown-content {display: block}
+.intro-image1, .intro-image2, .intro-image3 {width: 100%}
+.image-title, .image-desc {color: black}
 
 .banner {
 	width: 100%;
@@ -93,9 +71,7 @@ nav ul li a:hover, .dropdown-btn:hover {
 	align-items: center;
 }
 
-.banner img {
-	width: 100%;
-}
+.banner img {width: 100%;}
 
 .heading, .description {
 	position: absolute;
@@ -103,21 +79,14 @@ nav ul li a:hover, .dropdown-btn:hover {
 	font-family: 'Josefin Sans', sans-serif;
 }
 
-.heading {
-	top: 100%;
-}
-
-.description {
-	top: 105%;
-}
+.heading {top: 100%}
+.description {top: 105%}
 
 .the-band-heading {
 	font-family: 'Asap', sans-serif;
+	padding-top: 100px;
 }
-
-.the-band {
-	text-align: center;
-}
+.the-band {text-align: center}
 
 .the-band-content {
 	margin-left: auto;
@@ -126,13 +95,8 @@ nav ul li a:hover, .dropdown-btn:hover {
 	text-align: justify;
 }
 
-.the-band-sub {
-	opacity: 0.7;
-}
-
-.the-band-sub, .the-band-content-paragraph {
-	font-family: Arial;
-}
+.the-band-sub {opacity: 0.7}
+.the-band-sub, .the-band-content-paragraph {font-family: Arial}
 
 .name-list {
 	display: flex;
@@ -142,9 +106,7 @@ nav ul li a:hover, .dropdown-btn:hover {
 	padding-right: 30%;
 }
 
-.name1, .name2, .name3 {
-	display: inline-block;
-}
+.name1, .name2, .name3 {display: inline-block}
 
 .name-content {
 	text-align: center;
@@ -158,9 +120,7 @@ nav ul li a:hover, .dropdown-btn:hover {
 	margin: 0;
 }
 
-.tour-dates {
-	background-color: black;
-}
+.tour-dates {background-color: black}
 
 .tour-dates-heading, .tour-dates-sub {
 	color: white;
@@ -168,13 +128,8 @@ nav ul li a:hover, .dropdown-btn:hover {
 	font-family: 'Kanit', sans-serif;
 }
 
-.tour-dates-heading {
-	padding-top: 60px;
-}
-
-.tour-dates-sub {
-	padding-top: 20px;
-}
+.tour-dates-heading {padding-top: 60px}
+.tour-dates-sub {padding-top: 20px}
 
 .months {
 	margin: 0 auto;
@@ -189,13 +144,9 @@ nav ul li a:hover, .dropdown-btn:hover {
 	opacity: 0.8;
 }
 
-.november h4{
-	display: inline-block;
-}
+.november h4{display: inline-block}
 
-.three {
-	float: right;
-}
+.three {float: right}
 
 .three mark {
 	background-color: black;
@@ -218,13 +169,8 @@ mark {
 	padding-bottom: 20px;
 }
 
-.new-york {
-	margin-right: 20px;
-}
-
-.sanfrancisco {
-	margin-left: 20px;
-}
+.new-york {margin-right: 20px}
+.sanfrancisco {margin-left: 20px}
 
 .new-york, .paris, .sanfrancisco {
 	display: inline-block;
@@ -232,22 +178,15 @@ mark {
 	padding-bottom: 10px;
 }
 
-.new-york img, .paris img, .sanfrancisco img {
-	width: 100%;
-}
+.new-york img, .paris img, .sanfrancisco img {width: 100%;}
 
 .ticket-title, .ticket-date, .ticket-description {
 	font-family: 'Kanit', sans-serif;
 	padding-left: 5px;
 }
 
-.ticket-date {
-	opacity: 0.8;
-}
-
-.ticket-description {
-	font-weight: bolder;
-}
+.ticket-date {opacity: 0.8}
+.ticket-description {font-weight: bolder}
 
 .but-tickets {
 	padding: 16px;
@@ -269,18 +208,18 @@ mark {
 	font-family: 'Kanit', sans-serif;
 }
 
-.information {
-	text-align: center;
+.contact-heading {
+	padding: 100px;
 }
+
+.information {text-align: center;}
 
 .info, .form {
 	display: inline-block;
 	text-align: left;
 }
 
-.info {
-	margin-right: 100px;
-}
+.info {margin-right: 100px;}
 
 .info p {
 	font-size: 18px;
@@ -292,9 +231,7 @@ mark {
 	margin-top: 10px;
 }
 
-.form input {
-	padding: 10px;
-}
+.form input {padding: 10px;}
 
 .form button {
 	margin-top: 20px;
@@ -308,13 +245,8 @@ mark {
 	font-weight: bolder;
 }
 
-.cover-image img {
-	width: 100%;
-}
-
-.social-media {
-	text-align: center;
-}
+.cover-image img {width: 100%;}
+.social-media {text-align: center;}
 
 .social-media i {
 	padding: 10px;
@@ -322,9 +254,7 @@ mark {
 	font-size: 25px;
 }
 
-.social-media i:hover {
-	opacity: 1;
-}
+.social-media i:hover {opacity: 1;}
 
 .trade {
 	text-align: center;
@@ -397,9 +327,7 @@ mark {
 	font-family: 'Kanit', sans-serif;
 }
 
-.pay:hover {
-	background-color: #004d99;
-}
+.pay:hover {background-color: #004d99;}
 
 .cancel {
 	background-color: tomato;
@@ -410,17 +338,9 @@ mark {
 	margin-top: 10px;
 }
 
-.cancel:hover {
-	background-color: #ff3c1a;
-}
-
-.cancel, .help {
-	display: inline-block;
-}
-
-.help-link {
-	color: dodgerblue;
-}
+.cancel:hover {background-color: #ff3c1a;}
+.cancel, .help {display: inline-block}
+.help-link {color: dodgerblue}
 
 .help {
 	padding-top: 20px;
@@ -435,81 +355,64 @@ mark {
 }
 
 @media screen and (max-width: 1255px) {
-	.heading {
-		top: 90%;
-	}
-	.description {
-		top: 95%;
-	}
+	.heading {top: 90%}
+	.description {top: 95%}
 }
 
 @media screen and (max-width: 1131px) {
-	.heading {
-		top: 80%;
-	}
-	.description {
-		top: 85%;
-	}
+	.heading {top: 80%}
+	.description {top: 85%}
 }
 
 @media screen and (max-width: 1013px) {
-	.heading {
-		top: 70%;
-	}
-	.description {
-		top: 75%;
-	}
+	.heading {top: 70%}
+	.description {top: 75%}
 }
 
 @media screen and (max-width: 885px) {
-	.heading {
-		top: 60%;
-	}
-	.description {
-		top: 65%;
-	}
+	.heading {top: 60%}
+	.description {top: 65%}
 }
 
 @media screen and (max-width: 743px) {
-	.heading {
-		top: 50%;
-	}
-	.description {
-		top: 55%;
-	}
+	.heading {top: 50%}
+	.description {top: 55%}
 }
 
 @media screen and (max-width: 621px) {
-	.heading {
-		top: 40%;
-	}
-	.description {
-		top: 45%;
-	}
+	.heading {top: 40%}
+	.description {top: 45%}
 }
 
 @media screen and (max-width: 499px) {
-	.heading {
-		top: 30%;
+	.heading {top: 30%}
+	.description {top: 35%}
+
+	.the-band-content {
+		margin: 0;
+		width: 100%;
+		padding: 10px;
 	}
-	.description {
-		top: 35%;
+}
+
+@media screen and (max-width: 480px) {
+	.months {
+		margin: 0;
+		width: 100%;
 	}
+
+	.tour-dates {padding: 10px;}
+	.tickets {padding: 0;}
 }
 
 @media screen and (max-width: 416px) {
-	.heading {
-		top: 25%;
-	}
-	.description {
-		top: 30%;
-	}
+	.heading {top: 25%;}
+	.description {top: 30%;}
 }
 
 @media screen and (max-width: 761px) {
-	.name1, .name2, .name3 {
-		display: block;
-	}
+	.name1, .name2, .name3 {display: block;}
+
 	.name-list {
 		flex-direction: column;
 		text-align: center;
@@ -517,9 +420,8 @@ mark {
 }
 
 @media screen and (max-width: 923px) {
-	.tickets {
-		flex-direction: column;
-	}
+	.tickets {flex-direction: column;}
+
 	.new-york {
 	margin-right: 0;
 	margin-bottom: 20px;
@@ -532,13 +434,9 @@ mark {
 }
 
 @media screen and (max-width: 557px) {
-	nav ul li a, .dropdown-btn {
-		display: none;
-	}
-
-	.menu, .search {
-		display: inline-block;
-	}
+	nav ul li a, .dropdown-btn {display: none;}
+	.menu, .search {display: block;}
+	.search {float: right;}
 }
 
 @media screen and (max-width: 629px) {
@@ -549,15 +447,29 @@ mark {
 }
 
 @media screen and (max-width: 629px) {
-	.form {
-		margin-top: 20px;
-	}
+	.form {margin-top: 20px;}
 }
 
 @media screen and (max-width: 360px) {
 	.name, .mail, .msg {
-		margin: 10px;
+		margin: 0;
+		display: block;
+		width: 100%;
 	}
+
+	.name, .msg {margin-bottom: 15px;}
+
+	.form {
+		width: 100%;
+		padding: 10px;
+	}
+
+	.info, .form button {margin: 0;}
+	.heading, .description {display: none;}
+}
+
+@media screen and (max-width: 269px) {
+	.name1 img, .name2 img, .name3 img {width: 100%;}
 }
 
 .menu-content {
