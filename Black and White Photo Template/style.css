@@ -107,3 +107,13 @@
 		min-width: 100%;
 	}
 }
+
+@media screen and (max-width: 385px) {
+	.navigation ul li a {
+		display: block;
+		text-align: center;
+	}
+	.banner p {
+		letter-spacing: 0px;
+	}
+}
