@@ -17,6 +17,7 @@
             <a href="#about">ABOUT</a>
             <a href="#photos">PHOTOS</a>
             <a href="#contact">CONTACT</a>
+            <a id="bars" class="bars" href="#"><i class="fas fa-bars"></i></a>
         </div>
     </div>
     <div class="navigation">
@@ -178,11 +179,25 @@
         <div class="footer">
             <br><br><br>
             <p class="social-media"><i class="fas fa-at"></i><i class="fab fa-telegram"></i><i
-                    class="fab fa-discord"></i><i class="fab fa-whatsapp"></i><i class="fab fa-instagram"></i><i class="fab fa-reddit"></i></p>
+                    class="fab fa-discord"></i><i class="fab fa-whatsapp"></i><i class="fab fa-instagram"></i><i
+                    class="fab fa-reddit"></i></p>
             <p class="trade">Pasindu Uthum Web Templates™ | 2021</p>
             <br><br><br>
         </div>
     </div>
+
+    <div class="hidden-menu" id="menu">
+        <div class="menu-container">
+            <div class="navbar-hidden">
+                <a id="close" class="bars" href="#"><i class="fas fa-times"></i></a>
+                <a href="#home" onclick="hide()">HOME</a>
+                <a href="#about" onclick="hide()">ABOUT</a>
+                <a href="#photos" onclick="hide()">PHOTOS</a>
+                <a href="#contact" onclick="hide()">CONTACT</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

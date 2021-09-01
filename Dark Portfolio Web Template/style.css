@@ -26,19 +26,14 @@ body {
     width: 100%;
 }
 
-.navigation div {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
+.navigation div {padding: 10px 0;}
 
 .navigation i {
     color: white;
     font-size: 40px;
 }
 
-.navigation div {
-    text-align: center;
-}
+.navigation div {text-align: center;}
 
 .navigation div span {
     color: white;
@@ -47,25 +42,12 @@ body {
     font-size: 18px;
 }
 
-.navigation div:hover {
-    background-color: black;
-}
+.navigation div:hover {background-color: black;}
+.main-container h1 {font-size: 70px;}
+.navigation div a {text-decoration: none;}
+.name h1, .skills h1, .price h1, .photos h1, .contact h1 {font-size: 40px;}
+.main-container p {font-size: 20px;}
 
-.main-container h1 {
-    font-size: 70px;
-}
-
-.navigation div a {
-    text-decoration: none;
-}
-
-.name h1, .skills h1, .price h1, .photos h1, .contact h1 {
-    font-size: 40px;
-}
-
-.main-container p {
-    font-size: 20px;
-}
 .main-container {
     color: white;
     text-align: center;
@@ -116,9 +98,7 @@ body {
     flex-wrap: wrap;
 }
 
-.center h1 {
-    font-size: 40px;
-}
+.center h1 {font-size: 40px;}
 
 .center div {
     display: inline-block;
@@ -153,9 +133,7 @@ body {
     font-size: 20px;
 }
 
-.basic div:last-child, .pro div:last-child {
-    background-color: lightgrey;
-}
+.basic div:last-child, .pro div:last-child {background-color: lightgrey;}
 
 .parent {
     opacity: 0.6;
@@ -179,9 +157,7 @@ body {
     background-color: black;
 }
 
-.parent:hover {
-    opacity: 1;
-}
+.parent:hover {opacity: 1;}
 
 .price::after {
     content: "";
@@ -212,9 +188,7 @@ body {
     padding-right: 20px;
 }
 
-.contact label {
-    font-size: 20px;
-}
+.contact label {font-size: 20px;}
 
 .contact input {
     display: block;
@@ -237,13 +211,8 @@ body {
     margin-top: 10px;
 }
 
-.contact button:hover {
-    background: grey;
-}
-
-.social-media {
-	text-align: center;
-}
+.contact button:hover {background: grey;}
+.social-media {text-align: center;}
 
 .social-media i {
 	padding: 10px;
@@ -251,9 +220,7 @@ body {
 	font-size: 25px;
 }
 
-.social-media i:hover {
-	opacity: 1;
-}
+.social-media i:hover {opacity: 1;}
 
 .trade {
 	text-align: center;
@@ -287,45 +254,63 @@ body {
     text-decoration: none;
 }
 
+.navbar a:last-child {display: none;}
+
 .navbar a:hover {
     background-color: lightgrey;
     color: black;
 }
 
+/* Hidden Menu customization */
+.hidden-menu {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.menu-container {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-hidden {
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-hidden a {
+    padding: 16px 5%;
+    display: block;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-hidden a:hover {
+    background-color: lightgrey;
+    color: black;
+}
 
 @media screen and (max-width: 751px) {
-    .navbar-container {
-        display: block;
-    }
-
-    .navigation {
-        display: none;
-    }
-    .main-container {
-        margin: 50px 0px 0px 0px;
-    }
-    .name, .skills, .price, .photos, .contact {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-    .stats {
-        margin-right: 5%;
-        margin-left: 5%;
-    }
-
-    .download {
-        margin-left: 5%;
-    }
+    .navbar-container {display: block;}
+    .navigation {display: none}
+    .main-container {margin: 50px 0px 0px 0px}
+    .download {margin-left: 5%}
+    .name, .skills, .price, .photos, .contact {padding: 0 5%;}
+    .stats {margin: 0 5%;} 
 }
 
 @media screen and (max-width: 501px) {
-    .center h1 {
-        font-size: 30px;
-    }
-    .center p {
-        font-size: 18px;
-    }
+    .center h1 {font-size: 30px}
+    .center p {font-size: 18px}
 }
 
 @media screen and (max-width: 415px) {
@@ -336,12 +321,8 @@ body {
 }
 
 @media screen and (max-width: 405px) {
-    .parent {
-        width: 100%;
-    }
-    .main-container h1 {
-        font-size: 50px;
-    }
+    .parent {width: 100%}
+    .main-container h1 {font-size: 50px}
 }
 
 @media screen and (max-width: 487px) {
@@ -351,3 +332,11 @@ body {
     }
 }
 
+@media screen and (max-width: 378px) {
+    .navbar a {display: none;}
+
+    .navbar a:last-child {
+        display: block;
+        float: left;
+    }
+}
