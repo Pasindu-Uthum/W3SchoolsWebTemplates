@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
@@ -21,20 +20,15 @@ nav ul {
 	width: 100%;
 }
 
-nav ul li {
-	float: left;
-}
-
-#search {
-	float: right;
-}
+nav ul li {float: left;}
+#search {float: right;}
 
 nav ul li a {
 	color: white;
 	display: inline-block;
 	font-family: Comic Sans MS;
 	font-size: 16px;
-	padding: 10px 16px 10px 16px;
+	padding: 10px 16px;
 }
 
 nav ul li a:hover {
@@ -43,17 +37,13 @@ nav ul li a:hover {
 	font-weight: bolder;
 }
 
-.heading h1 {
+.heading h1, .heading p {
 	font-family: 'Bebas Neue', cursive;
-	font-size: 60px;
 	text-align: center;
 }
 
-.heading p {
-	font-family: 'Bebas Neue', cursive;
-	text-align: center;
-	font-size: 20px;
-}
+.heading h1 {font-size: 60px;}
+.heading p {font-size: 20px;}
 
 .heading p span {
 	background-color: black;
@@ -61,14 +51,8 @@ nav ul li a:hover {
 	padding: 5px;
 }
 
-.cover-image img {
-	width: 100%;
-}
-
-
-.cover-image {
-	position: relative;
-}
+.cover-image img {width: 100%;}
+.cover-image {position: relative;}
 
 .center {
 	position: absolute;
@@ -77,25 +61,16 @@ nav ul li a:hover {
 	text-align: left;
 }
 
-.center h1 {
-	text-align: left;
-	font-size: 100px;
-}
-
-.center h2 {
-	text-align: left;
-	font-size: 40px;
-}
+.center h1 {font-size: 100px;}
+.center h2 {font-size: 40px;}
 
 .center h1, .center h2 {
 	color: white;
 	font-family: 'Bebas Neue', cursive;
+	text-align: left;
 }
 
-.center h1, .center h2, .center button {
-	margin-left: 30px;
-}
-
+.center h1, .center h2, .center button {margin-left: 30px;}
 
 .center button {
 	color: #0d0d0d;
@@ -107,9 +82,7 @@ nav ul li a:hover {
 	opacity: 0.7;
 }
 
-.center button:hover {
-	opacity: 1;
-}
+.center button:hover {opacity: 1;}
 
 .section {
 	float: left;
@@ -122,9 +95,7 @@ nav ul li a:hover {
 	font-family: 'Staatliches', cursive;
 }
 
-.left h3 span {
-	opacity: 0.7;
-}
+.left h3 span {opacity: 0.7;}
 
 .left p {
 	font-family: 'Varela Round', sans-serif;
@@ -163,9 +134,7 @@ nav ul li a:hover {
 	color: black;
 }
 
-.reply-post {
-	display: none;
-}
+.reply-post {display: none;}
 
 .hide-reply {
 	background-color: lightgray;
@@ -206,9 +175,7 @@ nav ul li a:hover {
 	font-weight: bolder;
 }
 
-.profile p {
-	padding-bottom: 20px;
-}
+.profile p {padding-bottom: 20px;}
 
 .image-list {
 	list-style-type: none;
@@ -216,10 +183,7 @@ nav ul li a:hover {
 	margin: 0;
 }
 
-.image-list-item {
-	padding-top: 16px;
-	padding-bottom: 16px;
-}
+.image-list-item {padding: 16px 0;}
 
 .image-list-item-image {
 	width: 100px;
@@ -233,9 +197,7 @@ nav ul li a:hover {
 	font-size: 20px;
 }
 
-.image-list-item p {
-	opacity: 0.7;
-}
+.image-list-item p {opacity: 0.7;}
 
 .msg {
 	font-family: 'Patrick Hand', cursive;
@@ -243,9 +205,7 @@ nav ul li a:hover {
 	font-weight: bolder;
 }
 
-.popular-posts, .advertise, .popular-tags, .inspiration, .follow-me, .subscribe {
-	width: 100%;
-}
+.popular-posts, .advertise, .popular-tags, .inspiration, .follow-me, .subscribe {width: 100%;}
 
 .post-heading, .advertise-heading, .tags-heading, .inspiration-heading, .follow-me-heading, .subscribe-heading {
 	color: white;
@@ -260,13 +220,8 @@ nav ul li a:hover {
 	font-weight: bold;
 }
 
-.padding {
-	padding: 16px;
-}
-
-.hover:hover {
-	background-color: lightgray;
-}
+.padding {padding: 16px;}
+.hover:hover {background-color: lightgray;}
 
 .small {
 	float: left;
@@ -286,9 +241,7 @@ nav ul li a:hover {
 	font-weight: bolder;
 }
 
-.ads-space, .tags-space {
-	padding: 20px;
-}
+.ads-space, .tags-space {padding: 20px;}
 
 .tags-space span {
 	color: black;
@@ -323,9 +276,7 @@ nav ul li a:hover {
 	margin: 0;
 }
 
-.follow-me-media ul li {
-	float: left;
-}
+.follow-me-media ul li {float: left;}
 
 .follow-me-media ul li a {
 	color: black;
@@ -335,9 +286,7 @@ nav ul li a:hover {
 	text-align: center;
 }
 
-.follow-me-media ul li a:hover {
-	opacity: 0.7;
-}
+.follow-me-media ul li a:hover {opacity: 0.7;}
 
 .subscribe-description p {
 	padding-top: 16px;
@@ -359,18 +308,9 @@ nav ul li a:hover {
 	font-size: 20px;
 }
 
-.subscribe-description button:hover {
-	background-color: red;
-
-}
-
-.whole, .footer {
-	display: block;
-}
-
-.whole {
-	width: 100%;
-}
+.subscribe-description button:hover {background-color: red;}
+.whole, .footer {display: block;}
+.whole {width: 100%;}
 
 .footer {
 	color: white;
@@ -397,13 +337,8 @@ nav ul li a:hover {
 	color: black;
 }
 
-.footer a:hover {
-	background-color: grey;
-}
-
-.social-media {
-	text-align: center;
-}
+.footer a:hover {background-color: grey;}
+.social-media {text-align: center;}
 
 .social-media i {
 	padding: 10px;
@@ -411,9 +346,7 @@ nav ul li a:hover {
 	font-size: 25px;
 }
 
-.social-media i:hover {
-	opacity: 1;
-}
+.social-media i:hover {opacity: 1;}
 
 .trade {
 	text-align: center;
@@ -443,9 +376,7 @@ nav ul li a:hover {
 	margin-top: 200px;
 }
 
-.subscribe-container h1 {
-	font-family: 'Bebas Neue', cursive;
-}
+.subscribe-container h1 {font-family: 'Bebas Neue', cursive;}
 
 .subscribe-container p {
 	font-size: 20px;
@@ -470,58 +401,43 @@ nav ul li a:hover {
 	font-size: 20px;
 }
 
-.subscribe-container button:hover {
-	background-color: red;
-}
+.subscribe-container button:hover {background-color: red;}
 
 .subscribe-container span {
 	right: 15px;
 	top: 15px;
 	float: right;
 	font-size: 25px;
-	padding: 16px;
-	
+	padding: 16px;	
 }
 
-.subscribe-container span:hover {
-	background-color: tomato;
-}
-
-.subscribe-container span:active {
-	background-color: red;
-}
+.subscribe-container span:hover {background-color: tomato;}
+.subscribe-container span:active {background-color: red;}
 
 @media screen and (max-width: 933px) {
-	.section {
-		width: 100%;
-	}
-	.right {
-		width: 100%;
-	}
+	.section {width: 100%;}
+	.right {width: 100%;}
 }
 
 @media screen and (max-width: 789px) {
-	.center h1 {
-		font-size: 70px;
-	}
-
-	.center h2 {
-		font-size: 30px;
-	}
-	.center button {
-		padding: 5px;
-	}
+	.center h1 {font-size: 70px;}
+	.center h2 {font-size: 30px;}
+	.center button {padding: 5px;}
 }
 
 @media screen and (max-width: 554px) {
-	.center h1 {
-		font-size: 50px;
-	}
-
-	.center h2 {
-		font-size: 20px;
-	}
-	.center button {
-		padding: 5px;
-	}
+	.center h1 {font-size: 50px;}
+	.center h2 {font-size: 20px;}
+	.center button {padding: 5px;}
 }
+
+
+@media screen and (max-width: 418px) {
+	.center h1 {font-size: 40px;}
+	.center h2 {font-size: 20px;}
+	.center button {font-size: 10px;}
+}
+
+@media screen and (max-width: 354px) {.center button {display: none;}}
+@media screen and (max-width: 328px) {#search {display: none;}}
+@media screen and (max-width: 280px) {#linkedin {display: none;}}
