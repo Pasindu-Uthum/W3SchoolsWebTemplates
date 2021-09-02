@@ -7,10 +7,8 @@
 }
 
 .main-container {
-	width: 100%;
-	width: 75%;
-	margin-left: auto;
-	margin-right: auto;
+	width: 80%;
+	margin: 0 auto;
 }
 
 nav {
@@ -27,9 +25,7 @@ nav ul {
 	background-color: white;
 }
 
-nav ul li {
-	float: left;
-}
+nav ul li {float: left;}
 
 nav ul li a {
 	display: inline-block;
@@ -41,9 +37,7 @@ nav ul li a {
 	color: black;
 }
 
-.last {
-	float: right;
-}
+.last {float: right;}
 
 .food-images {
 	display: flex;
@@ -52,9 +46,7 @@ nav ul li a {
 	padding-top: 10px;
 }
 
-.bars:hover {
-	background-color: lightgray;
-}
+.bars:hover {background-color: lightgray;}
 
 .food {
 	flex: 25%;
@@ -62,9 +54,7 @@ nav ul li a {
 	padding: 10px;
 }
 
-.food img {
-	width: 100%;
-}
+.food img {width: 100%;}
 
 .food h1, .food p {
 	text-align: center;
@@ -72,17 +62,9 @@ nav ul li a {
 	padding: 5px;
 }
 
-.food h1 {
-	font-size: 25px;
-}
-
-.center {
-	text-align: center;
-}
-
-.pagination {
-	display: inline-block;
-}
+.food h1 {font-size: 25px;}
+.center {text-align: center;}
+.pagination {display: inline-block;}
 
 .pagination span {
 	float: left;
@@ -107,12 +89,12 @@ nav ul li a {
 	text-align: center;
 	font-family: 'Baloo Chettan 2', cursive;
 	font-size: 40px;
+	padding-top: 70px;
 }
 
 .about-section img {
 	text-align: center;
-	padding-left: 18%;
-	padding-right: 18%;
+	padding: 0 18%;
 	width: 100%;
 }
 
@@ -126,13 +108,8 @@ nav ul li a {
 	font-weight: bolder;
 }
 
-.about-section p {
-	font-family: 'Baloo Chettan 2', cursive;
-}
-
-.about-section p, .about-section h2 {
-	text-align: center;
-}
+.about-section p {font-family: 'Baloo Chettan 2', cursive;}
+.about-section p, .about-section h2 {text-align: center;}
 
 .left, .middle, .right {
 	float: left;
@@ -144,9 +121,7 @@ nav ul li a {
 	padding: 10px;
 }
 
-.post {
-	margin: 10px;
-}
+.post {margin: 10px;}
 
 .post img {
 	width: 20%;
@@ -158,9 +133,7 @@ nav ul li a {
 	padding-left: 5px;
 }
 
-p img {
-	padding-right: 5px;
-}
+p img {padding-right: 5px;}
 
 .tags span:first-child {
 	color: white;
@@ -175,9 +148,7 @@ p img {
 	padding: 5px;
 }
 
-.social-media {
-	text-align: center;
-}
+.social-media {text-align: center;}
 
 .social-media i {
 	padding: 10px;
@@ -185,9 +156,7 @@ p img {
 	font-size: 25px;
 }
 
-.social-media i:hover {
-	opacity: 1;
-}
+.social-media i:hover {opacity: 1;}
 
 .trade {
 	text-align: center;
@@ -206,19 +175,14 @@ p img {
 	left: 0;
 	animation-name: slide;
 	animation-duration: 1s;
-	transition: width 1s;
 	box-shadow: 1px 0px 5px black;
 	display: none;
 	overflow: hidden;
 }
 
 @keyframes slide {
-	from {
-		width: 0;
-	}
-	to {
-		width: 40%;
-	}
+	from {width: 0;}
+	to {width: 40%;}
 }
 
 .menu span {
@@ -235,9 +199,7 @@ p img {
 	color: black;
 }
 
-.menu span:hover {
-	background-color: lightgray;
-}
+.menu span:hover {background-color: lightgray;}
 
 .menu h1 {
 	font-family: 'Baloo Chettan 2', cursive;
@@ -261,21 +223,13 @@ p img {
 }
 
 @keyframes logo {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
 }
 
 @keyframes logo-title {
-	from {
-		background-color: transparent;
-	}
-	to {
-		background-color: #00e6ac;
-	}
+	from {background-color: transparent;}
+	to {background-color: #00e6ac;}
 }
 
 @media screen and (max-width: 987px) {
@@ -292,46 +246,65 @@ p img {
 	}
 }
 
-@media screen and (max-width: 391px) {
-	.my-food, .last {
-		display: none;
+@media screen and (max-width: 391px) {.my-food, .last {display: none;}}
+@media screen and (max-width: 468px) {.six {display: none;}}
+@media screen and (max-width: 411px) {.five {display: none;}}
+@media screen and (max-width: 360px) {.four {display: none;}}
+@media screen and (max-width: 304px) {.three {display: none;}}
+@media screen and (max-width: 604px) {.right, .middle, .left {width: 100%;}}
+@media screen and (max-width: 504px) {.about-section img {padding: 0%;}}
+
+@media screen and (max-width: 704px) {
+	.menu {
+		width: 50%;
+		animation-name: slide2;
+		animation-duration: 1s;
 	}
 }
 
-@media screen and (max-width: 468px) {
-	.six {
-		display: none;
+@keyframes slide2 {
+	from {width: 0;}
+	to {width: 50%;}
+}
+
+@media screen and (max-width: 562px) {
+	.menu {
+		width: 70%;
+		animation-name: slide3;
+		animation-duration: 1s;
 	}
 }
 
-@media screen and (max-width: 411px) {
-	.six, .five {
-		display: none;
+@keyframes slide3 {
+	from {width: 0;}
+	to {width: 70%;}
+}
+
+@media screen and (max-width: 400px) {
+	.menu {
+		width: 80%;
+		animation-name: slide4;
+		animation-duration: 1s;
 	}
 }
 
-@media screen and (max-width: 360px) {
-	.six, .five, .four {
-		display: none;
-	}
+@keyframes slide4 {
+	from {width: 0;}
+	to {width: 80%;}
 }
 
-@media screen and (max-width: 304px) {
-	.six, .five, .four, .three {
-		display: none;
-	}
-}
-
-@media screen and (max-width: 604px) {
-	.right, .middle, .left {
+@media screen and (max-width: 348px) {
+	.menu {
 		width: 100%;
-		margin-top
+		animation-name: slide5;
+		animation-duration: 1s;
 	}
 }
 
-@media screen and (max-width: 504px) {
-	.about-section img {
-		padding-left: 0%;
-		padding-right: 0%;
-	}
+@keyframes slide5 {
+	from {width: 0;}
+	to {width: 100%;}
 }
+
+@media screen and (max-width: 288px) {.menu h1 {font-size: 40px;}}
+@media screen and (max-width: 232px) {.menu h1 {font-size: 30px;}}
