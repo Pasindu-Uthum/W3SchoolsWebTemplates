@@ -25,9 +25,7 @@ nav ul {
 	padding: 10px;
 }
 
-.logo {
-	float: left;
-}
+.logo {float: left;}
 
 .others {
 	float: right;
@@ -48,9 +46,7 @@ nav ul li a:hover {
 	font-weight: bolder;
 }
 
-.cover-image img {
-	width: 100%;
-}
+.cover-image img {width: 100%;}
 
 .cover-image-title {
 	position: absolute;
@@ -63,8 +59,7 @@ nav ul li a:hover {
 
 .about-container, .menu-container {
 	width: 75%;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 }
 
 .about-container-left {
@@ -83,6 +78,7 @@ nav ul li a:hover {
 	font-size: 40px;
 	margin-bottom: 20px;
 	font-family: 'Fondamento', cursive;
+	padding-top: 70px;
 }
 
 .about-container-right h4 {
@@ -105,9 +101,7 @@ nav ul li a:hover {
 	display: inline-block;
 }
 
-.fade {
-	opacity: 0.7;
-}
+.fade {opacity: 0.7;}
 
 .about-container::after {
 	content: "";
@@ -115,37 +109,31 @@ nav ul li a:hover {
 	clear: both;
 }
 
-.menu-container-right {
-	float: right;
-	width: 50%;
-}
-
-.menu-container-left {
+.menu-container-right, .menu-container-left {
 	float: right;
 	width: 50%;
 }
 
 hr {
 	opacity: 0.5;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 	width: 75%;
 }
 
 .menu-container-right img, .about-container-left img {
 	opacity: 0.7;
 	width: 100%;
+	padding-top: 70px;
 }
 
 .menu-container-left h1 {
 	text-align: center;
 	font-family: 'Fondamento', cursive;
 	font-size: 40px;
+	padding-top: 70px;
 }
 
-.menu-container-left h2 {
-	font-family: 'Chau Philomene One', sans-serif;
-}
+.menu-container-left h2 {font-family: 'Chau Philomene One', sans-serif;}
 
 .menu-container-left p {
 	font-family: 'Patrick Hand', cursive;
@@ -162,8 +150,7 @@ hr {
 
 .contact-container {
 	width: 75%;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 }
 
 .contact-container input {
@@ -187,13 +174,12 @@ hr {
 	font-weight: bolder;
 }
 
-.contact-container button:hover {
-	background-color: #999999;
-}
+.contact-container button:hover {background-color: #999999;}
 
 .contact-container h1 {
 	font-family: 'Fondamento', cursive;
 	font-size: 40px;
+	padding-top: 70px;
 }
 
 .contact-container h3 {
@@ -207,9 +193,7 @@ hr {
 	font-weight: bolder;
 }
 
-.social-media {
-	text-align: center;
-}
+.social-media {text-align: center;}
 
 .social-media i {
 	padding: 10px;
@@ -217,9 +201,7 @@ hr {
 	font-size: 25px;
 }
 
-.social-media i:hover {
-	opacity: 1;
-}
+.social-media i:hover {opacity: 1;}
 
 .trade {
 	text-align: center;
@@ -232,90 +214,8 @@ hr {
 	width: 100%;
 	background-color: lightgray;
 	margin-top: 50px;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding: 50px 0;
 }
-
-@media screen and (max-width: 1533px) {
-	.cover-image-title {
-		top: 90%;
-	}
-}
-
-@media screen and (max-width: 1405px) {
-	.cover-image-title {
-		top: 80%;
-	}
-}
-
-@media screen and (max-width: 1247px) {
-	.cover-image-title {
-		top: 70%;
-	}
-}
-
-@media screen and (max-width: 1081px) {
-	.cover-image-title {
-		top: 60%;
-	}
-}
-
-@media screen and (max-width: 941px) {
-	.cover-image-title {
-		top: 50%;
-	}
-}
-
-@media screen and (max-width: 778px) {
-	.cover-image-title {
-		top: 40%;
-	}
-}
-
-@media screen and (max-width: 629px) {
-	.cover-image-title {
-		top: 30%;
-	}
-}
-
-@media screen and (max-width: 476px) {
-	.cover-image-title {
-		font-size: 15px;
-	}
-}
-
-@media screen and (max-width: 425px) {
-	.cover-image-title {
-		top: 20%;
-	}
-}
-
-@media screen and (max-width: 276px) {
-	.cover-image-title {
-		display: none;
-	}
-}
-
-@media screen and (max-width: 970px) {
-	.about-container-left, .menu-container-right,.about-container-right, .menu-container-left {
-		width: 100%;
-	}
-}
-
-.bars {
-	display: none;
-	float: right;
-}
-
-@media screen and (max-width: 554px) {
-	.bars {
-		display: block;
-	}
-	.others {
-		display: none;
-	}
-}
-
 
 .hiddenMenu {
 	background-color: rgba(26, 26, 26, 0.9);
@@ -333,12 +233,8 @@ hr {
 }
 
 @keyframes slide {
-	from {
-		height: 0;
-	}
-	to {
-		height: 100%;
-	}
+	from {height: 0;}
+	to {height: 100%;}
 }
 
 .hiddenMenu a {
@@ -358,15 +254,10 @@ hr {
 	padding: 16px;
 }
 
-.hiddenMenu span:hover {
-	background-color: tomato;
-}
+.hiddenMenu span:hover {background-color: tomato;}
+.hiddenMenu a:hover {background-color: grey;}
 
-.hiddenMenu a:hover {
-	background-color: grey;
-}
-
-.hiddenMenu h1 {
+.open-header {
 	color: white;
 	text-align: center;
 	font-family: 'Fondamento', cursive;
@@ -374,9 +265,29 @@ hr {
 	animation-name: pop-up;
 	animation-duration: 2s;
 	animation-delay: 0.5s;
+	margin-top: 100px;
 }
 
-.hiddenMenu h1 mark {
+.open-mark {
+	background-color: #00cc66;
+	color: black;
+	padding: 16px;
+	border: 5px solid black;
+}
+
+.hidden-header {
+	color: white;
+	text-align: center;
+	font-family: 'Fondamento', cursive;
+	font-size: 40px;
+	animation-name: pop-up;
+	animation-duration: 2s;
+	animation-delay: 0.5s;
+	display: none;
+	margin-top: 50px;
+}
+
+.hidden-mark {
 	background-color: #00cc66;
 	color: black;
 	padding: 16px;
@@ -384,16 +295,36 @@ hr {
 }
 
 @keyframes pop-up {
-	0% {
-		transform: scale(0);
-	}
-	25% {
-		transform: scale(1);
-	}
-	50% {
-		transform: scale(0.5);
-	}
-	100% {
-		transform: scale(1);
-	}
+	0% {transform: scale(0);}
+	25% {transform: scale(1);}
+	50% {transform: scale(0.5);}
+	100% {transform: scale(1);}
+}
+
+.bars {
+	display: none;
+	float: right;
+}
+
+@media screen and (max-width: 1255px) {.cover-image-title {top: 90%;}}
+@media screen and (max-width: 1143px) {.cover-image-title {top: 80%;}}
+@media screen and (max-width: 1021px) {.cover-image-title {top: 70%;}}
+@media screen and (max-width: 905px) {.cover-image-title {font-size: 20px;}}
+@media screen and (max-width: 865px) {.cover-image-title {top: 60%;}}
+@media screen and (max-width: 739px) {.cover-image-title {top: 50%;}}
+@media screen and (max-width: 613px) {.cover-image-title {font-size: 16px;}}
+@media screen and (max-width: 589px) {.cover-image-title {top: 40%;}}
+@media screen and (max-width: 469px) {.cover-image-title {display: none;}}
+@media screen and (max-width: 511px) {.open-header {font-size: 40px;}}
+@media screen and (max-width: 431px) {.open-header {font-size: 30px;}}
+@media screen and (max-width: 970px) {.about-container-left, .menu-container-right,.about-container-right, .menu-container-left {width: 100%;}}
+
+@media screen and (max-width: 321px) {
+	.open-header {display: none;}
+	.hidden-header {display: block;}
+}
+
+@media screen and (max-width: 554px) {
+	.bars {display: block;}
+	.others {display: none;}
 }
