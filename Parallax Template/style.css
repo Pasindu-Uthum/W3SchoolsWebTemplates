@@ -36,26 +36,13 @@ nav {
 }
 
 @keyframes down {
-	from {
-		height: 0px;
-	}
-	to {
-		height: 70px;
-	}
+	from {height: 0px;}
+	to {height: 70px;}
 }
 
-nav ul li {
-    float: left;
-}
-
-.bars {
-    display: none;
-}
-
-
-nav ul li:last-child {
-    float: right;
-}
+nav ul li {float: left;}
+.bars {display: none;}
+nav ul li:last-child {float: right;}
 
 nav ul li a {
     text-decoration: none;
@@ -68,9 +55,7 @@ nav ul li a {
     margin: 5px;
 }
 
-nav ul li a:hover {
-    background-color: lightgray;
-}
+nav ul li a:hover {background-color: lightgray;}
 
 .cover {
     width: 100%;
@@ -96,36 +81,25 @@ nav ul li a:hover {
 }
 
 @keyframes appear {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
-.aboutme {
-    width: 100%;
-}
+.aboutme {width: 100%;}
 
 .aboutme h1, .aboutme h3 {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
 }
 
-.aboutme h3 {
-    opacity: 0.6;
-}
+.aboutme h3 {opacity: 0.6;}
 
 .aboutme p {
     font-family: 'Open Sans', sans-serif;
     text-align: justify;
 }
 
-.split, .skills, .aboutme p {
-    margin-left: 10%;
-    margin-right: 10%;
-}
+.split, .skills, .aboutme p {margin: 0 10%;}
 
 .left-split, .right-split {
     width: 50%;
@@ -137,15 +111,12 @@ nav ul li a:hover {
     opacity: 0.7;
 }
 
-.left-split img:hover {
-    opacity: 1;
-}
+.left-split img:hover {opacity: 1;}
 
 .left-split h3 {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
 }
-
 
 .right-split p {
     padding-left: 40px;
@@ -234,8 +205,7 @@ nav ul li a:hover {
 }
 
 .image-grid {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin: 0 15%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -251,13 +221,8 @@ nav ul li a:hover {
     padding: 10px;
 }
 
-.column img:hover {
-    opacity: 0.6;
-}
-
-.button {
-    text-align: center;
-}
+.column img:hover {opacity: 0.6;}
+.button {text-align: center;}
 
 .button button {
     color: black;
@@ -269,9 +234,7 @@ nav ul li a:hover {
     font-weight: bolder;
 }
 
-.button button:hover {
-    background-color: grey;
-}
+.button button:hover {background-color: grey;}
 
 .contact-cover {
     background-image: url("parallax3.jpg");
@@ -293,10 +256,7 @@ nav ul li a:hover {
     font-family: 'Open Sans', sans-serif;
 }
 
-.contact-form {
-    margin-left: 15%;
-    margin-right: 15%;
-}
+.contact-form {margin: 0 15%;}
 
 .contact-form img {
     width: 25%;
@@ -324,9 +284,7 @@ nav ul li a:hover {
     font-size: 16px;
 }
 
-.input:last-child {
-    width: 100%;
-}
+.input:last-child {width: 100%;}
 
 .contact-form button {
     float: right;
@@ -364,13 +322,8 @@ nav ul li a:hover {
     color: white;
 } 
 
-.footer:hover {
-    opacity: 1;
-}
-
-.social-media {
-	text-align: center;
-}
+.footer:hover {opacity: 1;}
+.social-media {text-align: center;}
 
 .social-media i {
 	padding: 10px;
@@ -378,9 +331,7 @@ nav ul li a:hover {
 	font-size: 25px;
 }
 
-.social-media i:hover {
-	opacity: 1;
-}
+.social-media i:hover {opacity: 1;}
 
 .trade {
 	text-align: center;
@@ -400,9 +351,7 @@ nav ul li a:hover {
     font-size: 16px;
 }
 
-.footer button:hover {
-    background-color: white;
-}
+.footer button:hover {background-color: white;}
 
 .hidden-menu {
     position: fixed;
@@ -419,12 +368,8 @@ nav ul li a:hover {
 }
 
 @keyframes come {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 .hidden-menu ul {
@@ -432,9 +377,7 @@ nav ul li a:hover {
     display: block;
 }
 
-.hidden-menu ul li {
-    display: block;
-}
+.hidden-menu ul li {display: block;}
 
 .hidden-menu ul li a {
     color: black;
@@ -445,55 +388,29 @@ nav ul li a:hover {
     padding: 20px;
     font-family: 'Open Sans', sans-serif;
     font-weight: bolder;
-    
 }
 
-.hidden-menu ul li a:hover {
-    background-color: lightgray;
-}
+.hidden-menu ul li a:hover {background-color: lightgray;}
 
 .hidden-menu span {
     float: right;
     padding: 16px;
 }
 
-.hidden-menu span:hover {
-    background-color: tomato;
-}
+.hidden-menu span:hover {background-color: tomato;}
 
-@media screen and (max-width: 1107px) {
-    .right-split p {
-        font-size: 15px;
-    }
-}
+@media screen and (max-width: 1107px) {.right-split p {font-size: 15px;}}
 
-@media screen and (max-width: 843px) {
-    .split, .skills, .aboutme p {
-        margin-right: 5%;
-        margin-left: 5%;
-    }
-}
+@media screen and (max-width: 843px) {.split, .skills, .aboutme p {margin: 0 5%;}}
 
 @media screen and (max-width: 689px) {
-    .left-split, .right-split {
-        width: 100%;
-    }
-    .right-split p{
-        padding-left: 0;
-    }
+    .left-split, .right-split {width: 100%;}
+    .right-split p{padding-left: 0;}
 }
 
-@media screen and (max-width: 561px) {
-    .cover div {
-        font-size: 30px;
-    }
-}
+@media screen and (max-width: 561px) {.cover div {font-size: 30px;}}
+@media screen and (max-width: 475px) {.cover div {font-size: 20px;}}
 
-@media screen and (max-width: 475px) {
-    .cover div {
-        font-size: 20px;
-    }
-}
 
 @media screen and (max-width: 381px) {
     .cover div {
@@ -503,47 +420,21 @@ nav ul li a:hover {
 }
 
 @media screen and (max-width: 599px) {
-    .line {
-        display: none;
-    }
-    .show, .bars {
-        display: block;
-    }
+    .line {display: none;}
+    .show, .bars {display: block;}
 }
 
-@media screen and (max-width: 387px) {
-    .portfolio {
-        font-size: 50px;
-    }
-}
-
-@media screen and (max-width: 321px) {
-    .contact-cover {
-        font-size: 50px;
-    }
-}
-
-@media screen and (max-width: 429px) {
-    .input {
-        width: 100%;
-    }
-}
-
-
-@media screen and (max-width: 775px) {
-    .contact-form {
-        margin: 10px;
-    }
-}
+@media screen and (max-width: 387px) {.portfolio {font-size: 50px;}}
+@media screen and (max-width: 321px) {.contact-cover {font-size: 50px;}}
+@media screen and (max-width: 429px) {.input {width: 100%;}}
+@media screen and (max-width: 775px) {.contact-form {margin: 10px;}}
 
 @media screen and (max-width: 609px) {
     .contact-form img {
         width: 100%;
         margin-bottom: 20px;
     }
-    .form {
-        width: 100%;
-    }
+    .form {width: 100%;}
 }
 
 @media screen and (max-width: 1063px) {
@@ -559,8 +450,15 @@ nav ul li a:hover {
         min-width: 100%;
     }
 
-    .image-grid {
-        margin: 0;
+    .image-grid {margin: 0;}
+}
+
+@media screen and (max-width: 833px) {
+    .cover, .contact-cover, .portfolio {
+        height: 70vh;
+        background-size: contain;
     }
 }
 
+@media screen and (max-width: 637px) {.cover, .contact-cover, .portfolio {height: 50vh;}}
+@media screen and (max-width: 507px) {.cover, .contact-cover, .portfolio {height: 30vh;}}
