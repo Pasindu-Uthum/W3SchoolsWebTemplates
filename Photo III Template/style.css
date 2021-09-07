@@ -6,13 +6,7 @@
     margin: 0;
 }
 
-.cover-image {
-    width: 100%;
-}
-
-.cover-image img {
-    width: 100%;
-}
+.cover-image, .cover-image img {width: 100%;}
 
 .center {
     position: absolute;
@@ -26,7 +20,7 @@
 .small-screens {
     border: 1px solid black;
     display: none;
-    margin-bottom: 20px;
+    margin: 10px;
 }
 
 .center h1, .small-screens h1 {
@@ -43,48 +37,7 @@
     text-align: center;
 }
 
-.small-screens h1, .small-screens p {
-    color: black;
-}
-
-@media screen and (max-width: 1286px) {
-    .center {
-        top: 30%;
-    }
-}
-
-@media screen and (max-width: 1286px) {
-    .center {
-        top: 20%;
-    }
-    .center h1 {
-        font-size: 50px;
-    }
-    .center p {
-        font-size: 15px;
-    }
-}
-
-@media screen and (max-width: 590px) {
-    .center p {
-        display: none;
-    }
-    .center {
-        top: 15%;
-    }
-    .center h1 {
-        font-size: 40px;
-    }
-}
-
-@media screen and (max-width: 449px) {
-    .center {
-        display: none;
-    }
-    .small-screens {
-        display: block;
-    }
-}
+.small-screens h1, .small-screens p {color: black;}
 
 .navbar {
     display: flex;
@@ -100,9 +53,7 @@
     border-radius: 5px;
 }
 
-.navbar ul li {
-    float: left;
-}
+.navbar ul li {float: left;}
 
 .navbar ul li a {
     text-decoration: none;
@@ -114,9 +65,7 @@
     font-weight: bolder;
 }
 
-.navbar ul li a:hover {
-    background-color: grey;
-}
+.navbar ul li a:hover {background-color: grey;}
 
 .image-grid {
     display: flex;
@@ -136,26 +85,14 @@
 
 .contact-container {
     background-color: lightgray;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin: 0 20%;
     padding: 20px;;
 }
 
-.contact-container h1 {
-    text-align: center;
-}
-
-.contact-container p {
-    text-align: justify;
-}
-
-.contact-container h1, .contact-container p, .contact-container label {
-    font-family: 'Ubuntu', sans-serif;
-}
-
-label, input {
-    display: block;
-}
+.contact-container h1 {text-align: center;}
+.contact-container p {text-align: justify;}
+.contact-container h1, .contact-container p, .contact-container label {font-family: 'Ubuntu', sans-serif;}
+label, input {display: block;}
 
 input {
     width: 100%;
@@ -176,13 +113,8 @@ input {
     border: none;
 }
 
-.contact-container button:hover {
-    background-color: black;
-}
-
-.social-media {
-	text-align: center;
-}
+.contact-container button:hover {background-color: black;}
+.social-media {text-align: center;}
 
 .social-media i {
 	padding: 10px;
@@ -190,9 +122,7 @@ input {
 	font-size: 25px;
 }
 
-.social-media i:hover {
-	opacity: 1;
-}
+.social-media i:hover {opacity: 1;}
 
 .trade {
 	text-align: center;
@@ -201,6 +131,37 @@ input {
 	font-weight: bolder;
 }
 
-.footer {
-    background: lightgray;
+.footer {background: lightgray;}
+
+@media screen and (max-width: 471px) {
+    .column, .column img {
+        flex: 100%;
+        min-width: 100%;
+    }
+    .image-grid {padding: 0 20px;}
+
+    .contact-container {
+        background-color: lightgray;
+        margin: 20px;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 1286px) {.center {top: 30%;}}
+
+@media screen and (max-width: 1286px) {
+    .center {top: 20%;}
+    .center h1 {font-size: 50px;}
+    .center p {font-size: 15px;}
+}
+
+@media screen and (max-width: 590px) {
+    .center p {display: none;}
+    .center {top: 15%;}
+    .center h1 {font-size: 40px;}
+}
+
+@media screen and (max-width: 449px) {
+    .center {display: none;}
+    .small-screens {display: block;}
 }
