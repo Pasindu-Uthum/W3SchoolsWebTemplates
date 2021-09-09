@@ -193,7 +193,11 @@
 .aboutme h1 {font-size: 30px;}
 .aboutme {padding: 10px;}
 .aboutme p, .skills h2, .skills h3 {font-family: 'Ubuntu', sans-serif;}
-.aboutme p {font-size: 18px;}
+
+.aboutme p {
+    font-size: 18px;
+    text-align: justify;
+}
 
 .progress {
     width: 100%;
@@ -471,6 +475,7 @@
 @media screen and (max-width: 421px) {
     .two-images img:last-child {display: none;}
     .two-images img:first-child {width: 100%;}
+    .skills button {width: 100%;}
 }
 
 @media screen and (max-width: 619px) {
