@@ -66,8 +66,8 @@ nav ul li a:hover, .dropdown-btn:hover {
 
 .banner {
 	width: 100%;
-	justify-content: center;
 	display: flex;
+	justify-content: center;
 	align-items: center;
 }
 
@@ -102,8 +102,7 @@ nav ul li a:hover, .dropdown-btn:hover {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	padding-left: 30%;
-	padding-right: 30%;
+	padding: 0 30%;
 }
 
 .name1, .name2, .name3 {display: inline-block}
@@ -145,7 +144,6 @@ nav ul li a:hover, .dropdown-btn:hover {
 }
 
 .november h4{display: inline-block}
-
 .three {float: right}
 
 .three mark {
@@ -161,8 +159,7 @@ mark {
 
 
 .tickets {
-	padding-left: 25%;
-	padding-right: 25%;
+	padding: 0 25%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -196,11 +193,13 @@ mark {
 	margin-left: 10px;
 	font-family: 'Kanit', sans-serif;
 	font-weight: bolder;
+	border: 1px solid transparent;
 }
 
 .but-tickets:hover, .form button:hover {
 	background-color: white;
 	color: black;
+	border: 1px solid black;
 }
 
 .contact-heading, .contact-heading-sub  {
@@ -208,10 +207,7 @@ mark {
 	font-family: 'Kanit', sans-serif;
 }
 
-.contact-heading {
-	padding: 100px;
-}
-
+.contact-heading {padding: 50px 0;}
 .information {text-align: center;}
 
 .info, .form {
@@ -243,6 +239,7 @@ mark {
 	margin-left: 10px;
 	font-family: 'Kanit', sans-serif;
 	font-weight: bolder;
+	border: 1px solid transparent;
 }
 
 .cover-image img {width: 100%;}
@@ -272,14 +269,13 @@ mark {
 	z-index: 1;
 	position: fixed;
 	overflow: auto;
-	padding-top: 100px;
+	padding-top: 50px;
 	display: none;
 }
 
 .header{
 	background-color: dodgerblue;
-	margin-left: 25%;
-	margin-right: 25%;
+	margin: 0 25%;
 }
 
 .close {
@@ -296,8 +292,7 @@ mark {
 
 .details {
 	background-color: white;
-	margin-left: 25%;
-	margin-right: 25%;
+	margin: 0 25%;
 	padding: 20px;
 }
 
@@ -307,11 +302,10 @@ mark {
 }
 
 .count {
-	margin-top: 20px;
+	margin: 20px 0;
 	font-size: 16px;
 	padding: 10px;
 	width: 100%;
-	margin-bottom: 20px;
 	font-family: 'Kanit', sans-serif;
 	font-weight: bolder;
 }
@@ -352,124 +346,6 @@ mark {
 .close:hover {
 	color: red;
 	background-color: white;
-}
-
-@media screen and (max-width: 1255px) {
-	.heading {top: 90%}
-	.description {top: 95%}
-}
-
-@media screen and (max-width: 1131px) {
-	.heading {top: 80%}
-	.description {top: 85%}
-}
-
-@media screen and (max-width: 1013px) {
-	.heading {top: 70%}
-	.description {top: 75%}
-}
-
-@media screen and (max-width: 885px) {
-	.heading {top: 60%}
-	.description {top: 65%}
-}
-
-@media screen and (max-width: 743px) {
-	.heading {top: 50%}
-	.description {top: 55%}
-}
-
-@media screen and (max-width: 621px) {
-	.heading {top: 40%}
-	.description {top: 45%}
-}
-
-@media screen and (max-width: 499px) {
-	.heading {top: 30%}
-	.description {top: 35%}
-
-	.the-band-content {
-		margin: 0;
-		width: 100%;
-		padding: 10px;
-	}
-}
-
-@media screen and (max-width: 480px) {
-	.months {
-		margin: 0;
-		width: 100%;
-	}
-
-	.tour-dates {padding: 10px;}
-	.tickets {padding: 0;}
-}
-
-@media screen and (max-width: 416px) {
-	.heading {top: 25%;}
-	.description {top: 30%;}
-}
-
-@media screen and (max-width: 761px) {
-	.name1, .name2, .name3 {display: block;}
-
-	.name-list {
-		flex-direction: column;
-		text-align: center;
-	}
-}
-
-@media screen and (max-width: 923px) {
-	.tickets {flex-direction: column;}
-
-	.new-york {
-	margin-right: 0;
-	margin-bottom: 20px;
-	}
-
-	.sanfrancisco {
-	margin-left: 0;
-	margin-top: 20px;
-	}
-}
-
-@media screen and (max-width: 557px) {
-	nav ul li a, .dropdown-btn {display: none;}
-	.menu, .search {display: block;}
-	.search {float: right;}
-}
-
-@media screen and (max-width: 629px) {
-	.name-list {
-		padding-left: 0%;
-		padding-right: 0%;
-	}
-}
-
-@media screen and (max-width: 629px) {
-	.form {margin-top: 20px;}
-}
-
-@media screen and (max-width: 360px) {
-	.name, .mail, .msg {
-		margin: 0;
-		display: block;
-		width: 100%;
-	}
-
-	.name, .msg {margin-bottom: 15px;}
-
-	.form {
-		width: 100%;
-		padding: 10px;
-	}
-
-	.info, .form button {margin: 0;}
-	.heading, .description {display: none;}
-}
-
-@media screen and (max-width: 269px) {
-	.name1 img, .name2 img, .name3 img {width: 100%;}
 }
 
 .menu-content {
@@ -513,3 +389,120 @@ mark {
 	color: black;
 	background-color: white;
 }
+
+@media screen and (max-width: 1255px) {
+	.heading {top: 90%}
+	.description {top: 95%}
+}
+
+@media screen and (max-width: 1131px) {
+	.heading {top: 80%}
+	.description {top: 85%}
+}
+
+@media screen and (max-width: 1013px) {
+	.heading {top: 70%}
+	.description {top: 75%}
+}
+
+@media screen and (max-width: 885px) {
+	.heading {top: 60%}
+	.description {top: 65%}
+}
+
+@media screen and (max-width: 743px) {
+	.heading {top: 50%}
+	.description {top: 55%}
+}
+
+@media screen and (max-width: 621px) {
+	.heading {top: 40%}
+	.description {top: 45%}
+	.header, .details {margin: 0 10%;}
+}
+
+@media screen and (max-width: 499px) {
+	.heading {top: 30%}
+	.description {top: 35%}
+
+	.the-band-content {
+		margin: 0;
+		width: 100%;
+		padding: 10px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.months {
+		margin: 0;
+		width: 100%;
+	}
+
+	.tour-dates {padding: 10px;}
+	.tickets {padding: 0;}
+}
+
+@media screen and (max-width: 416px) {
+	.heading {top: 25%;}
+	.description {top: 30%;}
+}
+
+@media screen and (max-width: 761px) {
+	.name1, .name2, .name3 {display: block;}
+
+	.name-list {
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 923px) {
+	.tickets {flex-direction: column;}
+
+	.new-york {
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+
+	.sanfrancisco {
+		margin-left: 0;
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 557px) {
+	nav ul li a, .dropdown-btn {display: none;}
+	.menu, .search {display: block;}
+	.search {float: right;}
+}
+
+@media screen and (max-width: 629px) {.name-list {padding: 0;}}
+@media screen and (max-width: 629px) {.form {margin-top: 20px;}}
+
+@media screen and (max-width: 360px) {
+	.name, .mail, .msg {
+		margin: 0;
+		display: block;
+		width: 100%;
+	}
+
+	.name, .msg {margin-bottom: 15px;}
+
+	.form {
+		width: 100%;
+		padding: 10px;
+	}
+
+	.info, .form button {margin: 0;}
+	.heading, .description {display: none;}
+}
+
+@media screen and (max-width: 314px) {
+	.modal {padding-top: 0;}
+	.header, .details {margin: 0;}
+	.details {height: 81vh;}
+}
+
+@media screen and (max-width: 269px) {.name1 img, .name2 img, .name3 img {width: 100%;}}
+
+
