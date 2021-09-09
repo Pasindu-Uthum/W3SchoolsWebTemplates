@@ -98,7 +98,7 @@ body {background-color: rgb(204, 203, 195);}
 
 .about-section p {
     opacity: 0.7;
-    text-align: left;
+    text-align: justify;
     padding-top: 50px;
     font-size: 20px;
     padding-bottom: 50px;
