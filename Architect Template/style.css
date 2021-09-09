@@ -35,21 +35,10 @@ nav ul li a {
 	font-family: 'Londrina Solid', cursive;
 }
 
-nav ul li a:hover {
-	background-color: lightgray;
-}
-
-.logo {
-	float: left;
-}
-
-.right {
-	float: right;
-}
-
-.cover-image img {
-	width: 100%;
-}
+nav ul li a:hover {background-color: lightgray;}
+.logo {float: left;}
+.right {float: right;}
+.cover-image img {width: 100%;}
 
 .logo span {
 	color: black;
@@ -100,10 +89,8 @@ nav ul li a:hover {
 	position: absolute;
 	top: 0;
 	left: 0;
-	margin-top: 10px;
-	margin-left: 10px;
-	padding-top: 10px;
-	padding-left: 10px;
+	margin: 10px 0 0 10px;
+	padding: 10px 0 0 10px;
 	background-color: #262626;
 	padding: 16px;
 	color: white;
@@ -119,12 +106,11 @@ nav ul li a:hover {
 	font-family: 'Patrick Hand', cursive;
 	font-size: 20px;
 	font-weight: bolder;
-	padding-left: 5px;
+	padding: 0 10px;
+	text-align: justify;
 }
 
-.about-paragraph::selection {
-	text-shadow: 1px 1px 5px dodgerblue;
-}
+.about-paragraph::selection {text-shadow: 1px 1px 5px dodgerblue;}
 
 .persons {
 	display: flex;
@@ -137,18 +123,14 @@ nav ul li a:hover {
 	min-width: 25%;
 	padding: 10px;
 }
+
 .avatar img {
 	width: 100%;
 	filter: grayscale(50%);
 }
 
-.avatar h2, .avatar h3, .avatar button {
-	font-family: 'Catamaran', sans-serif;
-}
-
-.avatar h3 {
-	opacity: 0.7;
-}
+.avatar h2, .avatar h3, .avatar button {font-family: 'Catamaran', sans-serif;}
+.avatar h3 {opacity: 0.7;}
 
 .avatar p {
 	font-family: 'Patrick Hand', cursive;
@@ -156,9 +138,7 @@ nav ul li a:hover {
 	text-shadow: 1px 1px 5px dodgerblue;
 }
 
-.persons {
-	padding: 10px;
-}
+.persons {padding: 10px;}
 
 .avatar button {
 	font-weight: bolder;
@@ -168,6 +148,7 @@ nav ul li a:hover {
 	margin-top: 10px;
 	width: 100%;
 	text-align: center;
+	border: none;
 }
 
 .avatar button:hover {
@@ -186,9 +167,7 @@ nav ul li a:hover {
 	padding-left: 20px;
 }
 
-.input-fields {
-	width: 100%;
-}
+.input-fields {width: 100%;}
 
 .input-fields input {
 	display: block;
@@ -212,19 +191,12 @@ nav ul li a:hover {
 	font-family: 'Patrick Hand', cursive;
 	font-weight: bolder;
 	font-size: 18px;
+	border: none;
 }
 
-.contact-container button:hover {
-	background-color: black;
-}
-
-.map img {
-	width: 100%;
-}
-
-.social-media {
-	text-align: center;
-}
+.contact-container button:hover {background-color: black;}
+.map img {width: 100%;}
+.social-media {text-align: center;}
 
 .social-media i {
 	padding: 10px;
@@ -232,9 +204,7 @@ nav ul li a:hover {
 	font-size: 25px;
 }
 
-.social-media i:hover {
-	opacity: 1;
-}
+.social-media i:hover {opacity: 1;}
 
 .trade {
 	text-align: center;
@@ -257,15 +227,9 @@ nav ul li a:hover {
 }
 
 @keyframes slide {
-	from {
-		width: 0;
-	}
-	to {
-		width: 100%;
-	}
+	from {width: 0;}
+	to {width: 100%;}
 }
-
-
 
 .menu-container a {
 	color: black;
@@ -278,9 +242,7 @@ nav ul li a:hover {
 	text-align: center;
 }
 
-.menu-container a:hover {
-	background-color: lightgray;
-}
+.menu-container a:hover {background-color: lightgray;}
 
 .profile img {
 	width: 100%;
@@ -320,6 +282,8 @@ nav ul li a:hover {
 	color: black;
 	padding: 5px;
 	border: 5px solid #262626;
+	display: block;
+	margin-bottom: 10px;
 }
 
 .close {
@@ -327,6 +291,10 @@ nav ul li a:hover {
 	margin: 10px;
 }
 
+.menu {
+	display: none;
+	float: right;
+}
 
 @media screen and (max-width: 1015px) {
 	.first-row-image1 {
@@ -359,27 +327,14 @@ nav ul li a:hover {
 	}
 }
 
-.menu {
-	display: none;
-	float: right;
-}
-
 @media screen and (max-width: 505px) {
-	.right {
-		display: none;
-	}
+	.right {display: none;}
+	.title span {padding: 5px;}
+	.menu {display: block;}
 
 	.title {
 		font-size: 20px;
 		top: 30%;
-	}
-
-	.title span {
-		padding: 5px;
-	}
-
-	.menu {
-		display: block;
 	}
 }
 
@@ -389,9 +344,7 @@ nav ul li a:hover {
 		min-width: 100%;
 	}
 
-	.projects-container h1, .about-container h1, .contact-container h1 {
-		text-align: center;
-	}
+	.projects-container h1, .about-container h1, .contact-container h1 {text-align: center;}
 }
 
 @media screen and (max-width: 405px) {
