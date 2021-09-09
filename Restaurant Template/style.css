@@ -19,6 +19,7 @@ nav ul {
 }
 
 nav ul li {float: left;}
+.bars {display: none;}
 
 nav ul li a {
     color: white;
@@ -303,6 +304,63 @@ table tr td {
     display: none;
 }
 
+.hidden-menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+    display: none;
+}
+
+.hidden-menu span:first-child {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    display: block;
+    padding: 16px;
+}
+
+.hidden-menu span {
+    display: block;
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.hidden-menu h1 {
+    display: block;
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.title {
+    animation-name: display;
+    animation-duration: 1s;
+}
+
+@keyframes display {
+    from {
+        transform: scale(0);
+    }
+    to {s
+        transform: scale(1);
+    }
+}
+
+.hidden-menu span:hover, .close:hover {
+    background-color: grey;
+}
+
+@media screen and (max-width: 231px) {.hidden-menu h1 {font-size: 50px;}}
+
 @media screen and (max-width: 913px) {.left-side-items {padding-right: 100px;}}
 
 @media screen and (max-width: 749px) {
@@ -353,4 +411,8 @@ table tr td {
     .cover-image button {font-size: 25px;}
 }
 
-@media screen and (max-width: 323px) {.cover-image button {display: none;}}
+@media screen and (max-width: 323px) {
+    .cover-image button {display: none;}
+    nav ul li {display: none;}
+    .bars {display: block;}
+}

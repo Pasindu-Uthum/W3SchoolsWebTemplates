@@ -32,3 +32,15 @@ starter.onclick = () => {
     salad_menu.style.display = 'none';
     starter_menu.style.display = 'block';
 }
+
+const bars = document.querySelector(".bars");
+const hidden_menu = document.querySelector(".hidden-menu");
+const close = document.querySelector(".close");
+
+bars.onclick = function() {
+    hidden_menu.style.display = 'block';
+}
+
+close.onclick = function() {
+    hidden_menu.style.display = 'none';
+}

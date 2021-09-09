@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Pacifico&effect=neon|fire|shadow-multiple|fire-animation|anaglyph|emboss|outline|3d|3d-float">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://kit.fontawesome.com/58e77607fe.js" crossorigin="anonymous"></script>
     <title>Restaurant | Web Template</title>
@@ -18,6 +20,7 @@
                 <li><a href="#menu">MENU</a></li>
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#contact">CONTACT</a></li>
+                <li class="bars"><a href="#"><i class="fas fa-bars"></i></a></li>
             </ul>
         </nav>
         <div class="banner">
@@ -25,6 +28,17 @@
         </div>
         <center><button onclick="document.location = '#menu'">LET ME SEE THE MENU</button></center>
         <span>Open from 10am to 12pm</span>
+    </div>
+
+    <div class="hidden-menu">
+        <span class="close"><i class="fas fa-times"></i></span><br><br><br><br>
+        <span>HOME</span>
+        <span>MENU</span>
+        <span>ABOUT</span>
+        <span>CONTACT</span>
+        <div class="title">
+            <h1 class="font-effect-fire-animation">PIZZA RESTAURANT</h1>
+        </div>
     </div>
 
     <div id="menu" class="menu-container">
