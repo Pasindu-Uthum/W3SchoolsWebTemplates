@@ -350,7 +350,7 @@ table tr td {
     from {
         transform: scale(0);
     }
-    to {s
+    to {
         transform: scale(1);
     }
 }
