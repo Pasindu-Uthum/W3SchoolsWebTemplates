@@ -75,14 +75,9 @@ nav ul li a {
 	font-weight: bolder;
 }
 
-.pagination span.one {
+.pagination span .one, .pagination span:hover {
 	background-color: black;
 	color: white;
-}
-
-.pagination span:hover {
-	color: white;
-	background-color: black;
 }
 
 .about-section h1 {
@@ -253,6 +248,12 @@ p img {padding-right: 5px;}
 @media screen and (max-width: 304px) {.three {display: none;}}
 @media screen and (max-width: 604px) {.right, .middle, .left {width: 100%;}}
 @media screen and (max-width: 504px) {.about-section img {padding: 0%;}}
+
+@media screen and (max-width: 772px) {
+	.about-section p, .left p {
+		text-align: justify;
+	}
+}
 
 @media screen and (max-width: 704px) {
 	.menu {
