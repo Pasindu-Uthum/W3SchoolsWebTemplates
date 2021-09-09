@@ -122,6 +122,7 @@ nav ul li a:hover {background-color: lightgray;}
     padding-left: 40px;
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
+    text-align: justify;
 }
 
 .split::after {
@@ -342,6 +343,7 @@ nav ul li a:hover {background-color: lightgray;}
 .footer button {
     padding: 16px;
     background-color: lightgray;
+    border: none;
 }
 
 .footer button a {
