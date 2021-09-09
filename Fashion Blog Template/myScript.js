@@ -42,7 +42,7 @@ var subscribe = document.getElementById("subscribe-pop-up");
 var first_sub = document.getElementById("top-subscribe-btn");
 
 first_sub.onclick = function() {
-	subscribe.style.display = "block";
+	subscribe.style.display = "flex";
 }
 
 function welcomeFunction() {
