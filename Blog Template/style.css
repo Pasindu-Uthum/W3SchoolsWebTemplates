@@ -56,7 +56,6 @@ body {background-color: lightgray;}
 }
 
 .read-more:hover {background-color: lightgray;}
-
 .read-more, .comments {display: inline-block;}
 
 .comments {
@@ -93,12 +92,7 @@ body {background-color: lightgray;}
 }
 
 .title-date, .title-heading, .title-paragraph {padding-left: 10px;}
-
-.read-more {
-	margin-left: 10px;
-	margin-bottom: 10px;
-}
-
+.read-more {margin: 0 0 10px 10px;}
 .comments {padding-right: 10px;}
 
 .profile h2, .profile p {
@@ -228,5 +222,7 @@ body {background-color: lightgray;}
 		width: 100%;
 		margin: 0;	
 	}
+	
 	.content {padding: 20px;}
+	.profile {margin-top: 20px;}
 }
