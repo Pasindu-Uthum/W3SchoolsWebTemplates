@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -26,10 +27,10 @@ main {
 
 main p {
   padding: 20px;
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Bree Serif', serif;
   font-size: 20px;
-  font-weight: bolder;
   text-align: justify;
+  font-weight: bolder;
 }
 
 main img {
@@ -51,33 +52,31 @@ article {
           justify-content: center;
 }
 
-.left {
+article .left {
   float: left;
   width: 50%;
   padding: 10px;
-  font-family: 'Patrick Hand', cursive;
-  font-size: 30px;
+  font-family: 'Bree Serif', serif;
+  font-size: 25px;
   font-weight: bolder;
   text-align: justify;
 }
 
-.left p::-moz-selection {
-  color: #3fca3f;
-  text-shadow: 0px 0px 15px lightgreen;
+article .left p::-moz-selection {
+  background-color: lightgreen;
 }
 
-.left p::selection {
-  color: #3fca3f;
-  text-shadow: 0px 0px 15px lightgreen;
+article .left p::selection {
+  background-color: lightgreen;
 }
 
-.right {
+article .right {
   float: right;
   width: 50%;
   padding: 10px;
 }
 
-.right img {
+article .right img {
   width: 100%;
   border-radius: 25px;
 }
@@ -91,7 +90,7 @@ article {
       flex-wrap: wrap;
 }
 
-.column {
+.links-container .column {
   -webkit-box-flex: 25%;
       -ms-flex: 25%;
           flex: 25%;
@@ -99,28 +98,28 @@ article {
   padding: 0 60px;
 }
 
-.link {
+.links-container .column .link {
   text-align: center;
   margin-top: 10px;
 }
 
-.link a {
+.links-container .column .link a {
   display: block;
   text-align: center;
   text-decoration: none;
   color: black;
   padding: 16px;
-  background-color: lightgreen;
   border-radius: 1.5em;
   height: 3em;
   font-family: 'Patrick Hand', cursive;
   font-size: 20px;
   font-weight: bolder;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.column a:hover {
-  color: white;
-  background-color: seagreen;
+.links-container .column .link a:hover {
+  font-size: 22px;
 }
 
 .social-media {
@@ -152,19 +151,19 @@ article {
 }
 
 @media screen and (max-width: 1095px) {
-  .column {
+  .links-container .column {
     padding: 0 20px;
   }
 }
 
 @media screen and (max-width: 927px) {
-  .column {
+  .links-container .column {
     padding: 0 10px;
   }
 }
 
 @media screen and (max-width: 847px) {
-  .column {
+  .links-container .column {
     padding: 0 60px;
     -webkit-box-flex: 50%;
         -ms-flex: 50%;
@@ -174,7 +173,7 @@ article {
 }
 
 @media screen and (max-width: 623px) {
-  .column {
+  .links-container .column {
     padding: 0 40px;
   }
   article {
@@ -192,7 +191,7 @@ article {
 }
 
 @media screen and (max-width: 553px) {
-  .column {
+  .links-container .column {
     padding: 0 10px;
   }
   header h1 {
@@ -201,7 +200,7 @@ article {
 }
 
 @media screen and (max-width: 427px) {
-  .column {
+  .links-container .column {
     padding: 0 60px;
     -webkit-box-flex: 100%;
         -ms-flex: 100%;
@@ -211,13 +210,13 @@ article {
 }
 
 @media screen and (max-width: 315px) {
-  .column {
+  .links-container .column {
     padding: 0 40px;
   }
 }
 
 @media screen and (max-width: 271px) {
-  .column {
+  .links-container .column {
     padding: 0 10px;
   }
 }
