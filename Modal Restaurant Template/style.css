@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-image: url('onepage_restaurant.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    color: white;
+    font-weight: lighter;
+}
+
+.buttons {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.access-menu {
+    display: block;
+    margin: 20px;
+    padding: 16px;
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.access-menu:hover {
+    background-color: grey;
+    color: black;
+    cursor: pointer;
+}
+
+.info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.days, .address {
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.days {font-size: 30px;}
+.address {font-size: 20px;}
+
+.social-media i {
+	padding: 10px;
+	opacity: 0.5;
+	font-size: 25px;
+    color: white;
+}
+
+.social-media i:hover {opacity: 1;}
+
+.trade {
+	font-size: 20px;
+	font-family: Comic Sans MS;
+	font-weight: bolder;
+    color: white;
+}
+
+.menu-container, .contact-container {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    padding: 100px 20%;
+    overflow: auto;
+    display: none;
+}
+
+.menu, .contact {
+    width: 100%;
+    background-color: white;
+    animation: 1s scale-in;
+}
+
+@keyframes scale-in {
+    from {transform: scale(0.1);}
+    to {transform: scale(1);}
+}
+
+.heading {
+    background-color: black;
+    padding: 15px;
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    width: 100%;
+    font-weight: lighter;
+}
+
+span {
+    float: right;
+    color: white;
+    padding: 10px;
+}
+
+span:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+.content {padding: 20px;}
+
+.content p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+.contact p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.form {padding: 15px;}
+
+.form input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    border: 1px solid gray;
+}
+
+.form button {
+    border: none;
+    background-color: white;
+    margin-top: 10px;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: 'Raleway', sans-serif;
+}
+
+.form button:hover {background-color: lightslategrey;}
+
+@media screen and (max-width: 674px) {.menu-container, .contact-container {padding: 100px 10%;}}
+@media screen and (max-width: 370px) {.menu-container, .contact-container {padding: 100px 2%;}}
