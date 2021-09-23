@@ -46,12 +46,13 @@ nav ul li a:hover {
 	font-weight: bolder;
 }
 
+.cover-image {position: relative;}
 .cover-image img {width: 100%;}
 
 .cover-image-title {
 	position: absolute;
-	width: 100%;
-	top: 100%;
+	bottom: 10px;
+	left: 0;
 	font-size:25px;
 	opacity: 0.7;
 	font-family: 'Fondamento', cursive;
@@ -306,16 +307,15 @@ hr {
 	float: right;
 }
 
-@media screen and (max-width: 1255px) {.cover-image-title {top: 90%;}}
-@media screen and (max-width: 1143px) {.cover-image-title {top: 80%;}}
-@media screen and (max-width: 1021px) {.cover-image-title {top: 70%;}}
-@media screen and (max-width: 905px) {.cover-image-title {font-size: 20px;}}
-@media screen and (max-width: 865px) {.cover-image-title {top: 60%;}}
-@media screen and (max-width: 739px) {.cover-image-title {top: 50%;}}
-@media screen and (max-width: 613px) {.cover-image-title {font-size: 16px;}}
-@media screen and (max-width: 589px) {.cover-image-title {top: 40%;}}
-@media screen and (max-width: 469px) {.cover-image-title {display: none;}}
-@media screen and (max-width: 511px) {.open-header {font-size: 40px;}}
+
+@media screen and (max-width: 865px) {.cover-image-title {font-size: 20px;}}
+
+@media screen and (max-width: 511px) {
+	.open-header {font-size: 40px;}
+	.cover-image-title {font-size: 15px;}
+}
+
+@media screen and (max-width: 317px) {.cover-image-title {display: none;}}
 @media screen and (max-width: 431px) {.open-header {font-size: 30px;}}
 @media screen and (max-width: 970px) {.about-container-left, .menu-container-right,.about-container-right, .menu-container-left, .about-container, .menu-container {width: 100%;}}
 @media screen and (max-width: 970px) {.about-container, .menu-container {padding: 0 10px;}}
