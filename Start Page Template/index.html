@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://kit.fontawesome.com/58e77607fe.js" crossorigin="anonymous"></script>
+  <title>Start Page | Web Template</title>
+</head>
+
+<body>
+  <div class="banner">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+        <li><a id="bars" data-status="off" href="#"><i class="fas fa-bars"></i></a></li>
+      </ul>
+    </nav>
+    <h1>START PAGE</h1>
+    <p>Template by Pasindu Uthum</p>
+    <button>Get Started</button>
+  </div>
+
+  <div class="lorem-container">
+    <div class="lorem">
+      <h1>Lorem Ipsum</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+      <br><br>
+      <p class="fade">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+        ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+    <div class="image-anchor">
+      <i class="fas fa-anchor"></i>
+    </div>
+  </div>
+  <br><br><br><br><br>
+  <div class="coffee-container">
+    <div class="image-coffee">
+      <i class="fas fa-coffee"></i>
+    </div>
+    <div class="coffee">
+      <h1>Lorem Ipsum</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+      <br><br>
+      <p class="fade">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+        ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+  </div>
+
+  <div class="quote">
+    Quote of the day: live life
+  </div>
+
+  <div class="footer">
+    <p class="social-media"><i class="fas fa-at"></i><i class="fab fa-telegram"></i><i class="fab fa-discord"></i><i
+        class="fab fa-whatsapp"></i><i class="fab fa-instagram"></i><i class="fab fa-reddit"></i></p>
+    <p class="trade">Pasindu Uthum Web Templates™ | 2021</p>
+  </div>
+
+  <div class="menu-container">
+    <span>Link 1</span>
+    <span>Link 2</span>
+    <span>Link 3</span>
+    <span>Link 4</span>
+  </div>
+
+  <script>
+    const bars = document.getElementById('bars');
+    const menu = document.querySelector(".menu-container");
+
+    bars.onclick = function () {
+      if (this.dataset.status === 'off') {
+        menu.style.display = 'block';
+        this.dataset.status = 'on';
+        this.innerHTML = `<i class="fas fa-times"></i>`;
+      } else {
+        menu.style.display = 'none';
+        this.dataset.status = 'off';
+        this.innerHTML = `<i class="fas fa-bars"></i>`;
+      }
+    }
+  </script>
+</body>
+
+</html>
