@@ -1,0 +1,827 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav ul {
+  background-color: white;
+  display: block;
+  width: 100%;
+  list-style-type: none;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 1px 15px grey;
+          box-shadow: 0px 1px 15px grey;
+}
+
+nav ul li {
+  float: right;
+}
+
+nav ul li:first-child {
+  float: left;
+}
+
+nav ul li:last-child {
+  display: none;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 16px;
+  display: inline-block;
+  font-family: "Varela Round", sans-serif;
+  font-size: 20px;
+}
+
+nav ul li a:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.cover-page {
+  background-image: url("mac.jpg");
+  background-size: cover;
+  height: 92vh;
+  width: 100%;
+  background-position: center;
+  position: relative;
+}
+
+.cover-page .content {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(32, 32, 32, 0.4);
+  padding-left: 50px;
+  font-family: "Varela Round", sans-serif;
+}
+
+.cover-page .content h1 {
+  color: white;
+  font-size: 70px;
+  font-weight: lighter;
+  padding-top: 200px;
+}
+
+.cover-page .content p {
+  color: white;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.cover-page .content button {
+  margin-top: 20px;
+  display: block;
+  padding: 16px;
+  font-size: 20px;
+  color: black;
+  background-color: lightgray;
+  border: none;
+  opacity: 0.6;
+  font-family: "Varela Round", sans-serif;
+}
+
+.cover-page .content button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.cover-page .media {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.cover-page .media span {
+  color: white;
+  display: inline-block;
+  padding: 5px;
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+.cover-page .media span:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.about-container {
+  font-family: "Varela Round", sans-serif;
+  padding: 100px 0;
+  height: auto;
+  width: 100%;
+}
+
+.about-container h1, .about-container h3 {
+  text-align: center;
+  font-weight: lighter;
+  padding-bottom: 20px;
+}
+
+.about-container .grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.about-container .grid .box {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  min-width: 25%;
+  padding: 20px;
+}
+
+.about-container .grid .box i {
+  font-size: 90px;
+  text-align: center;
+  display: block;
+}
+
+.about-container .grid .box h3 {
+  padding-top: 10px;
+}
+
+.about-container .grid .box p {
+  text-align: center;
+  font-size: 18px;
+}
+
+.design-intro {
+  background-color: lightgray;
+  width: 100%;
+  height: auto;
+  padding: 100px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.design-intro .description {
+  width: 50%;
+  font-family: "Varela Round", sans-serif;
+  padding-right: 50px;
+}
+
+.design-intro .description h1 {
+  padding-bottom: 20px;
+  font-weight: lighter;
+}
+
+.design-intro .description p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+.design-intro .description button {
+  display: block;
+  padding: 10px;
+  font-family: "Varela Round", sans-serif;
+  color: white;
+  background-color: black;
+  border: none;
+  margin-top: 20px;
+}
+
+.design-intro .description button i {
+  padding-right: 10px;
+}
+
+.design-intro img {
+  width: 50%;
+  border-radius: 20px;
+}
+
+.team {
+  width: 100%;
+  height: auto;
+  font-family: "Varela Round", sans-serif;
+  padding: 100px 0;
+}
+
+.team h1, .team h3 {
+  text-align: center;
+  font-weight: lighter;
+  padding-bottom: 20px;
+}
+
+.team .members {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.team .members .padding {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  min-width: 25%;
+  font-family: "Varela Round", sans-serif;
+}
+
+.team .members .padding .avatar {
+  margin: 10px;
+  -webkit-box-shadow: 1px 1px 15px #474747;
+          box-shadow: 1px 1px 15px #474747;
+}
+
+.team .members .padding .avatar img {
+  width: 100%;
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+}
+
+.team .members .padding .avatar .avatar-description {
+  padding: 10px;
+}
+
+.team .members .padding .avatar .avatar-description h1 {
+  text-align: left;
+}
+
+.team .members .padding .avatar .avatar-description .fade {
+  opacity: 0.6;
+  font-size: 19px;
+}
+
+.team .members .padding .avatar .avatar-description p {
+  padding-top: 10px;
+  font-size: 18px;
+}
+
+.team .members .padding .avatar .avatar-description button {
+  text-align: center;
+  width: 100%;
+  display: block;
+  padding: 10px;
+  font-size: 18px;
+  font-family: "Varela Round", sans-serif;
+  background-color: lightgray;
+  border: none;
+  margin-top: 10px;
+}
+
+.team .members .padding .avatar .avatar-description button i {
+  padding-left: 10px;
+  display: inline-block;
+}
+
+.team .members .padding .avatar .avatar-description button:hover {
+  background-color: grey;
+  cursor: pointer;
+}
+
+.stats {
+  width: 100%;
+  height: auto;
+  padding: 50px 0 70px 0;
+  background-color: #4e4e4e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.stats .stat-box {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  min-width: 25%;
+  color: white;
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+}
+
+.stats .stat-box span {
+  display: block;
+  font-size: 50px;
+}
+
+.stats .stat-box p {
+  font-size: 18px;
+}
+
+.work-container {
+  width: 100%;
+  height: auto;
+  font-family: "Varela Round", sans-serif;
+  padding-top: 100px;
+}
+
+.work-container h1, .work-container h3 {
+  text-align: center;
+  font-weight: lighter;
+  padding-bottom: 20px;
+}
+
+.work-container .image-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 100px;
+}
+
+.work-container .image-grid .column {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  min-width: 25%;
+  padding: 10px;
+}
+
+.work-container .image-grid .column img {
+  width: 100%;
+  padding-top: 20px;
+  display: block;
+}
+
+.work-container .image-grid .column img:hover {
+  opacity: 0.8;
+}
+
+.skills-container {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #e2e2e2;
+  padding: 100px 0;
+}
+
+.skills-container .description {
+  width: 50%;
+  font-family: "Varela Round", sans-serif;
+  padding: 0 20px;
+}
+
+.skills-container .description h1 {
+  padding-bottom: 20px;
+  font-weight: lighter;
+}
+
+.skills-container .description p {
+  font-size: 18px;
+}
+
+.skills-container .skills {
+  width: 50%;
+  padding-right: 20px;
+}
+
+.skills-container .skills span {
+  display: block;
+  font-family: "Varela Round", sans-serif;
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+.skills-container .skills .progress {
+  width: 100%;
+  height: 2em;
+  background-color: white;
+}
+
+.skills-container .skills .progress .data-done {
+  background-color: #575757;
+  height: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  font-family: "Varela Round", sans-serif;
+}
+
+.price-container {
+  width: 100%;
+  height: auto;
+  font-family: "Varela Round", sans-serif;
+  background-color: black;
+}
+
+.price-container .plans {
+  width: 100%;
+  background-color: #3b3b3b;
+  padding: 100px 20px;
+}
+
+.price-container .plans h1, .price-container .plans h3 {
+  text-align: center;
+  font-weight: lighter;
+  padding-bottom: 20px;
+  color: white;
+}
+
+.price-container .plans::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.price-container .plans .set-padding {
+  padding: 30px 10px;
+  width: 33.33%;
+  float: left;
+}
+
+.price-container .plans .set-padding .basic div, .price-container .plans .set-padding .pro div, .price-container .plans .set-padding .premium div {
+  width: 100%;
+  background-color: white;
+  font-family: "Varela Round", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  padding: 20px 16px;
+  border-bottom: 1px solid lightgray;
+}
+
+.price-container .plans .set-padding .basic div:first-child, .price-container .plans .set-padding .pro div:first-child, .price-container .plans .set-padding .premium div:first-child {
+  background-color: black;
+  color: white;
+  padding: 40px;
+  font-size: 30px;
+  margin-top: 15px;
+}
+
+.price-container .plans .set-padding .basic div span, .price-container .plans .set-padding .pro div span, .price-container .plans .set-padding .premium div span {
+  font-size: 30px;
+  padding-top: 20px;
+  display: block;
+}
+
+.price-container .plans .set-padding .basic div p, .price-container .plans .set-padding .pro div p, .price-container .plans .set-padding .premium div p {
+  padding-bottom: 20px;
+}
+
+.price-container .plans .set-padding .basic div button, .price-container .plans .set-padding .pro div button, .price-container .plans .set-padding .premium div button {
+  display: inline-block;
+  padding: 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-family: "Varela Round", sans-serif;
+}
+
+.price-container .plans .set-padding .basic div button:hover, .price-container .plans .set-padding .pro div button:hover, .price-container .plans .set-padding .premium div button:hover {
+  color: black;
+  background-color: lightgray;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.price-container .plans .set-padding .basic:hover, .price-container .plans .set-padding .pro:hover, .price-container .plans .set-padding .premium:hover {
+  -webkit-box-shadow: 0px 0px 15px black;
+          box-shadow: 0px 0px 15px black;
+}
+
+.price-container .plans .set-padding .pro div:first-child {
+  background-color: #f44336;
+  padding: 60px;
+  margin-top: 0;
+}
+
+.contact-container {
+  width: 100%;
+  height: auto;
+  font-family: "Varela Round", sans-serif;
+  padding: 100px 20px;
+}
+
+.contact-container h1, .contact-container h3 {
+  text-align: center;
+  font-weight: lighter;
+  padding-bottom: 20px;
+}
+
+.contact-container p {
+  font-size: 20px;
+  font-family: "Varela Round", sans-serif;
+  padding: 10px 20px;
+}
+
+.contact-container p i {
+  padding-right: 10px;
+}
+
+.contact-container .form input {
+  width: 100%;
+  display: block;
+  padding: 16px;
+  border: 1px solid grey;
+  outline: none;
+  font-family: "Varela Round", sans-serif;
+  margin: 10px 0;
+}
+
+.contact-container .form button {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  border: none;
+  display: block;
+  font-family: "Varela Round", sans-serif;
+  margin-bottom: 50px;
+}
+
+.contact-container .form button:hover {
+  color: black;
+  background-color: grey;
+  font-weight: bolder;
+}
+
+.contact-container img {
+  width: 100%;
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+}
+
+.footer {
+  background-color: black;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer a {
+  display: inline-block;
+  padding: 10px;
+  border: none;
+  font-family: "Varela Round", sans-serif;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.footer a:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.footer .social-media {
+  padding-top: 30px;
+  text-align: center;
+  color: white;
+}
+
+.footer .social-media i {
+  padding: 10px;
+  opacity: 0.5;
+  font-size: 25px;
+}
+
+.footer .social-media i:hover {
+  opacity: 1;
+}
+
+.footer .trade {
+  text-align: center;
+  font-size: 20px;
+  font-family: Comic Sans MS;
+  font-weight: bolder;
+  color: white;
+}
+
+/* Styles for the mobile menu container */
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 10px;
+  z-index: 1;
+  display: none;
+}
+
+.menu-container .menu {
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+.menu-container .menu span {
+  float: right;
+  padding: 10px;
+}
+
+.menu-container .menu span:hover {
+  background-color: tomato;
+}
+
+.menu-container .menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-container .menu a p {
+  font-family: "Varela Round", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  padding: 16px;
+}
+
+.menu-container .menu a p:hover {
+  background-color: lightgray;
+}
+
+.menu-container .menu h1 {
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+  padding-bottom: 20px;
+  -webkit-animation: scale 1s;
+          animation: scale 1s;
+}
+
+@-webkit-keyframes scale {
+  from {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scale {
+  from {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 1019px) {
+  .cover-page .content h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 939px) {
+  .team .members .padding {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    min-width: 50%;
+  }
+}
+
+@media screen and (max-width: 753px) {
+  nav ul li {
+    display: none;
+  }
+  nav ul li:first-child, nav ul li:last-child {
+    display: block;
+  }
+  .about-container .grid .box {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    min-width: 50%;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 669px) {
+  .design-intro {
+    display: block;
+  }
+  .design-intro .description {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .design-intro img {
+    width: 100%;
+  }
+  .work-container .image-grid .column {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    min-width: 50%;
+  }
+}
+
+@media screen and (max-width: 655px) {
+  .price-container .plans .set-padding {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .stats .stat-box {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    min-width: 50%;
+    padding-top: 20px;
+  }
+  .skills-container {
+    display: block;
+  }
+  .skills-container .description {
+    width: 100%;
+  }
+  .skills-container .skills {
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  .cover-page .content {
+    padding-left: 10px;
+  }
+  .cover-page .content h1 {
+    font-size: 40px;
+  }
+  .cover-page .content p, .cover-page .content button {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 467px) {
+  .team .members .padding {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 347px) {
+  .about-container .grid .box {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    min-width: 100%;
+    padding: 20px;
+  }
+  .work-container .image-grid .column {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 317px) {
+  .cover-page .content h1 {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .stats .stat-box {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    min-width: 100%;
+  }
+  .price-container .plans {
+    padding: 100px 0px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,724 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+$default: 'Varela Round', sans-serif;
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  ul {
+    background-color: white;
+    display: block;
+    width: 100%;
+    list-style-type: none;
+    overflow: hidden;
+    box-shadow: 0px 1px 15px grey;
+    li {
+      float: right;
+      &:first-child {
+        float: left;
+      }
+      &:last-child {
+        display: none;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+        padding: 16px;
+        display: inline-block;
+        font-family: $default;
+        font-size: 20px;
+        &:hover {
+          background-color: lightgray;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.cover-page {
+  background-image: url('mac.jpg');
+  background-size: cover;
+  height: 92vh;
+  width: 100%;
+  background-position: center;
+  position: relative;
+  .content {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 32, 32, 0.4);
+    padding-left: 50px;
+    font-family: $default;
+    h1 {
+      color: white;
+      font-size: 70px;
+      font-weight: lighter;
+      padding-top: 200px;
+    }
+    p {
+      color: white;
+      font-size: 20px;
+      padding-top: 20px;
+    }
+    button {
+      margin-top: 20px;
+      display: block;
+      padding: 16px;
+      font-size: 20px;
+      color: black;
+      background-color: lightgray;
+      border: none;
+      opacity: 0.6;
+      font-family: $default;
+      &:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+    }
+  }
+  .media {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    span {
+      color: white;
+      display: inline-block;
+      padding: 5px;
+      font-size: 20px;
+      opacity: 0.5;
+      &:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.about-container {
+  font-family: $default;
+  padding: 100px 0;
+  height: auto;
+  width: 100%;
+  h1, h3 {
+    text-align: center;
+    font-weight: lighter;
+    padding-bottom: 20px;
+  }
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    .box {
+      flex: 25%;
+      min-width: 25%;
+      padding: 20px;
+      i {
+        font-size: 90px;
+        text-align: center;
+        display: block;
+      }
+      h3 {
+        padding-top: 10px;
+      }
+      p {
+        text-align: center;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.design-intro {
+  background-color: lightgray;
+  width: 100%;
+  height: auto;
+  padding: 100px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .description {
+    width: 50%;
+    font-family: $default;
+    padding-right: 50px;
+    h1 {
+      padding-bottom: 20px;
+      font-weight: lighter;
+    }
+    p {
+      font-size: 20px;
+      text-align: justify;
+    }
+    button {
+      display: block;
+      padding: 10px;
+      font-family: $default;
+      color: white;
+      background-color: black;
+      border: none;
+      margin-top: 20px;
+      i {
+        padding-right: 10px;
+      }
+    }
+  }
+  img {
+    width: 50%;
+    border-radius: 20px;
+  }
+}
+
+.team {
+  width: 100%;
+  height: auto;
+  font-family: $default;
+  padding: 100px 0;
+  h1, h3 {
+    text-align: center;
+    font-weight: lighter;
+    padding-bottom: 20px;
+  }
+  .members {
+    display: flex;
+    flex-wrap: wrap;
+    .padding {
+      flex: 25%;
+      min-width: 25%;
+      font-family: $default;
+      .avatar {
+        margin: 10px;
+        box-shadow: 1px 1px 15px rgb(71, 71, 71);
+        img {
+          width: 100%;
+          filter: grayscale(50%);
+        }
+        .avatar-description {
+          padding: 10px;
+          h1 {
+            text-align: left;
+          }
+          .fade {
+            opacity: 0.6;
+            font-size: 19px;
+          }
+          p {
+            padding-top: 10px;
+            font-size: 18px;
+          }
+          button {
+            text-align: center;
+            width: 100%;
+            display: block;
+            padding: 10px;
+            font-size: 18px;
+            font-family: $default;
+            background-color: lightgray;
+            border: none;
+            margin-top: 10px;
+            i {
+              padding-left: 10px;
+              display: inline-block;
+            }
+            &:hover {
+              background-color: grey;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.stats {
+  width: 100%;
+  height: auto;
+  padding: 50px 0 70px 0;
+  background-color: rgb(78, 78, 78);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  .stat-box {
+    flex: 25%;
+    min-width: 25%;
+    color: white;
+    text-align: center;
+    font-family: $default;
+    span {
+      display: block;
+      font-size: 50px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+.work-container {
+  width: 100%;
+  height: auto;
+  font-family: $default;
+  padding-top: 100px;
+  h1, h3 {
+    text-align: center;
+    font-weight: lighter;
+    padding-bottom: 20px;
+  }
+  .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+    .column {
+      flex: 25%;
+      min-width: 25%;
+      padding: 10px;
+      img {
+        width: 100%;
+        padding-top: 20px;
+        display: block;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+.skills-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(226, 226, 226);
+  padding: 100px 0;
+  .description {
+    width: 50%;
+    font-family: $default;
+    padding: 0 20px;
+    h1 {
+      padding-bottom: 20px;
+      font-weight: lighter;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+  .skills {
+    width: 50%;
+    padding-right: 20px;
+    span {
+      display: block;
+      font-family: $default;
+      font-size: 18px;
+      padding: 10px 0;
+    }
+    .progress {
+      width: 100%;
+      height: 2em;
+      background-color: white;
+      .data-done {
+        background-color: rgb(87, 87, 87);
+        height: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: $default;
+      }
+    }
+  }
+}
+
+.price-container {
+  width: 100%;
+  height: auto;
+  font-family: $default;
+  background-color: black;
+  .plans {
+    h1, h3 {
+      text-align: center;
+      font-weight: lighter;
+      padding-bottom: 20px;
+      color: white;
+    }
+    width: 100%;
+    background-color: rgb(59, 59, 59);
+    padding: 100px 20px;
+    &::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    .set-padding {
+      padding: 30px 10px;
+      width: 33.33%;
+      float: left;
+      .basic, .pro, .premium {
+        div {
+          width: 100%;
+          background-color: white;
+          font-family: $default;
+          font-size: 18px;
+          text-align: center;
+          padding: 20px 16px;
+          border-bottom: 1px solid lightgray;
+          &:first-child {
+            background-color: black;
+            color: white;
+            padding: 40px;
+            font-size: 30px;
+            margin-top: 15px;
+          }
+          span {
+            font-size: 30px;
+            padding-top: 20px;
+            display: block;
+          }
+          p {
+            padding-bottom: 20px;
+          }
+          button {
+            display: inline-block;
+            padding: 16px;
+            background-color: black;
+            color: white;
+            border: none;
+            font-family: $default;
+            &:hover {
+              color: black;
+              background-color: lightgray;
+              font-weight: bold;
+              cursor: pointer;
+            }
+          }
+        }
+        &:hover {
+          box-shadow: 0px 0px 15px black;
+        }
+      }
+      .pro {
+        div {
+          &:first-child {
+            background-color: #f44336;
+            padding: 60px;
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contact-container {
+  width: 100%;
+  height: auto;
+  font-family: $default;
+  padding: 100px 20px;
+  h1, h3 {
+    text-align: center;
+    font-weight: lighter;
+    padding-bottom: 20px;
+  }
+  p {
+    font-size: 20px;
+    font-family: $default;
+    padding: 10px 20px;
+    i {
+      padding-right: 10px;
+    }
+  }
+  .form {
+    input {
+      width: 100%;
+      display: block;
+      padding: 16px;
+      border: 1px solid grey;
+      outline: none;
+      font-family: $default;
+      margin: 10px 0;
+    }
+    button {
+      background-color: black;
+      color: white;
+      padding: 16px;
+      border: none;
+      display: block;
+      font-family: $default;
+      margin-bottom: 50px;
+      &:hover {
+        color: black;
+        background-color: grey;
+        font-weight: bolder;
+      }
+    }
+  }
+  img {
+    width: 100%;
+    filter: grayscale(50%);
+  }
+}
+
+.footer {
+  background-color: black;
+  padding: 50px 0;
+  text-align: center;
+  a {
+    display: inline-block;
+    padding: 10px;
+    border: none;
+    font-family: $default;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    &:hover {
+      background-color: lightgray;
+      cursor: pointer;
+    }
+  }
+  .social-media {
+    padding-top: 30px;
+    text-align: center;
+    color: white;
+    i {
+      padding: 10px;
+      opacity: 0.5;
+      font-size: 25px;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  .trade {
+	  text-align: center;
+	  font-size: 20px;
+	  font-family: Comic Sans MS;
+	  font-weight: bolder;
+    color: white;
+  }
+}
+
+/* Styles for the mobile menu container */
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 10px;
+  z-index: 1;
+  display: none;
+  .menu {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    span {
+      float: right;
+      padding: 10px;
+      &:hover {
+        background-color: tomato;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      p {
+        font-family: $default;
+        font-weight: bolder;
+        text-align: center;
+        padding: 16px;
+        &:hover {
+          background-color: lightgray;
+        }
+      }
+    }
+    h1 {
+      font-family: $default;
+      text-align: center;
+      padding-bottom: 20px;
+      animation: scale 1s;
+    }
+  }
+}
+
+@keyframes scale {
+  from {
+    transform: scale(0.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 1019px) {
+  .cover-page {
+    .content {
+      h1 {
+        font-size: 50px;
+      }
+    }
+  }  
+}
+
+@media screen and (max-width: 939px) {
+  .team {
+    .members {
+      .padding {
+        flex: 50%;
+        min-width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 753px) {
+  nav {
+    ul {
+      li {
+        display: none;
+        &:first-child, &:last-child {
+          display: block;
+        }
+      }
+    }
+  }
+  .about-container {
+    .grid {
+      .box {
+        flex: 50%;
+        min-width: 50%;
+        padding: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 669px) {
+  .design-intro {
+    display: block;
+    .description {
+      width: 100%;
+      padding-bottom: 50px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .work-container {
+    .image-grid {
+      .column {
+        flex: 50%;
+        min-width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 655px) {
+  .price-container {
+    .plans {
+      .set-padding {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .stats {
+    .stat-box {
+      flex: 50%;
+      min-width: 50%;
+      padding-top: 20px;
+    }
+  }
+
+  .skills-container {
+    display: block;
+    .description {
+      width: 100%;
+    }
+    .skills {
+      width: 100%;
+      padding-left: 20px;
+      padding-top: 20px;
+    }
+  }
+
+  .cover-page {
+    .content {
+      padding-left: 10px;
+      h1 {
+        font-size: 40px;
+      }
+      p, button {
+        font-size: 15px;
+      }
+    }
+  } 
+}
+
+@media screen and (max-width: 467px) {
+  .team {
+    .members {
+      .padding {
+        flex: 100%;
+        min-width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 347px) {
+  .about-container {
+    .grid {
+      .box {
+        flex: 100%;
+        min-width: 100%;
+        padding: 20px;
+      }
+    }
+  }
+  .work-container {
+    .image-grid {
+      .column {
+        flex: 100%;
+        min-width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 317px) {
+  .cover-page {
+    .content {
+      h1 {
+        padding-top: 100px;
+      }
+    }
+  } 
+}
+
+@media screen and (max-width: 280px) {
+  .stats {
+    .stat-box {
+      flex: 100%;
+      min-width: 100%;
+    }
+  }
+  .price-container {
+    .plans {
+      padding: 100px 0px;
+    }
+  }
+}
