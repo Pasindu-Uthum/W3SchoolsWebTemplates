@@ -1,0 +1,476 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.slide-show .slide {
+  width: 100%;
+}
+
+.slide-show .slide img {
+  width: 100%;
+  -webkit-animation: appear 0.5s;
+          animation: appear 0.5s;
+}
+
+.slide-show button {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-family: "Varela Round", sans-serif;
+  border-radius: 15px;
+  font-weight: bolder;
+}
+
+.slide-show button:hover {
+  background-color: white;
+  cursor: pointer;
+  color: black;
+}
+
+.slide-show .download-notice {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  padding: 50px;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 0.6;
+}
+
+.slide-show .download-notice:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.slide-show .download-notice h2 {
+  color: white;
+  font-family: "Varela Round", sans-serif;
+  font-weight: lighter;
+  padding: 0px 50px;
+}
+
+.slide-show .download-notice hr {
+  margin: 10px 0;
+}
+
+.slide-show .download-notice p {
+  text-align: center;
+  color: white;
+  font-family: "Varela Round", sans-serif;
+}
+
+.slide-show .download-notice button {
+  position: unset;
+  display: inline-block;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.slide-show .download-notice button i {
+  padding-left: 5px;
+}
+
+@-webkit-keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.app {
+  width: 100%;
+  padding: 80px 20px;
+}
+
+.app .description {
+  width: 70%;
+  float: left;
+  font-family: "Poppins", sans-serif;
+  padding-right: 50px;
+}
+
+.app .description h1 {
+  font-size: 80px;
+}
+
+.app .description h2 {
+  font-size: 60px;
+  color: #4CAF50;
+}
+
+.app .description p {
+  font-size: 20px;
+  padding-top: 10px;
+  text-align: justify;
+}
+
+.app .description p span {
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.app .description button {
+  font-family: "Varela Round", sans-serif;
+  color: black;
+  background-color: lightgrey;
+  border: none;
+  display: block;
+  padding: 10px;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.app .description button i {
+  padding-right: 10px;
+}
+
+.app .description button:hover {
+  background-color: grey;
+  cursor: pointer;
+}
+
+.app .description .availability {
+  font-size: 20px;
+  padding-top: 100px;
+}
+
+.app .description .availability i {
+  padding-right: 10px;
+}
+
+.app .description .availability i:first-child {
+  color: #4CAF50;
+}
+
+.app .description .availability i:last-child {
+  color: dodgerblue;
+}
+
+.app .image {
+  width: 30%;
+  float: left;
+}
+
+.app .image img {
+  width: 100%;
+}
+
+.app::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.clarity {
+  width: 100%;
+  height: auto;
+  background-color: lightgrey;
+  padding: 80px 20px;
+}
+
+.clarity .description {
+  width: 70%;
+  float: left;
+  font-family: "Poppins", sans-serif;
+  padding-left: 50px;
+}
+
+.clarity .description h1 {
+  font-size: 80px;
+}
+
+.clarity .description h2 {
+  font-size: 60px;
+  color: #f44336;
+}
+
+.clarity .description p {
+  font-size: 20px;
+  padding-top: 10px;
+  text-align: justify;
+}
+
+.clarity .description p span {
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.clarity .image {
+  width: 30%;
+  float: left;
+}
+
+.clarity .image img {
+  width: 100%;
+}
+
+.clarity::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.features {
+  width: 100%;
+  background-color: #5e5e5e;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding: 80px 20px;
+}
+
+.features h1 {
+  text-align: center;
+  font-size: 70px;
+}
+
+.features p {
+  text-align: center;
+}
+
+.features .icon-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.features .icon-grid .column {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  min-width: 25%;
+}
+
+.features .icon-grid .column .icon {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.features .icon-grid .column .icon i {
+  font-size: 70px;
+  padding: 20px;
+}
+
+.pricing {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  padding: 80px 20px;
+}
+
+.pricing h1 {
+  text-align: center;
+  font-size: 70px;
+}
+
+.pricing p {
+  text-align: center;
+}
+
+.pricing .set-padding {
+  width: 50%;
+  padding: 10px;
+  float: left;
+}
+
+.pricing .set-padding .plan {
+  -webkit-box-shadow: 1px 3px 15px grey;
+          box-shadow: 1px 3px 15px grey;
+}
+
+.pricing .set-padding .plan div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+  border-bottom: 1px solid grey;
+}
+
+.pricing .set-padding .plan div:first-child {
+  font-size: 30px;
+  color: white;
+  border: none;
+  margin-top: 50px;
+  padding: 30px 0;
+}
+
+.pricing .set-padding .plan div:nth-child(6) {
+  font-size: 40px;
+  padding: 15px;
+}
+
+.pricing .set-padding .plan div:last-child {
+  padding: 30px 0;
+  background-color: #e6e6e6;
+  border: none;
+}
+
+.pricing .set-padding .plan div:last-child button {
+  padding: 16px;
+  display: inline-block;
+  border: none;
+  color: white;
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.pricing .set-padding .plan div:last-child button i {
+  padding-right: 10px;
+}
+
+.pricing .set-padding .plan div:last-child button:hover {
+  background-color: #2b2b2b;
+  cursor: pointer;
+}
+
+.pricing .set-padding .plan:hover {
+  -webkit-box-shadow: 1px 3px 30px grey;
+          box-shadow: 1px 3px 30px grey;
+}
+
+.pricing::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.footer {
+  width: 100%;
+  background-color: lightgray;
+  padding: 80px 0;
+}
+
+.footer .social-media {
+  text-align: center;
+}
+
+.footer .social-media i {
+  padding: 10px;
+  opacity: 0.5;
+  font-size: 25px;
+}
+
+.footer .social-media i:hover {
+  opacity: 1;
+}
+
+.footer .trade {
+  text-align: center;
+  font-size: 20px;
+  font-family: Comic Sans MS;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 843px) {
+  .slide-show button {
+    top: 35%;
+  }
+  .slide-show .download-notice {
+    position: inherit;
+    margin: 10px;
+    text-align: center;
+  }
+  .slide-show .download-notice h2 {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 808px) {
+  .clarity .description {
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 0;
+  }
+  .clarity .image {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 744px) {
+  .app .description {
+    width: 100%;
+    padding-right: 0;
+  }
+  .app .image {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 583px) {
+  .pricing .set-padding {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 564px) {
+  .features .icon-grid .column {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    min-width: 50%;
+  }
+}
+
+@media screen and (max-width: 423px) {
+  .slide-show button {
+    top: 18%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .clarity .description h1, .app .description h1 {
+    font-size: 60px;
+  }
+  .clarity .description h2, .app .description h2 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .features .icon-grid .column {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 334px) {
+  .features h1 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 294px) {
+  .features h1, .pricing h1 {
+    font-size: 40px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
