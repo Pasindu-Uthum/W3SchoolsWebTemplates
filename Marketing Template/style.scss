@@ -1,0 +1,584 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+$default: "Baloo 2", cursive;
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  ul {
+    list-style-type: none;
+    display: block;
+    background-color: lightgray;
+    overflow: hidden;
+    width: 100%;
+    li {
+      float: left;
+      width: 25%;
+      text-align: center;
+      &:hover {
+        background-color: rgb(177, 177, 177);
+      }
+      &:last-child {
+        display: none;
+      }
+      a {
+        display: inline-block;
+        color: black;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+        font-family: $default;
+      }
+    }
+  }
+}
+
+.marketing {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 10px;
+  font-family: $default;
+  h1 {
+    font-size: 50px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .slideshow {
+    width: 100%;
+
+    .slide {
+      width: 100%;
+      position: relative;
+      img {
+        width: 100%;
+      }
+      .text-top-left {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        padding: 10px;
+        background-color: white;
+        animation: up 0.3s;
+      }
+      .text-center {
+        position: absolute;
+        top: 40%;
+        left: 45%;
+        padding: 10px;
+        background-color: white;
+        animation: center-up 0.3s;
+      }
+      .text-top-right {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        padding: 10px;
+        background-color: white;
+        animation: up 0.3s;
+      }
+    }
+  }
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .navigation {
+    padding: 20px;
+    background-color: rgb(65, 65, 65);
+    width: 100%;
+    button {
+      color: white;
+      background-color: transparent;
+      display: block;
+      border: none;
+      font-size: 25px;
+      &:hover {
+        color: lightgray;
+        cursor: pointer;
+      }
+    }
+    .button {
+      width: 10%;
+      float: left;
+    }
+    &::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    .dots {
+      float: left;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      float: left;
+      padding: 7.5px 0;
+      .dot {
+        height: 15px;
+        width: 15px;
+        border: 1px soldi black;
+        margin: 0 10px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+@keyframes up {
+  from {
+    top: 400px;
+    opacity: 0;
+  }
+  to {
+    top: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes center-up {
+  from {
+    top: 90%;
+    opacity: 0;
+  }
+  to {
+    top: 40%;
+    opacity: 1;
+  }
+}
+
+.offers {
+  width: 70%;
+  margin: 10px auto;
+  text-align: center;
+  padding-top: 50px;
+  span {
+    display: inline-block;
+    font-family: $default;
+    font-size: 30px;
+    border-bottom: 4px solid grey;
+  }
+  .offers-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 20px;
+    .box {
+      flex: 25%;
+      min-width: 25%;
+      height: 200px;
+      text-align: left;
+      font-family: $default;
+      padding: 10px;
+      h1 {
+        font-weight: lighter;
+      }
+      &:nth-child(3),
+      &:nth-child(4) {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.pricing {
+  width: 70%;
+  margin: 10px auto;
+  padding-top: 50px;
+  text-align: center;
+  font-family: $default;
+  h1 {
+    font-weight: lighter;
+    font-size: 30px;
+  }
+  .prices {
+    width: 100%;
+    .set-padding {
+      width: 33.33%;
+      padding: 10px;
+      float: left;
+      .price {
+        width: 100%;
+        &:hover {
+          box-shadow: 0px 5px 15px grey;
+        }
+        div {
+          padding: 16px;
+          font-size: 20px;
+          border: 1px solid lightgray;
+          border-top: none;
+          &:first-child {
+            color: white;
+            font-size: 30px;
+            padding: 10px;
+            border: none;
+          }
+          span {
+            font-size: 30px;
+          }
+          p {
+            font-size: 15px;
+          }
+          button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            display: inline-block;
+            padding: 10px;
+            font-family: $default;
+            font-size: 18px;
+            &:hover {
+              color: black;
+              background-color: lightgray;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    &::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  }
+}
+
+.about-container {
+  width: 70%;
+  margin: 10px auto;
+  text-align: center;
+  padding-top: 50px;
+  span {
+    display: inline-block;
+    font-family: $default;
+    font-size: 30px;
+    border-bottom: 4px solid grey;
+  }
+  .team {
+    width: 100%;
+    padding-top: 50px;
+    font-family: $default;
+    text-align: left;
+    .padding {
+      width: 33.33%;
+      float: left;
+      padding: 10px;
+      .member {
+        width: 100%;
+        box-shadow: 0px 5px 15px grey;
+        img {
+          width: 100%;
+        }
+        .content {
+          padding: 10px;
+          text-align: justify;
+          h1,
+          h3 {
+            font-weight: lighter;
+          }
+          h3 {
+            opacity: 0.6;
+          }
+          button {
+            width: 100%;
+            background-color: lightgray;
+            padding: 8px;
+            font-family: $default;
+            display: inline-block;
+            text-align: center;
+            border: none;
+            font-size: 18px;
+            margin: 5px 0;
+            &:hover {
+              cursor: pointer;
+              background-color: grey;
+            }
+          }
+        }
+      }
+    }
+  }
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+.contact-container {
+  width: 70%;
+  margin: 10px auto;
+  padding: 50px 0;
+  text-align: center;
+  span {
+    display: inline-block;
+    font-family: $default;
+    font-size: 30px;
+    border-bottom: 4px solid grey;
+  }
+  .form {
+    legend {
+      font-family: $default;
+      font-size: 20px;
+      padding: 0 5px;
+    }
+    fieldset {
+      padding: 20px 10px;
+      border: 2px solid rgb(105, 105, 105);
+    }
+    input {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-family: $default;
+      text-align: left;
+      border: 1px solid grey;
+      &:hover {
+        border: 2px solid black;
+      }
+    }
+    label {
+      display: block;
+      font-family: $default;
+      font-size: 20px;
+      text-align: left;
+    }
+    button {
+      width: 100%;
+      display: inline-block;
+      background-color: black;
+      border: none;
+      font-family: $default;
+      padding: 8px;
+      color: white;
+      font-size: 20px;
+      margin-top: 20px;
+      &:hover {
+        background-color: lightgray;
+        cursor: pointer;
+        color: black;
+      }
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  background-color: lightgray;
+  padding: 40px 0;
+  text-align: center;
+  p {
+    text-align: center;
+    font-family: $default;
+    font-size: 25px;
+  }
+  button {
+    display: inline-block;
+    background-color: black;
+    border: none;
+    margin-top: 20px;
+    a {
+      color: white;
+      font-family: $default;
+      font-size: 16px;
+      text-decoration: none;
+      display: block;
+      padding: 10px;
+      &:hover {
+        cursor: pointer;
+        color: black;
+        background-color: grey;
+      }
+    }
+  }
+  .social-media {
+    text-align: center;
+    padding-top: 50px;
+    i {
+      padding: 10px;
+      opacity: 0.5;
+      font-size: 25px;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  .trade {
+    text-align: center;
+    font-size: 20px;
+    font-family: Comic Sans MS;
+    font-weight: bolder;
+  }
+}
+
+.mobile-menu {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  font-family: $default;
+  color: white;
+  display: none;
+  .menu {
+    height: auto;
+    width: 100%;
+    span {
+      font-size: 30px;
+      padding: 10px 16px;
+      &:hover {
+        color: tomato;
+      }
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 10px;
+      font-size: 20px;
+    }
+    h1 {
+      padding-top: 20px;
+      font-size: 17vw;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1098px) {
+  .offers {
+    .offers-grid {
+      .box {
+        height: auto;
+        h1 {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 884px) {
+  .offers {
+    .offers-grid {
+      .box {
+        flex: 50%;
+        min-width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 792px) {
+  .about-container {
+    .team {
+      .padding {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 724px) {
+  .pricing {
+    .prices {
+      .set-padding {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .marketing {
+    .slideshow {
+      .slide {
+        .text-top-left {
+          top: 10px;
+          left: 10px;
+        }
+        .text-top-right {
+          top: 10px;
+          right: 10px;
+        }
+        .text-center {
+          left: 40%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 474px) {
+  .marketing {
+    .slideshow {
+      .slide {
+        .text-center {
+          left: 30%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 454px) {
+  .offers {
+    .offers-grid {
+      .box {
+        flex: 100%;
+        min-width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 354px) {
+  .marketing,
+  .offers,
+  .pricing,
+  .about-container,
+  .contact-container {
+    margin: 10px 0;
+    width: 100%;
+    padding: 50px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  nav {
+    ul {
+      li {
+        display: none;
+        &:last-child {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 276px) {
+  .mobile-menu {
+    h1 {
+      display: none;
+    }
+    p {
+      font-size: 20px;
+      border: 1px solid white;
+    }
+  }
+}

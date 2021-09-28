@@ -1,0 +1,654 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav ul {
+  list-style-type: none;
+  display: block;
+  background-color: lightgray;
+  overflow: hidden;
+  width: 100%;
+}
+
+nav ul li {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+
+nav ul li:hover {
+  background-color: #b1b1b1;
+}
+
+nav ul li:last-child {
+  display: none;
+}
+
+nav ul li a {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  font-family: "Baloo 2", cursive;
+}
+
+.marketing {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 10px;
+  font-family: "Baloo 2", cursive;
+}
+
+.marketing h1 {
+  font-size: 50px;
+}
+
+.marketing p {
+  font-size: 20px;
+}
+
+.marketing .slideshow {
+  width: 100%;
+}
+
+.marketing .slideshow .slide {
+  width: 100%;
+  position: relative;
+}
+
+.marketing .slideshow .slide img {
+  width: 100%;
+}
+
+.marketing .slideshow .slide .text-top-left {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  padding: 10px;
+  background-color: white;
+  -webkit-animation: up 0.3s;
+          animation: up 0.3s;
+}
+
+.marketing .slideshow .slide .text-center {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  padding: 10px;
+  background-color: white;
+  -webkit-animation: center-up 0.3s;
+          animation: center-up 0.3s;
+}
+
+.marketing .slideshow .slide .text-top-right {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  padding: 10px;
+  background-color: white;
+  -webkit-animation: up 0.3s;
+          animation: up 0.3s;
+}
+
+.marketing::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.marketing .navigation {
+  padding: 20px;
+  background-color: #414141;
+  width: 100%;
+}
+
+.marketing .navigation button {
+  color: white;
+  background-color: transparent;
+  display: block;
+  border: none;
+  font-size: 25px;
+}
+
+.marketing .navigation button:hover {
+  color: lightgray;
+  cursor: pointer;
+}
+
+.marketing .navigation .button {
+  width: 10%;
+  float: left;
+}
+
+.marketing .navigation::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.marketing .navigation .dots {
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  float: left;
+  padding: 7.5px 0;
+}
+
+.marketing .navigation .dots .dot {
+  height: 15px;
+  width: 15px;
+  border: 1px soldi black;
+  margin: 0 10px;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes up {
+  from {
+    top: 400px;
+    opacity: 0;
+  }
+  to {
+    top: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes up {
+  from {
+    top: 400px;
+    opacity: 0;
+  }
+  to {
+    top: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes center-up {
+  from {
+    top: 90%;
+    opacity: 0;
+  }
+  to {
+    top: 40%;
+    opacity: 1;
+  }
+}
+
+@keyframes center-up {
+  from {
+    top: 90%;
+    opacity: 0;
+  }
+  to {
+    top: 40%;
+    opacity: 1;
+  }
+}
+
+.offers {
+  width: 70%;
+  margin: 10px auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.offers span {
+  display: inline-block;
+  font-family: "Baloo 2", cursive;
+  font-size: 30px;
+  border-bottom: 4px solid grey;
+}
+
+.offers .offers-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.offers .offers-grid .box {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  min-width: 25%;
+  height: 200px;
+  text-align: left;
+  font-family: "Baloo 2", cursive;
+  padding: 10px;
+}
+
+.offers .offers-grid .box h1 {
+  font-weight: lighter;
+}
+
+.offers .offers-grid .box:nth-child(3), .offers .offers-grid .box:nth-child(4) {
+  color: #fff;
+}
+
+.pricing {
+  width: 70%;
+  margin: 10px auto;
+  padding-top: 50px;
+  text-align: center;
+  font-family: "Baloo 2", cursive;
+}
+
+.pricing h1 {
+  font-weight: lighter;
+  font-size: 30px;
+}
+
+.pricing .prices {
+  width: 100%;
+}
+
+.pricing .prices .set-padding {
+  width: 33.33%;
+  padding: 10px;
+  float: left;
+}
+
+.pricing .prices .set-padding .price {
+  width: 100%;
+}
+
+.pricing .prices .set-padding .price:hover {
+  -webkit-box-shadow: 0px 5px 15px grey;
+          box-shadow: 0px 5px 15px grey;
+}
+
+.pricing .prices .set-padding .price div {
+  padding: 16px;
+  font-size: 20px;
+  border: 1px solid lightgray;
+  border-top: none;
+}
+
+.pricing .prices .set-padding .price div:first-child {
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  border: none;
+}
+
+.pricing .prices .set-padding .price div span {
+  font-size: 30px;
+}
+
+.pricing .prices .set-padding .price div p {
+  font-size: 15px;
+}
+
+.pricing .prices .set-padding .price div button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  display: inline-block;
+  padding: 10px;
+  font-family: "Baloo 2", cursive;
+  font-size: 18px;
+}
+
+.pricing .prices .set-padding .price div button:hover {
+  color: black;
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.pricing .prices::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.about-container {
+  width: 70%;
+  margin: 10px auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.about-container span {
+  display: inline-block;
+  font-family: "Baloo 2", cursive;
+  font-size: 30px;
+  border-bottom: 4px solid grey;
+}
+
+.about-container .team {
+  width: 100%;
+  padding-top: 50px;
+  font-family: "Baloo 2", cursive;
+  text-align: left;
+}
+
+.about-container .team .padding {
+  width: 33.33%;
+  float: left;
+  padding: 10px;
+}
+
+.about-container .team .padding .member {
+  width: 100%;
+  -webkit-box-shadow: 0px 5px 15px grey;
+          box-shadow: 0px 5px 15px grey;
+}
+
+.about-container .team .padding .member img {
+  width: 100%;
+}
+
+.about-container .team .padding .member .content {
+  padding: 10px;
+  text-align: justify;
+}
+
+.about-container .team .padding .member .content h1,
+.about-container .team .padding .member .content h3 {
+  font-weight: lighter;
+}
+
+.about-container .team .padding .member .content h3 {
+  opacity: 0.6;
+}
+
+.about-container .team .padding .member .content button {
+  width: 100%;
+  background-color: lightgray;
+  padding: 8px;
+  font-family: "Baloo 2", cursive;
+  display: inline-block;
+  text-align: center;
+  border: none;
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.about-container .team .padding .member .content button:hover {
+  cursor: pointer;
+  background-color: grey;
+}
+
+.about-container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.contact-container {
+  width: 70%;
+  margin: 10px auto;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact-container span {
+  display: inline-block;
+  font-family: "Baloo 2", cursive;
+  font-size: 30px;
+  border-bottom: 4px solid grey;
+}
+
+.contact-container .form legend {
+  font-family: "Baloo 2", cursive;
+  font-size: 20px;
+  padding: 0 5px;
+}
+
+.contact-container .form fieldset {
+  padding: 20px 10px;
+  border: 2px solid dimgray;
+}
+
+.contact-container .form input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-family: "Baloo 2", cursive;
+  text-align: left;
+  border: 1px solid grey;
+}
+
+.contact-container .form input:hover {
+  border: 2px solid black;
+}
+
+.contact-container .form label {
+  display: block;
+  font-family: "Baloo 2", cursive;
+  font-size: 20px;
+  text-align: left;
+}
+
+.contact-container .form button {
+  width: 100%;
+  display: inline-block;
+  background-color: black;
+  border: none;
+  font-family: "Baloo 2", cursive;
+  padding: 8px;
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.contact-container .form button:hover {
+  background-color: lightgray;
+  cursor: pointer;
+  color: black;
+}
+
+.footer {
+  width: 100%;
+  background-color: lightgray;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer p {
+  text-align: center;
+  font-family: "Baloo 2", cursive;
+  font-size: 25px;
+}
+
+.footer button {
+  display: inline-block;
+  background-color: black;
+  border: none;
+  margin-top: 20px;
+}
+
+.footer button a {
+  color: white;
+  font-family: "Baloo 2", cursive;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+.footer button a:hover {
+  cursor: pointer;
+  color: black;
+  background-color: grey;
+}
+
+.footer .social-media {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.footer .social-media i {
+  padding: 10px;
+  opacity: 0.5;
+  font-size: 25px;
+}
+
+.footer .social-media i:hover {
+  opacity: 1;
+}
+
+.footer .trade {
+  text-align: center;
+  font-size: 20px;
+  font-family: Comic Sans MS;
+  font-weight: bolder;
+}
+
+.mobile-menu {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  font-family: "Baloo 2", cursive;
+  color: white;
+  display: none;
+}
+
+.mobile-menu .menu {
+  height: auto;
+  width: 100%;
+}
+
+.mobile-menu .menu span {
+  font-size: 30px;
+  padding: 10px 16px;
+}
+
+.mobile-menu .menu span:hover {
+  color: tomato;
+}
+
+.mobile-menu .menu a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.mobile-menu .menu h1 {
+  padding-top: 20px;
+  font-size: 17vw;
+  text-align: center;
+}
+
+@media screen and (max-width: 1098px) {
+  .offers .offers-grid .box {
+    height: auto;
+  }
+  .offers .offers-grid .box h1 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 884px) {
+  .offers .offers-grid .box {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    min-width: 50%;
+  }
+}
+
+@media screen and (max-width: 792px) {
+  .about-container .team .padding {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 724px) {
+  .pricing .prices .set-padding {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .marketing .slideshow .slide .text-top-left {
+    top: 10px;
+    left: 10px;
+  }
+  .marketing .slideshow .slide .text-top-right {
+    top: 10px;
+    right: 10px;
+  }
+  .marketing .slideshow .slide .text-center {
+    left: 40%;
+  }
+}
+
+@media screen and (max-width: 474px) {
+  .marketing .slideshow .slide .text-center {
+    left: 30%;
+  }
+}
+
+@media screen and (max-width: 454px) {
+  .offers .offers-grid .box {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 354px) {
+  .marketing,
+  .offers,
+  .pricing,
+  .about-container,
+  .contact-container {
+    margin: 10px 0;
+    width: 100%;
+    padding: 50px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  nav ul li {
+    display: none;
+  }
+  nav ul li:last-child {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 276px) {
+  .mobile-menu h1 {
+    display: none;
+  }
+  .mobile-menu p {
+    font-size: 20px;
+    border: 1px solid white;
+  }
+}
+/*# sourceMappingURL=style.css.map */
