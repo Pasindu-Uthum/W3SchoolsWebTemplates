@@ -487,11 +487,11 @@ nav {
 
 @media screen and (max-width: 694px) {
   .contact-container {
+    padding-left: 10px;
+    padding-right: 10px;
     .info,
     .contact-form {
       width: 100%;
-      padding-left: 10px;
-      padding-right: 10px;
     }
     .info {
       text-align: center;
