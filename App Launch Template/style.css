@@ -118,7 +118,7 @@
 
 .app .description h2 {
   font-size: 60px;
-  color: #4CAF50;
+  color: #4caf50;
 }
 
 .app .description p {
@@ -162,7 +162,7 @@
 }
 
 .app .description .availability i:first-child {
-  color: #4CAF50;
+  color: #4caf50;
 }
 
 .app .description .availability i:last-child {
@@ -445,10 +445,12 @@
 }
 
 @media screen and (max-width: 375px) {
-  .clarity .description h1, .app .description h1 {
+  .clarity .description h1,
+  .app .description h1 {
     font-size: 60px;
   }
-  .clarity .description h2, .app .description h2 {
+  .clarity .description h2,
+  .app .description h2 {
     font-size: 40px;
   }
 }
@@ -469,7 +471,8 @@
 }
 
 @media screen and (max-width: 294px) {
-  .features h1, .pricing h1 {
+  .features h1,
+  .pricing h1 {
     font-size: 40px;
   }
 }

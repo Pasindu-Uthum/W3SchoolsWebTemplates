@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,9 +7,9 @@
   margin: 0;
 }
 
-$default: 'Varela Round', sans-serif;
-$poppins: 'Poppins', sans-serif;
-$green: #4CAF50;
+$default: "Varela Round", sans-serif;
+$poppins: "Poppins", sans-serif;
+$green: #4caf50;
 $red: #f44336;
 $blue: #3f51b5;
 
@@ -392,7 +392,8 @@ $blue: #3f51b5;
 }
 
 @media screen and (max-width: 375px) {
-  .clarity, .app {
+  .clarity,
+  .app {
     .description {
       h1 {
         font-size: 60px;
@@ -424,7 +425,8 @@ $blue: #3f51b5;
 }
 
 @media screen and (max-width: 294px) {
-  .features, .pricing {
+  .features,
+  .pricing {
     h1 {
       font-size: 40px;
     }
