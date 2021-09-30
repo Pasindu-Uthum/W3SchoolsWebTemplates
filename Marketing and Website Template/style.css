@@ -586,6 +586,8 @@ nav ul #bars {
   .contact-container .info,
   .contact-container .contact-form {
     width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .contact-container .info {
     text-align: center;
