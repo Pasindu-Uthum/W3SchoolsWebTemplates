@@ -1,0 +1,665 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav ul {
+  list-style-type: none;
+  width: 100%;
+  overflow: hidden;
+  background-color: black;
+  display: block;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li .dropBtn {
+  position: relative;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 10px 16px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav ul li a:hover {
+  background-color: grey;
+  color: black;
+}
+
+nav ul li:first-child a {
+  background-color: #34975f;
+}
+
+nav ul li:first-child a i {
+  padding-right: 5px;
+}
+
+nav ul li:first-child a:hover {
+  background-color: grey;
+  color: black;
+}
+
+nav ul li:last-child {
+  float: right;
+}
+
+nav ul li .dropdown {
+  position: absolute;
+  min-width: 160px;
+  -webkit-box-shadow: 00px 5px 10px grey;
+          box-shadow: 00px 5px 10px grey;
+  display: none;
+  background-color: white;
+}
+
+nav ul li .dropdown a {
+  color: black;
+  display: block;
+}
+
+nav ul #bars {
+  display: none;
+}
+
+.cover-image {
+  height: 70vh;
+  width: 100%;
+  position: relative;
+}
+
+.cover-image span {
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-size: 25px;
+}
+
+.cover-image img {
+  width: 100%;
+  height: 70vh;
+}
+
+.team {
+  padding-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.team .team-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px;
+}
+
+.team .team-grid .member {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  min-width: 25%;
+  padding: 10px;
+}
+
+.team .team-grid .member img {
+  width: 40%;
+  border-radius: 100px;
+  padding-bottom: 10px;
+}
+
+.work-container {
+  width: 100%;
+  background-color: #313131;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 50px 0;
+  position: relative;
+}
+
+.work-container .work {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  min-width: 25%;
+  padding: 10px;
+}
+
+.work-container .work h1 {
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.work-container .work h2 {
+  padding-bottom: 10px;
+}
+
+.work-container .work p {
+  font-weight: lighter;
+  text-align: justify;
+  padding: 5px 0;
+}
+
+.work-container .work img {
+  width: 100%;
+  display: block;
+}
+
+.work-container .work .content {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+}
+
+.work-container button {
+  display: block;
+  position: absolute;
+  bottom: -30px;
+  right: 20px;
+  border-radius: 100px;
+  padding: 16px;
+  border: none;
+  background-color: #34975f;
+  color: white;
+  font-size: 20px;
+}
+
+.work-container button:hover {
+  background-color: lightgray;
+  color: black;
+  cursor: pointer;
+}
+
+.side-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  z-index: 1;
+  background-color: white;
+  -webkit-animation: slide-in 0.5s;
+          animation: slide-in 0.5s;
+  display: none;
+}
+
+.side-bar span {
+  font-size: 40px;
+  width: 100%;
+  display: block;
+  padding: 10px;
+  color: #34975f;
+  white-space: nowrap;
+}
+
+.side-bar span:hover {
+  background-color: lightgray;
+  cursor: pointer;
+  color: black;
+}
+
+.side-bar p {
+  font-size: 35px;
+  padding: 5px;
+}
+
+.side-bar p:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+@-webkit-keyframes slide-in {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 20%;
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 20%;
+    opacity: 1;
+  }
+}
+
+.pricing {
+  text-align: center;
+  padding-top: 50px;
+  width: 100%;
+}
+
+.pricing .padding {
+  width: 33.33%;
+  float: left;
+  padding: 50px 10px;
+}
+
+.pricing .padding .price:hover {
+  -webkit-box-shadow: 0px 0px 10px grey;
+          box-shadow: 0px 0px 10px grey;
+}
+
+.pricing .padding .price div {
+  padding: 15px;
+  font-size: 24px;
+  border: 1px solid grey;
+  border-top: none;
+}
+
+.pricing .padding .price div:first-child {
+  font-size: 35px;
+  color: white;
+  background-color: black;
+  border: none;
+}
+
+.pricing .padding .price div span {
+  font-size: 35px;
+}
+
+.pricing .padding .price div button {
+  background-color: #34975f;
+  border: none;
+  display: inline-block;
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+}
+
+.pricing .padding .price div button i {
+  padding-right: 5px;
+}
+
+.pricing .padding .price div button:hover {
+  cursor: pointer;
+  background-color: grey;
+  color: black;
+}
+
+.pricing::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.contact-container {
+  width: 100%;
+  padding: 50px 50px;
+  background-color: lightgray;
+}
+
+.contact-container .info {
+  width: 40%;
+  float: left;
+  padding-right: 50px;
+}
+
+.contact-container .info span {
+  border-bottom: 5px solid #34975f;
+  font-size: 40px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.contact-container .info h2 {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.contact-container .info p {
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+.contact-container .info p i {
+  padding-right: 10px;
+  color: #34975f;
+}
+
+.contact-container .contact-form {
+  width: 60%;
+  float: left;
+  background-color: white;
+  padding: 20px 50px 40px 50px;
+}
+
+.contact-container .contact-form .form label {
+  display: block;
+  padding-top: 20px;
+}
+
+.contact-container .contact-form .form input {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid grey;
+  padding: 10px;
+  outline: none;
+}
+
+.contact-container .contact-form .like {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  float: left;
+}
+
+.contact-container .contact-form .like input {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.contact-container .contact-form button {
+  float: right;
+  margin-top: 20px;
+  display: block;
+  padding: 10px 20px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+.contact-container .contact-form button:hover {
+  background-color: grey;
+  cursor: pointer;
+  color: black;
+}
+
+.contact-container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.map {
+  width: 100%;
+}
+
+.map img {
+  width: 100%;
+  -webkit-filter: grayscale(60%);
+          filter: grayscale(60%);
+  display: block;
+}
+
+.footer {
+  width: 100%;
+  background-color: black;
+  padding: 80px 0;
+  color: white;
+}
+
+.footer .social-media {
+  text-align: center;
+}
+
+.footer .social-media i {
+  padding: 10px;
+  opacity: 0.5;
+  font-size: 25px;
+}
+
+.footer .social-media i:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.footer .trade {
+  text-align: center;
+  font-size: 20px;
+  font-family: Comic Sans MS;
+  font-weight: bolder;
+}
+
+.footer span {
+  float: right;
+  padding: 10px;
+  font-size: 20px;
+  display: block;
+  background-color: #34975f;
+  display: none;
+}
+
+.footer a {
+  float: right;
+  margin-right: 20px;
+  display: block;
+  padding: 10px;
+  border: none;
+  border-radius: none;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+}
+
+.footer a:hover {
+  cursor: pointer;
+  color: black;
+  background-color: lightgray;
+}
+
+.mobile-menu {
+  background-color: rgba(0, 0, 0, 0.9);
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  display: none;
+  -webkit-animation: downcome 1s;
+          animation: downcome 1s;
+}
+
+.mobile-menu span {
+  font-size: 20px;
+  display: block;
+  padding: 20px;
+}
+
+.mobile-menu p {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.mobile-menu p a {
+  color: white;
+  text-decoration: none;
+}
+
+@-webkit-keyframes downcome {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes downcome {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: 100%;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 934px) {
+  .work-container .work {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    min-width: 50%;
+  }
+}
+
+@media screen and (max-width: 844px) {
+  .side-bar {
+    width: 40%;
+  }
+  @-webkit-keyframes slide-in {
+    from {
+      width: 0;
+      opacity: 0;
+    }
+    to {
+      width: 40%;
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in {
+    from {
+      width: 0;
+      opacity: 0;
+    }
+    to {
+      width: 40%;
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 752px) {
+  nav ul li {
+    display: none;
+  }
+  nav ul li:first-child, nav ul li:last-child {
+    display: block;
+  }
+  nav ul #bars {
+    display: block;
+  }
+  .team .team-grid .member {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    min-width: 50%;
+  }
+}
+
+@media screen and (max-width: 694px) {
+  .contact-container .info,
+  .contact-container .contact-form {
+    width: 100%;
+  }
+  .contact-container .info {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .cover-image {
+    height: auto;
+  }
+  .cover-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .pricing .padding {
+    width: 100%;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 458px) {
+  .work-container .work {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 406px) {
+  .side-bar {
+    width: 100%;
+  }
+  @-webkit-keyframes slide-in {
+    from {
+      width: 0;
+      opacity: 0;
+    }
+    to {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in {
+    from {
+      width: 0;
+      opacity: 0;
+    }
+    to {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 240px) {
+  .cover-image {
+    height: auto;
+  }
+  .cover-image span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .team .team-grid .member {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    min-width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
