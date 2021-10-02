@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://kit.fontawesome.com/58e77607fe.js" crossorigin="anonymous"></script>
+  <title>Social Media | Web Template</title>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+      <li id="bars" data-status="off"><a href="#"><i class="fas fa-bars"></i></a></li>
+      <li><a href="#"><i class="fas fa-globe-americas"></i></a></li>
+      <li><a href="#"><i class="fas fa-user-alt"></i></a></li>
+      <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+      <li class="dropBtn"><a href="#"><i class="fas fa-bell"></i><span>3</span></a></li>
+      <li><a href="#"><img src="avatar2.png" alt="Profile img"></a></li>
+    </ul>
+  </nav>
+
+  <div class="main-container">
+    <aside class="left">
+      <div class="profile">
+        <h1>My Profile</h1>
+        <img src="avatar3.png" alt="Profile Blue">
+        <hr>
+        <p><i class="fas fa-pencil-alt"></i> Designer, UI</p>
+        <p><i class="fas fa-home"></i>London, UK</p>
+        <p><i class="fas fa-birthday-cake"></i>April 1, 1988</p>
+      </div>
+
+      <div class="dropdown-container">
+        <p onclick="dropFunction(0)"><i class="fas fa-circle-notch"></i> My Groups</p>
+        <div class="dropdown">
+          <button onclick="hide(0)"><i class="fas fa-eye-slash"></i></button>
+          Some Text ...
+        </div>
+        <p onclick="dropFunction(1)"><i class="far fa-calendar-check"></i> My Events</p>
+        <div class="dropdown">
+          <button onclick="hide(1)"><i class="fas fa-eye-slash"></i></button>
+          Some Other Text ...
+        </div>
+        <p onclick="dropFunction(2)"><i class="fas fa-users"></i> My Photos </p>
+        <div class="dropdown">
+          <button onclick="hide(2)"><i class="fas fa-eye-slash"></i></button>
+          <div class="image-grid">
+            <img src="lights.jpg" alt="nothern lights">
+            <img src="nature.jpg" alt="Nature">
+            <img src="mountains.jpg" alt="mountains">
+            <img src="forest.jpg" alt="Forest">
+            <img src="nature.jpg" alt="Nature">
+            <img src="snow.jpg" alt="Snow mountains">
+          </div>
+        </div>
+      </div>
+      <div class="interests">
+        <p>Interests</p>
+        <span style="background-color: #303e45; color: white;">News</span>
+        <span style="background-color: #3a4b53; color: white;">W3Schools</span>
+        <span style="background-color: #435761; color: white;">Labels</span>
+        <span style="background-color: #4d636f; color: white;">Games</span>
+        <span style="background-color: #57707d; color: white;">Friends</span>
+        <span style="background-color: #abc3cf;">travel</span>
+        <span style="background-color: #7d97a5;">Coding</span>
+        <span style="background-color: #9eb1bb;">Food</span>
+        <span style="background-color: #becbd2;">Design</span>
+        <span style="background-color: #dfe5e8;">Art</span>
+        <span style="background-color: #f5f7f8;">Photos</span>
+      </div>
+      <div class="notification">
+        <p><b>Hey!</b></p> <span onclick="notification()"><i class="fas fa-times"></i></span>
+        <p>People are looking at your profile. Find out who.</p>
+      </div>
+    </aside>
+
+    <main class="center">
+      <div class="post-section">
+        <p>Social Media Template by Pasindu Uthum</p>
+        <input type="text" name="blog" value="Status: Feeling Awesome">
+        <button><i class="fas fa-pencil-alt"></i> Post</button>
+      </div>
+
+      <div class="post">
+        <div class="name">
+          <img src="avatar2.png" alt="John Doe">
+          <h2>John Doe</h2>
+        </div>
+        <span>1 min</span>
+        <br><br><br>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.</p>
+        <div class="image">
+          <img src="lights.jpg" alt="Nothern Lights">
+        </div>
+        <div class="image">
+          <img src="nature.jpg" alt="nature">
+        </div>
+        <button><i class="fas fa-thumbs-up"></i> Like</button>
+        <button><i class="fas fa-comment"></i> Comment</button>
+      </div>
+
+      <div class="post">
+        <div class="name">
+          <img src="avatar5.png" alt="Jane Doe">
+          <h2>Jane Doe</h2>
+        </div>
+        <span>16 min</span>
+        <br><br><br>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.</p>
+        <button><i class="fas fa-thumbs-up"></i> Like</button>
+        <button><i class="fas fa-comment"></i> Comment</button>
+      </div>
+
+      <div class="post">
+        <div class="name">
+          <img src="avatar6.png" alt="Angie Jane">
+          <h2>Angie Jane</h2>
+        </div>
+        <span>32 min</span>
+        <br><br><br>
+        <hr>
+        <p>Have yo seen this?</p>
+        <img src="nature.jpg" alt="nature">
+        <button><i class="fas fa-thumbs-up"></i> Like</button>
+        <button><i class="fas fa-comment"></i> Comment</button>
+      </div>
+    </main>
+
+    <aside class="right">
+      <div class="events">
+        <p>Upcoming Events</p>
+        <img src="forest.jpg" alt="Forest">
+        <p><b>Holiday</b></p>
+        <p>Friday 15:00</p>
+        <button>Info</button>
+      </div>
+
+      <div class="request">
+        <p>Friend Request</p>
+        <img src="avatar6.png" alt="Forest">
+        <p>Jane Doe</p>
+        <button style="background-color: #4CAF50;"><i class="fas fa-check"></i></button>
+        <button style="background-color: #f44336;"><i class="fas fa-times"></i></button>
+      </div>
+
+      <div class="other-divs">ADS</div>
+      <div class="other-divs"><i class="fas fa-bug"></i></div>
+    </aside>
+  </div>
+
+  <footer>
+    <div class="banner">
+      Footer
+    </div>
+    <div class="my-footer">
+      <p class="social-media"><i class="fas fa-at"></i><i class="fab fa-telegram"></i><i class="fab fa-discord"></i><i
+          class="fab fa-whatsapp"></i><i class="fab fa-instagram"></i><i class="fab fa-reddit"></i></p>
+      <p class="trade">Pasindu Uthum Web Templates™ | 2021</p>
+    </div>
+  </footer>
+
+  <div class="mobile-menu">
+    <p onclick="hideMenu()"><i class="fas fa-globe-americas"></i>Language</p>
+    <p onclick="hideMenu()"><i class="fas fa-user-alt"></i></i>Profile</p>
+    <p onclick="hideMenu()"><i class="fas fa-envelope"></i></i>Message</p>
+    <p onclick="hideMenu()"><i class="fas fa-bell"></i></i>Notifications <span>3</span></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

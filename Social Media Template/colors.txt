@@ -1,0 +1,20 @@
+Accent color light: #4d636f;
+Accent color dark: #57707d;
+Button 1: #4CAF50;
+Button 2: #f44336;
+
+
+Interests -
+#303e45
+#3a4b53
+#435761
+#4d636f
+#57707d
+#607d8b
+#7d97a5
+#9eb1bb
+#becbd2
+#dfe5e8
+#f5f7f8
+
+notification: #dfe5e8;
