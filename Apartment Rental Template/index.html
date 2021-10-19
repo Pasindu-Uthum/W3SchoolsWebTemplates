@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/58e77607fe.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <title>Apartment Rental | Web Template</title>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">Rental</a></li>
+      <li class="bars" data-status="close"><a href="#"><i class="fas fa-bars"></i></a></li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+      <h1>Rental <br> from $99</h1>
+      <span>per night</span>
+      <div class="nav-form">
+        <label for="checkIn"><i class="far fa-calendar-check"></i> Check In</label>
+        <input type="text" name="checkIn" id="checkIn" placeholder="DD MM YYYY">
+
+        <label for="checkOut"><i class="far fa-calendar"></i> Check Out</label>
+        <input type="text" name="checkOut" id="checkOut" placeholder="DD MM YYYY">
+
+        <label for="adults"><i class="fas fa-male"></i> Adults</label>
+        <input type="number" min="1" value="1" name="adults" id="adults">
+
+        <label for="kids"><i class="fas fa-child"></i> Kids</label>
+        <input type="number" value="0" name="kids" id="kids">
+      </div>
+
+      <button><i class="fas fa-search"></i> Search availability</button>
+
+      <ul>
+        <li><a href="#"><i class="fas fa-building"></i> Apartment</a></li>
+        <li><a href="#"><i class="fa fa-rss"></i> Subscribe</a></li>
+        <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </section>
+
+    <article>
+      <h1>The Apartment</h1>
+      <div class="image-preview-section">
+        <div class="main-image-container">
+          <img src="./bedroom.jpg" alt="Bedroom" class="main-image">
+          <span class="captionText">Bedroom</span>
+        </div>
+        <div class="image-selection">
+          <img src="./livingroom.jpg" alt="Living Room" class="subImg">
+          <img src="./diningroom.jpg" alt="Dining Room" class="subImg">
+          <img src="./bedroom.jpg" alt="Bedroom" class="subImg">
+          <img src="./livingroom2.jpg" alt="Living Room II" class="subImg">
+        </div>
+      </div>
+
+      <div class="space">
+        <h2>The Space</h2>
+        <div class="left">
+          <p><i class="fas fa-male"></i> Max people: 4</p>
+          <p><i class="fas fa-bath"></i> Bathrooms: 2</p>
+          <p><i class="fas fa-bed"></i> Bedrooms: 1</p>
+        </div>
+        <div class="right">
+          <p><i class="far fa-clock"></i> check In: After 3PM</p>
+          <p><i class="far fa-clock"></i> check Out: 12PM</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="amenities">
+        <h2>Amenities</h2>
+        <div class="left">
+          <p><i class="fas fa-shower"></i> Shower</p>
+          <p><i class="fas fa-wifi"></i> WiFi</p>
+          <p><i class="fas fa-tv"></i> TV</p>
+        </div>
+        <div class="right">
+          <p><i class="fas fa-utensils"></i> Ktchen</p>
+          <p><i class="fas fa-thermometer-half"></i> Heating</p>
+          <p><i class="fas fa-wheelchair"></i>Accessible</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="extra-info">
+        <h2>Extra Info</h2>
+        <p>Our apartment is really clean and we like to keep it that way. Enjoy the lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <span>We accept: <i class="fa fa-credit-card"></i> <i class="fa fa-cc-mastercard"></i> <i
+            class="fa fa-cc-amex"></i> <i class="fa fa-cc-paypal"></i></span>
+      </div>
+
+      <hr>
+
+      <div class="rules">
+        <h2>Rules</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+        <span>Subscribe to receive updates on available dates and special offers.</span>
+        <button>Subscribe</button>
+      </div>
+
+      <hr>
+
+      <div class="contact-container">
+        <h1>Contact</h1>
+        <span><i class="fas fa-map-marker-alt"></i> Chicago, US</span>
+        <span><i class="fas fa-phone-alt"></i> Phone: +00 151515</span>
+        <span><i class="fas fa-envelope"></i> Email: mail@mail.com</span>
+        <p>Questions? Go ahead, ask them:</p>
+
+        <input type="text" name="name" id="name" placeholder="Name">
+        <input type="text" name="mail" id="mail" placeholder="Email">
+        <input type="text" name="message" id="message" placeholder="Message">
+
+        <button>Send a Message</button>
+      </div>
+
+      <div class="footer">
+        <p class="social-media"><i class="fas fa-at"></i><i class="fab fa-telegram"></i><i class="fab fa-discord"></i><i
+            class="fab fa-whatsapp"></i><i class="fab fa-instagram"></i><i class="fab fa-reddit"></i></p>
+        <p class="trade">Pasindu Uthum Web Templates™ | 2021</p>
+      </div>
+
+    </article>
+  </main>
+
+  <div class="overlay"></div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
